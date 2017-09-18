@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+  
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="undertale," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。  * 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容， 因为它们充满了剧透。 * 当个好孩子，好吗？">
+<meta name="keywords" content="undertale">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Undertale 的调试模式">
+<meta property="og:url" content="http://xa0082249956.tk/2017/05/15/undertale-debug-mode/index.html">
+<meta property="og:site_name" content="&gt;33&lt;">
+<meta property="og:description" content="Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。  * 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容， 因为它们充满了剧透。 * 当个好孩子，好吗？">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-08-28T12:37:52.657Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Undertale 的调试模式">
+<meta name="twitter:description" content="Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。  * 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容， 因为它们充满了剧透。 * 当个好孩子，好吗？">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://xa0082249956.tk/2017/05/15/undertale-debug-mode/"/>
+
+
+
+
+
+  <title>Undertale 的调试模式 | >33<</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">>33<</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-quicknote">
+          <a href="/quicknote/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br />
+            
+            快速笔记
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xa0082249956.tk/2017/05/15/undertale-debug-mode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xa0082249956">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content=">33<">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Undertale 的调试模式</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
+                2017-08-28
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hacking/" itemprop="url" rel="index">
+                    <span itemprop="name">hacking</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hacking/undertale/" itemprop="url" rel="index">
+                    <span itemprop="name">undertale</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/05/15/undertale-debug-mode/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/05/15/undertale-debug-mode/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+             <span id="/2017/05/15/undertale-debug-mode/" class="leancloud_visitors" data-flag-title="Undertale 的调试模式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。</p>
+<blockquote>
+<p>* 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容，<br>
+因为它们充满了<strong>剧透</strong>。<br>
+* 当个好孩子，好吗？</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="启用调试">启用调试</h1>
+<blockquote>
+<p><strong>警告</strong></p>
+<p>在继续之前，请确定你已经备份了 <code>Undertale.*</code> 和 <code>data.*</code> <a href="#windows">Windows</a> / <code>game.*</code> <a href="#linux">Linux</a>。<br>
+如果你的游戏如果打不开了，请找 Flowey 或者 Chara，那朵花和那只猹应该知道怎么做。</p>
+</blockquote>
+<!-- aaa -->
+<blockquote>
+<p><strong>提示</strong></p>
+<p>你需要有 带十六进制编辑功能的编辑器 ( 以下简称 编辑器 ) 才能进行下面的操作，推荐使用 UltraEdit。</p>
+</blockquote>
+<h2 id="version-1.0">Version 1.0</h2>
+<p>使用类似 WinRAR 或 好压 等解压软件解压游戏目录下的 <code>Undertale.exe</code> 到游戏根目录，然后用编辑器打开 <code>data.win</code>，定位到 <code>0x725B24</code> ( UltraEdit 可以使用快捷键 <code>Ctrl + G</code> ) 后将值改为 <code>01</code>，保存退出。( 覆盖原先的 exe 文件 )</p>
+<blockquote>
+<p><strong>提示</strong></p>
+<p>如果你在玩 Steam 版，你只需要解压除了 steam_api.dll 外的文件，否则调试模式不能启用。<br>
+<em>If you are playing the Steam version, you should extract every file except steam_api.dll, or the debug mode won’t be activated.</em></p>
+</blockquote>
+<h2 id="version-1.001">Version 1.001</h2>
+<h3 id="windows">Windows</h3>
+<p>用编辑器打开 <code>data.win</code>，定位到 <code>0x725D8C</code> ( 或许可以 Ctrl + G ) 后将值改为 <code>01</code>，保存退出。</p>
+<h3 id="linux">Linux</h3>
+<p>用编辑器打开 <code>game.unx</code>，定位到 <code>0x725DDC</code> ( 或许可以 Ctrl + G ) 后将值改为 <code>01</code>，保存退出。</p>
+<h3 id="macos">macOS</h3>
+<p>用编辑器打开 <code>game.ios</code>，定位到 <code>0x725D8C</code> ( 或许可以 Mac + G ) 后将值改为 <code>01</code>，保存退出。</p>
+<h1 id="调试模式功能">调试模式功能</h1>
+<h2 id="fun-内容">Fun 内容</h2>
+<p>在调试模式启用时，所有需要改 Fun 内容才能出现的 Gaster 追随者会自动出现。</p>
+<h2 id="键盘快捷键">键盘快捷键</h2>
+<h3 id="部分摘要">部分摘要</h3>
+<table>
+<thead>
+<tr class="header">
+<th>G [O/I]</th>
+<th>S / L</th>
+<th>P [W/F] Back</th>
+<th>M</th>
+<th>V</th>
+<th>Ins / Del</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>箱子[取/放]</td>
+<td>存 / 读</td>
+<td>速度[慢/快]</td>
+<td>杀</td>
+<td>边缘</td>
+<td>下 / 上</td>
+</tr>
+</tbody>
+</table>
+<h3 id="详细">详细</h3>
+<table style="width:71%;">
+<colgroup>
+<col width="13%">
+<col width="56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">G</td>
+<td>使用箱子。</td>
+</tr>
+<tr class="even">
+<td align="left">G - 在商店中</td>
+<td>设置金币数为 5000.</td>
+</tr>
+<tr class="odd">
+<td align="left">I</td>
+<td>打开一个对话框，可以让你把东西放到箱子里。 ( 在正常游戏下没有出现过 )</td>
+</tr>
+<tr class="even">
+<td align="left">O</td>
+<td>打开一个对话框，可以让你把东西从箱子取出。 ( 在正常游戏下没有出现过 )</td>
+</tr>
+<tr class="odd">
+<td align="left">S</td>
+<td>打开存档对话框。</td>
+</tr>
+<tr class="even">
+<td align="left">L</td>
+<td>即时读档。</td>
+</tr>
+<tr class="odd">
+<td align="left">M</td>
+<td>LOVE 加一。 ( 你想进屠杀路线吗？ ) ( 但是谁也没有来。 )</td>
+</tr>
+<tr class="even">
+<td align="left">W</td>
+<td>将 FPS 设为 10.</td>
+</tr>
+<tr class="odd">
+<td align="left">F</td>
+<td>将 FPS 设为 60 并两倍速游戏，不影响音乐播放。</td>
+</tr>
+<tr class="even">
+<td align="left">P</td>
+<td>在快和正常之间切换游戏速度。</td>
+</tr>
+<tr class="odd">
+<td align="left">R - 7 连击</td>
+<td>重启游戏。</td>
+</tr>
+<tr class="even">
+<td align="left">U</td>
+<td>切换 Undyne 的电话。改变角色配色为 蓝 或 黄。</td>
+</tr>
+<tr class="odd">
+<td align="left">V</td>
+<td>显示房间边缘。</td>
+</tr>
+<tr class="even">
+<td align="left">5</td>
+<td><em>Increase battle group by 5. Does not roll over to 0 after 256.</em></td>
+</tr>
+<tr class="odd">
+<td align="left">退格键</td>
+<td>按下时可以走快一些。</td>
+</tr>
+<tr class="even">
+<td align="left">Page Up</td>
+<td><em>Increase ‘steps’ by 100.</em></td>
+</tr>
+<tr class="odd">
+<td align="left">Page Down</td>
+<td><em>Sets attack in the STAT menu to 989. Appears to be cosmetic only.</em></td>
+</tr>
+<tr class="even">
+<td align="left">End</td>
+<td>演示从 New Home 开始的下一个怪物，在屠杀路线中，是 Flowey.</td>
+</tr>
+<tr class="odd">
+<td align="left">Home</td>
+<td>在当前 battle group 中开始一场战斗，默认是 140 - 真抱歉 [v1.0]</td>
+</tr>
+<tr class="even">
+<td align="left">Insert</td>
+<td>传送到下一个房间。将你放在一个确定的位置。( 如不能移动可以尝试 F10 )</td>
+</tr>
+<tr class="odd">
+<td align="left">Delete</td>
+<td>传送到上一个房间。</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="left">按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">F3</td>
+<td>在你的存档文件夹中放置文件 <code>system_information_962</code>。在游戏重新启动后，把你放在屠杀路线后的黑屏状态。<em>似乎不太好</em></td>
+</tr>
+<tr class="even">
+<td align="left">F7</td>
+<td>增加 500 金币。</td>
+</tr>
+<tr class="odd">
+<td align="left">F9</td>
+<td>停止所有音乐。</td>
+</tr>
+<tr class="even">
+<td align="left">F10</td>
+<td>自由移动。</td>
+</tr>
+<tr class="odd">
+<td align="left">F11</td>
+<td>传送到与 Papyrus 作战后的房间 [<code>room_water1</code>/id:<code>82</code>].</td>
+</tr>
+<tr class="even">
+<td align="left">F12</td>
+<td>重新打开当前房间。</td>
+</tr>
+<tr class="odd">
+<td align="left">R + 6</td>
+<td>传送到 Ruins 中的谜题房间 [<code>room_ruins2</code>/id:<code>7</code>].</td>
+</tr>
+<tr class="even">
+<td align="left">T + 6</td>
+<td>传送到 Ruins 出口的外面 [<code>room_tundra1</code>/id:<code>44</code>].</td>
+</tr>
+<tr class="odd">
+<td align="left">W + 6</td>
+<td>传送到与 Papyrus 作战后的房间 [<code>room_water1</code>/id:<code>82</code>] ，与 F11 作用相同。</td>
+</tr>
+<tr class="even">
+<td align="left">F + 6</td>
+<td>传送到 Hotlands 饮水机房间 [<code>room_fire2</code>/id:<code>138</code>].</td>
+</tr>
+<tr class="odd">
+<td align="left">E + 6</td>
+<td>传送到 New Home 入口 [<code>room_castle_front</code>/id:<code>219</code>].</td>
+</tr>
+<tr class="even">
+<td align="left">Y + 6</td>
+<td>传送到 True Lab 入口 [<code>room_truelab_elevator</code>/id:<code>244</code>].</td>
+</tr>
+</tbody>
+</table>
+<h3 id="战斗中">战斗中</h3>
+<table style="width:67%;">
+<colgroup>
+<col width="9%">
+<col width="56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>减速。不能低于 1 FPS，否则崩溃。</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>加速。不能超过正常速度的两倍，否则崩溃。</td>
+</tr>
+<tr class="odd">
+<td>F</td>
+<td>加速到两倍速。</td>
+</tr>
+<tr class="even">
+<td>W</td>
+<td>减速到 10 FPS.</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>敌方回合减短。</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>敌方回合加长。</td>
+</tr>
+<tr class="odd">
+<td>Delete</td>
+<td>当前战斗中 HP 设置为 999.</td>
+</tr>
+<tr class="even">
+<td>F6</td>
+<td>设置仁慈为 0，攻击为 9999.</td>
+</tr>
+<tr class="odd">
+<td>O + P</td>
+<td>设置仁慈为 9999，可以直接仁慈。<em>Some enemies that cannot be normally spared turn into Aaron.</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="调试-flag">调试 Flag</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Flag</th>
+<th>在 <code>file0</code> 中的位置</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td>5</td>
+<td>设置为 1 后，在与 Undyne 作战之前，她会认为你没有杀人。</td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>57</td>
+<td>非 0 时覆盖 LOVE 的值。</td>
+</tr>
+<tr class="odd">
+<td>28</td>
+<td>59</td>
+<td>设置为 1 后，可以按 C 来快速跳过对话。</td>
+</tr>
+<tr class="even">
+<td>69</td>
+<td>100</td>
+<td><em>If set to 1, changes Burgerpants’ dialogue slightly.</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="特殊区域">特殊区域</h2>
+<h3 id="first-sans-encounter">First Sans Encounter</h3>
+<p>过场动画时，按 J 来仔细观察 Sans，然后游戏崩溃。<em>喵喵喵？</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J</td>
+<td>放大 Sans 并崩溃游戏。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="chara-的倒影">Chara 的倒影</h3>
+<p>你在 Waterfall 的水洼中的倒影会在你按下 空格 后变成一个神秘人物 ( 似乎是 Chara )。</p>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>空格</td>
+<td>变猹。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="怪物小孩攀登">怪物小孩攀登</h3>
+<p>在你的头上会出现两个数值，开始时是 <code>-1</code> 和 <code>0</code>，第一个数值是一个计时器，由第二个数值确定。第二个数值代表怪物小孩的状态。</p>
+<h2 id="特殊战斗中的特殊内容">特殊战斗中的特殊内容</h2>
+<h3 id="lesser-dog">Lesser Dog</h3>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J</td>
+<td>增加头的高度。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="papyrus">Papyrus</h3>
+<table style="width:64%;">
+<colgroup>
+<col width="6%">
+<col width="56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>空格</td>
+<td>设置 Papyrus 的下一次攻击和对话内容为 “<em>THE KING WILL TRIM A HEDGE IN THE SHAPE OF MY SMILE!!!</em>” 「国王会以我笑容的图案建造一片树篱！！」</td>
+</tr>
+<tr class="even">
+<td>O</td>
+<td>如果你在你变蓝时按下了它，Papyrus 不会攻击你，如果你尝试仁慈或攻击它，它会说“<em>…</em>”</td>
+</tr>
+</tbody>
+</table>
+<h3 id="shyren">Shyren</h3>
+<table style="width:64%;">
+<colgroup>
+<col width="6%">
+<col width="56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3</td>
+<td><em>Increases the emotion variable, used during the fight to affect her status.</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="疯狂假人">疯狂假人</h3>
+<p>一个从 300 开始的红色数字会出现在疯狂假人的头顶，代表它的 HP。按下 A 会将 HP 设置为 180，它会活蹦乱跳，准备他的「最后攻击！」</p>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>设置假人 HP 为 180.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="undyne">Undyne</h3>
+<blockquote>
+<p>你不能使用 O + P 来饶恕 Undyne.</p>
+</blockquote>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7</td>
+<td>设置 HP 为 999.</td>
+</tr>
+<tr class="even">
+<td>A</td>
+<td>减少 1 回合计数。</td>
+</tr>
+<tr class="odd">
+<td><del>O + P</del></td>
+<td><del>乖，不会有用的</del></td>
+</tr>
+</tbody>
+</table>
+<h3 id="asgore">Asgore</h3>
+<p>一个从 0 开始的计数器会出现在游戏界面左上角。计数器的值越大，Asgore 的攻击力就越强，抵抗力就越弱。<br>
+按 A 来减少或按 S 来增加这个值。如果这个值大于 20，它会在 Asgore 来一次黄蓝攻击后变回 20…<br>
+如果你手动设置成大于 22 或小于 1 的值，游戏会在 Asgore 攻击时崩溃。</p>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>减弱攻击，增强抵抗。</td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td>增强攻击，减弱抵抗。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="photoshop-flowey">Photoshop Flowey</h3>
+<blockquote>
+<p>你以为我是谁啊？<br>
+我是这个世界的神！</p>
+</blockquote>
+<p>黄色的<font color="#ffd000" face="Serif"> debug </font>会随着 Flowey 一起在游戏界面的右下角出现。</p>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F3</td>
+<td>在存档文件夹中创建 <code>system_information_962</code> 文件。</td>
+</tr>
+<tr class="even">
+<td>Home</td>
+<td>立刻攻击 Flowey. 如果所有灵魂指示器都变暗了，产生 6000 点伤害。</td>
+</tr>
+<tr class="odd">
+<td>Page Up</td>
+<td>按顺序关闭灵魂指示器，在下一轮灵魂战斗中增加伤害。所有指示器均关闭时禁用，在下一次灵魂战斗开始时，游戏崩溃。</td>
+</tr>
+<tr class="even">
+<td>右 Shift, 左 Shift, X</td>
+<td>按顺序关闭灵魂指示器，在下一轮灵魂战斗中增加伤害。</td>
+</tr>
+<tr class="odd">
+<td>Shift</td>
+<td>关闭灵魂指示器，一次一个。</td>
+</tr>
+<tr class="even">
+<td>Q</td>
+<td>在载入时直接开始战斗。但它不会停止载入，所以直到 Flowey 接近你之前你都不能移动，而你也不会被攻击。</td>
+</tr>
+<tr class="odd">
+<td>W</td>
+<td>将 FPS 设为 10. 如果在 Flowey 死亡状态下使用，将在 Flowey 生命值回复后开始攻击。<em>待确认：谁开始攻击？</em></td>
+</tr>
+<tr class="even">
+<td>E</td>
+<td>每只眼睛三颗星形炮弹。</td>
+</tr>
+<tr class="odd">
+<td>R</td>
+<td>每只眼睛七颗星形炮弹。</td>
+</tr>
+<tr class="even">
+<td>I</td>
+<td>让 Flowey 笑，然后重新开始战斗。可以在灵魂战斗中使用。</td>
+</tr>
+<tr class="odd">
+<td>A</td>
+<td>切换火焰发射器。</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>两倍速。锁定火球攻击。<em>Lock on pellet attack.</em></td>
+</tr>
+<tr class="odd">
+<td>H</td>
+<td>一次手指枪攻击。</td>
+</tr>
+<tr class="even">
+<td>V</td>
+<td>一次藤条攻击。</td>
+</tr>
+<tr class="odd">
+<td>N</td>
+<td>一次掉落的炸弹攻击。</td>
+</tr>
+<tr class="even">
+<td>M</td>
+<td>一次食蝇草攻击。<em>Ball of teeth/dentata attack.</em></td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>切换 Flowey 嘴唇的摆动状态。</td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td>存档。在游戏界面左下角显示「存档 2 已保存」。</td>
+</tr>
+<tr class="odd">
+<td>L</td>
+<td>读档。在游戏界面左下角显示「存档 2 已读取」。</td>
+</tr>
+<tr class="even">
+<td>O</td>
+<td>紫色灵魂战斗 ( 书 ) 。</td>
+</tr>
+<tr class="odd">
+<td>P</td>
+<td>绿色灵魂战斗 ( 平底锅 ) 。</td>
+</tr>
+<tr class="even">
+<td>G</td>
+<td>橘色灵魂战斗 ( 手套 ) 。</td>
+</tr>
+<tr class="odd">
+<td>J</td>
+<td>黄色灵魂战斗 ( 枪 ) 。</td>
+</tr>
+<tr class="even">
+<td>K</td>
+<td>蓝色灵魂战斗 ( 刀子 ) 。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="asriel-dreemurr">Asriel Dreemurr</h3>
+<blockquote>
+<p>死亡暗黑重金属摇滚炫彩中二小王子?</p>
+</blockquote>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C</td>
+<td>切换 Asriel 四处浮动 / 在屏幕中间静止。</td>
+</tr>
+<tr class="even">
+<td>空格</td>
+<td>和 G 相同，主要在文本框上部浮动。Asriel 还必须和下面的任意一个按键一起使用。攻击立刻开始，可以叠加。</td>
+</tr>
+<tr class="odd">
+<td>G</td>
+<td>混沌冲击 / 混沌爆发。<em>Chaos Buster/Chaos Blaster.</em></td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>无尽雷霆 / 无尽雷霆 II。<em>Shocker Breaker/Shocker Breaker II</em></td>
+</tr>
+<tr class="odd">
+<td>W</td>
+<td>混沌之刃 / 混沌魔刃。<em>Chaos Saber/Chaos Slicer</em> 将 FPS 设为 10.</td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td>爆热星辰 / 爆热银河。<em>Star Blazing/Galacta Blazing</em></td>
+</tr>
+<tr class="odd">
+<td>H</td>
+<td>终极毁灭。<em>HYPER GONER</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="undyne-the-undying">Undyne the Undying</h3>
+<blockquote>
+<p>你不能使用 O + P 来饶恕 Undyne.</p>
+</blockquote>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7</td>
+<td>设置 HP 为 999.</td>
+</tr>
+<tr class="even">
+<td>A</td>
+<td>减少 1 回合计数。</td>
+</tr>
+<tr class="odd">
+<td><del>O + P</del></td>
+<td><del>乖，不会有用的</del></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sans">Sans</h3>
+<table>
+<thead>
+<tr class="header">
+<th>按键</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E</td>
+<td>设置下一次攻击为他的「特殊攻击」。</td>
+</tr>
+<tr class="even">
+<td>A</td>
+<td>设置下一次攻击为他饶恕你的那一部分。</td>
+</tr>
+</tbody>
+</table>
+<h1 id="参考资料与致谢">参考资料与致谢</h1>
+<ol style="list-style-type: decimal">
+<li>https://tcrf.net/Undertale/Debug_Mode</li>
+<li>https://steamcommunity.com/sharedfiles/filedetails/?id=584103897</li>
+<li>http://tieba.baidu.com/p/4784165936</li>
+<li>http://zh.undertale.wikia.com/</li>
+<li>Undertale 的制作团队。</li>
+<li>还有，你。</li>
+</ol>
+<h1 id="更新日志">更新日志</h1>
+<ul>
+<li>2017年5月15日 23点20分 [v1.0.0] 基本翻译完毕。</li>
+<li>2017年5月15日 23点33分 [v1.1.0] 对照 wiki 修正。</li>
+<li>2017年5月15日 23点36分 [v1.2.0] 功能 -&gt; 影响。</li>
+<li>2017年5月15日 23点48分 [v1.2.1] 普通的格式修改。</li>
+<li>2017年5月16日 22点00分 [v1.2.2] 修正 Asriel 攻击名称翻译。</li>
+<li>2017年7月29日 17点36分 [v1.2.2] 使用 Pandoc 渲染的格式修正。有点想某个人。</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/undertale/" rel="tag"># undertale</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/04/tex-math-practice/" rel="next" title="$\rm \LaTeX$ 公式输入练习">
+                <i class="fa fa-chevron-left"></i> $\rm \LaTeX$ 公式输入练习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/30/derivative-review/" rel="prev" title="导数复习">
+                导数复习 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="hypercomments_widget"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <p class="site-author-name" itemprop="name">xa0082249956</p>
+            <p class="site-description motion-element" itemprop="description">Finding Paradise.</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives">
+            
+                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/xa0082249956" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>GitHub</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#启用调试"><span class="nav-number">1.</span> <span class="nav-text">启用调试</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#version-1.0"><span class="nav-number">1.1.</span> <span class="nav-text">Version 1.0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#version-1.001"><span class="nav-number">1.2.</span> <span class="nav-text">Version 1.001</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#windows"><span class="nav-number">1.2.1.</span> <span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linux"><span class="nav-number">1.2.2.</span> <span class="nav-text">Linux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#macos"><span class="nav-number">1.2.3.</span> <span class="nav-text">macOS</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#调试模式功能"><span class="nav-number">2.</span> <span class="nav-text">调试模式功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#fun-内容"><span class="nav-number">2.1.</span> <span class="nav-text">Fun 内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#键盘快捷键"><span class="nav-number">2.2.</span> <span class="nav-text">键盘快捷键</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#部分摘要"><span class="nav-number">2.2.1.</span> <span class="nav-text">部分摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#详细"><span class="nav-number">2.2.2.</span> <span class="nav-text">详细</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#战斗中"><span class="nav-number">2.2.3.</span> <span class="nav-text">战斗中</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调试-flag"><span class="nav-number">2.3.</span> <span class="nav-text">调试 Flag</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊区域"><span class="nav-number">2.4.</span> <span class="nav-text">特殊区域</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#first-sans-encounter"><span class="nav-number">2.4.1.</span> <span class="nav-text">First Sans Encounter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chara-的倒影"><span class="nav-number">2.4.2.</span> <span class="nav-text">Chara 的倒影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#怪物小孩攀登"><span class="nav-number">2.4.3.</span> <span class="nav-text">怪物小孩攀登</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊战斗中的特殊内容"><span class="nav-number">2.5.</span> <span class="nav-text">特殊战斗中的特殊内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#lesser-dog"><span class="nav-number">2.5.1.</span> <span class="nav-text">Lesser Dog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#papyrus"><span class="nav-number">2.5.2.</span> <span class="nav-text">Papyrus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shyren"><span class="nav-number">2.5.3.</span> <span class="nav-text">Shyren</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#疯狂假人"><span class="nav-number">2.5.4.</span> <span class="nav-text">疯狂假人</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undyne"><span class="nav-number">2.5.5.</span> <span class="nav-text">Undyne</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#asgore"><span class="nav-number">2.5.6.</span> <span class="nav-text">Asgore</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#photoshop-flowey"><span class="nav-number">2.5.7.</span> <span class="nav-text">Photoshop Flowey</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#asriel-dreemurr"><span class="nav-number">2.5.8.</span> <span class="nav-text">Asriel Dreemurr</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undyne-the-undying"><span class="nav-number">2.5.9.</span> <span class="nav-text">Undyne the Undying</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sans"><span class="nav-number">2.5.10.</span> <span class="nav-text">Sans</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料与致谢"><span class="nav-number">3.</span> <span class="nav-text">参考资料与致谢</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更新日志"><span class="nav-number">4.</span> <span class="nav-text">更新日志</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xa0082249956</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/fastclick/1.0.0/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.1/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.1/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 88889, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 88889, xid: "2017/05/15/undertale-debug-mode/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/88889/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("8LLOLhFX9fK01n7EE9byecsO-gzGzoHsz", "habO7LS1THw9TmHyxEYi0npk");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
