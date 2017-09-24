@@ -81,7 +81,10 @@
 <meta property="og:description" content="基本概念 定义 在数学中，椭圆是平面上到两个固定点的距离之和为常数的点之轨迹。 In mathematics, an ellipse is a curve in a plane surrounding two focal points such that the sum of the distances to the two focal points is constant for every p">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://xa0082249956.tk/2017/09/06/ellipse/Ellipse-def-e.svg">
-<meta property="og:updated_time" content="2017-09-18T14:48:22.537Z">
+<meta property="og:image" content="http://xa0082249956.tk/2017/09/06/ellipse/secdef.png">
+<meta property="og:image" content="http://xa0082249956.tk/2017/09/06/ellipse/qxjj.gif">
+<meta property="og:image" content="http://xa0082249956.tk/2017/09/06/ellipse/qxjjp2.gif">
+<meta property="og:updated_time" content="2017-09-24T15:05:14.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="椭圆">
 <meta name="twitter:description" content="基本概念 定义 在数学中，椭圆是平面上到两个固定点的距离之和为常数的点之轨迹。 In mathematics, an ellipse is a curve in a plane surrounding two focal points such that the sum of the distances to the two focal points is constant for every p">
@@ -261,8 +264,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-18T22:48:22+08:00">
-                2017-09-18
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -366,35 +369,32 @@
 <h2 id="定义">定义</h2>
 <blockquote class="blockquote-center">在数学中，<b>椭圆</b>是平面上到两个固定点的距离之和为常数的点之轨迹。<br>
 In mathematics, an <b>ellipse</b> is a curve in a plane surrounding two focal points such that the sum of the distances to the two focal points is constant for every point on the curve.</blockquote>
-<p>椭圆的定义可表示为 <span class="math display">\[
+
+<p>椭圆的定义可表示为 <span class="math">\[
 E = \{P \mid |PF_1| + |PF_2| = 2a\}
-\]</span> 其中 <span class="math inline">\((0 &lt; |F_1F_2| = 2c &lt; 2a)\)</span>, <span class="math inline">\(E\)</span> 为椭圆.<br>
-<span class="math inline">\(F_1\)</span>, <span class="math inline">\(F_2\)</span> 为椭圆的两个<strong>焦点</strong>(foci).<br>
-两焦点连线中点 <span class="math inline">\(C\)</span> 为椭圆的<strong>中心</strong>(center).</p>
-<p>穿过两焦点并终止于椭圆上的线段 <span class="math inline">\(AB\)</span> 为<strong>长轴</strong>(major axis)<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.<br>
-穿过中心垂直于长轴并终止于椭圆的线段 <span class="math inline">\(CD\)</span> 叫<strong>短轴</strong>(minor axis).</p>
-<p><strong>半长轴</strong> <span class="math inline">\(a\)</span> 为长轴的一半.<br>
-<strong>半短轴</strong> <span class="math inline">\(b\)</span> 为短轴的一半.<br>
-<strong>半焦距</strong> <span class="math inline">\(c\)</span> 为焦距的一半.<br>
-它们满足 <span class="math inline">\(a^2 = b^2 + c^2\)</span>.</p>
+\]</span> 其中 <span class="math">\((0 &lt; |F_1F_2| = 2c &lt; 2a)\)</span>, <span class="math">\(E\)</span> 为椭圆.<br><span class="math">\(F_1\)</span>, <span class="math">\(F_2\)</span> 为椭圆的两个<strong>焦点</strong>(foci).<br>两焦点连线中点 <span class="math">\(C\)</span> 为椭圆的<strong>中心</strong>(center).</p>
+<p>穿过两焦点并终止于椭圆上的线段 <span class="math">\(AB\)</span> 为<strong>长轴</strong>(major axis)<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.<br>穿过中心垂直于长轴并终止于椭圆的线段 <span class="math">\(CD\)</span> 叫<strong>短轴</strong>(minor axis).</p>
+<p><strong>半长轴</strong> <span class="math">\(a\)</span> 为长轴的一半.<br><strong>半短轴</strong> <span class="math">\(b\)</span> 为短轴的一半.<br><strong>半焦距</strong> <span class="math">\(c\)</span> 为焦距的一半.<br>它们满足 <span class="math">\(a^2 = b^2 + c^2\)</span>.</p>
 <p>如果两个焦点重合, 这个椭圆就是圆.</p>
 <img src="/2017/09/06/ellipse/Ellipse-def-e.svg" alt="椭圆的定义 by Ag2gaeh, CC-BY-SA-4.0" title="椭圆的定义 by Ag2gaeh, CC-BY-SA-4.0">
+
 <h2 id="方程">方程</h2>
 <h3 id="圆锥曲线方程">圆锥曲线方程</h3>
-<p>椭圆是在笛卡尔平面上如下形式的方程所定义的曲线 <span class="math display">\[
+<p>椭圆是在笛卡尔平面上如下形式的方程所定义的曲线 <span class="math">\[
 Ax^2+Bx^2+Cxy+Dx+Ey+F=0
-\]</span> 其中 <span class="math inline">\(B^2 &lt; 4AC\)</span>, 这里的系数均为实数, 并存在定义在椭圆上的点对 (x, y) 的多于一个的解.</p>
-<p>当原点位于中心时, 方程可以写作 <span class="math display">\[
+\]</span> 其中 <span class="math">\(B^2 &lt; 4AC\)</span>, 这里的系数均为实数, 并存在定义在椭圆上的点对 (x, y) 的多于一个的解.</p>
+<p>当原点位于中心时, 方程可以写作 <span class="math">\[
 Ax^2+Bxy+Cy^2 = 1
 \]</span></p>
 <div class="spoiler collapsed"><div class="spoiler-title">懵逼时间</div><div class="spoiler-content">> 中心位于原点的椭圆 $Ax^{2}+Bxy+Cy^{2}=1$ 可以被看作单位圆在关联于对称矩阵 $$ A^{\prime }={\begin{bmatrix}A&B/2\\B/2&C\end{bmatrix} }  = PDP^{T} $$ 的线性映射下的图像，这里的 $D$ 是带有 $ A^{\prime } $ 的特征值的对角矩阵，二者沿着主对角线都是正实数的，而 $P$ 是拥有 $ A^{\prime } $ 的特征向量作为纵列的实数的酉矩阵。椭圆的长短轴分别沿着 $ A^{\prime } $ 的两个特征向量的方向，而两个与之对应的特征值分别是半长轴和半短轴的长度的平方的倒数。</div></div>
-<p>椭圆可以通过对一个圆的所有点的 <span class="math inline">\(x\)</span> 坐标乘以一个常数而不改变 <span class="math inline">\(y\)</span> 坐标来生成。</p>
+
+<p>椭圆可以通过对一个圆的所有点的 <span class="math">\(x\)</span> 坐标乘以一个常数而不改变 <span class="math">\(y\)</span> 坐标来生成。</p>
 <h3 id="标准方程">标准方程</h3>
-<p>对于这里的标准方程, 椭圆的中心均与原点 <span class="math inline">\((0, 0)\)</span> 重合.</p>
-<h4 id="焦点在-x-轴上时">焦点在 <span class="math inline">\(x\)</span> 轴上时</h4>
-<p>椭圆的标准方程为 <span class="math display">\[
+<p>对于这里的标准方程, 椭圆的中心均与原点 <span class="math">\((0, 0)\)</span> 重合.</p>
+<h4 id="焦点在-x-轴上时">焦点在 <span class="math">\(x\)</span> 轴上时</h4>
+<p>椭圆的标准方程为 <span class="math">\[
 \frac{x^2}{a^2}+\frac{y^2}{b^2} = 1\quad (a &gt; b &gt; 0)
-\]</span> 其中 <span class="math inline">\(-a \le x \le a\)</span>, <span class="math inline">\(-b \le y \le b\)</span>.</p>
+\]</span> 其中 <span class="math">\(-a \le x \le a\)</span>, <span class="math">\(-b \le y \le b\)</span>.</p>
 <div class="spoiler collapsed"><div class="spoiler-title">推导过程</div><div class="spoiler-content">
 假设动点为 $P(x, y)$, 两个定点 $F_1(-c, 0)$, $F_2(c, 0)$, 根据定义有
 $$
@@ -420,52 +420,77 @@ $$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$$
 
 该方程即为动点 $P$ 的轨迹方程, 也即椭圆的标准方程.
 </div></div>
-<h4 id="焦点在-y-轴上时">焦点在 <span class="math inline">\(y\)</span> 轴上时</h4>
-<p>椭圆的标准方程为 <span class="math display">\[
+
+<h4 id="焦点在-y-轴上时">焦点在 <span class="math">\(y\)</span> 轴上时</h4>
+<p>椭圆的标准方程为 <span class="math">\[
 \frac{y^2}{a^2}+\frac{x^2}{b^2} = 1\quad (a &gt; b &gt; 0)
-\]</span> 其中 <span class="math inline">\(-a \le y \le a\)</span>, <span class="math inline">\(-b \le x \le b\)</span>.</p>
+\]</span> 其中 <span class="math">\(-a \le y \le a\)</span>, <span class="math">\(-b \le x \le b\)</span>.</p>
 <h3 id="参数方程">参数方程</h3>
-<p>中心位于点 <span class="math inline">\((h, k)\)</span> 的长轴平行于 <span class="math inline">\(x\)</span> 轴的椭圆: <span class="math display">\[
+<p>中心位于点 <span class="math">\((h, k)\)</span> 的长轴平行于 <span class="math">\(x\)</span> 轴的椭圆: <span class="math">\[
 \left\{
     \begin{align}
         x &amp;= h + a \cos t \\
         y &amp;= k + b \sin t
     \end{align}
 \right.
-\]</span> 其中 <span class="math inline">\(t\)</span> 为参数且 <span class="math inline">\(t \in [-\pi, \pi]\)</span>.</p>
+\]</span> 其中 <span class="math">\(t\)</span> 为参数且 <span class="math">\(t \in [-\pi, \pi]\)</span>.</p>
 <blockquote>
-<p>长轴平行于 <span class="math inline">\(y\)</span> 轴的时候, 交换一下 <span class="math inline">\(a\)</span> 和 <span class="math inline">\(b\)</span> 就苟啦~</p>
+<p>长轴平行于 <span class="math">\(y\)</span> 轴的时候, 交换一下 <span class="math">\(a\)</span> 和 <span class="math">\(b\)</span> 就苟啦~</p>
 </blockquote>
 <h2 id="离心率">离心率</h2>
-<p>椭圆的形状可以用<strong>椭圆的离心率</strong>来表达, 高中大多数数学课本把它指示为 <span class="math inline">\(e\)</span>.<br>
-椭圆的离心率 <span class="math inline">\(e\)</span> 取值范围为 <span class="math inline">\((0,1)\)</span>. <span class="math inline">\(e = 1\)</span> 时, 椭圆的两个焦点重合, 也就是说这是个圆.</p>
-<p>对于有半长轴 <span class="math inline">\(a\)</span> 和半短轴 <span class="math inline">\(b\)</span> 的椭圆, 离心率 <span class="math display">\[
+<p>椭圆的形状可以用<strong>椭圆的离心率</strong>来表达, 高中大多数数学课本把它指示为 <span class="math">\(e\)</span>.<br>椭圆的离心率 <span class="math">\(e\)</span> 取值范围为 <span class="math">\((0,1)\)</span>. <span class="math">\(e = 1\)</span> 时, 椭圆的两个焦点重合, 也就是说这是个圆.</p>
+<p>对于有半长轴 <span class="math">\(a\)</span> 和半短轴 <span class="math">\(b\)</span> 的椭圆, 离心率 <span class="math">\[
 e = \frac{c}{a} = \sqrt{1 - \frac{b^2}{a^2} } 
 \]</span></p>
-<p>半焦距 <span class="math inline">\(c\)</span> 也叫椭圆的<strong>线性离心率</strong>.<br>
-两个焦点之间的距离 <span class="math inline">\(2c = 2ae\)</span>.</p>
+<p>半焦距 <span class="math">\(c\)</span> 也叫椭圆的<strong>线性离心率</strong>.<br>两个焦点之间的距离 <span class="math">\(2c = 2ae\)</span>.</p>
 <h1 id="拓展内容">拓展内容</h1>
 <h2 id="正焦弦与通径">正焦弦与通径</h2>
-<p>过椭圆的焦点, 作垂直于长轴的直线, 则直线被椭圆截得的线段叫做椭圆的<strong>正焦弦</strong>(latus rectum)或<strong>通径</strong>.<br>
-通径长度的一半叫<strong>半正焦弦</strong>(simi-latus rectum)或<strong>半通径</strong> <span class="math inline">\(p\)</span>. <span class="math display">\[p = \frac{b^2}{a}\]</span> 半正焦弦 <span class="math inline">\(p\)</span> 也被叫做椭圆在顶点 <span class="math inline">\((\pm a, 0)\)</span> 处密切圆(曲率圆)的曲率半径.<br>
-对于圆锥曲线来说, 其半通径也是最小曲率半径.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>过椭圆的焦点, 作垂直于长轴的直线, 则直线被椭圆截得的线段叫做椭圆的<strong>正焦弦</strong>(latus rectum)或<strong>通径</strong>.<br>通径长度的一半叫<strong>半正焦弦</strong>(simi-latus rectum)或<strong>半通径</strong> <span class="math">\(p\)</span>. <span class="math">\[p = \frac{b^2}{a}\]</span> 半正焦弦 <span class="math">\(p\)</span> 也被叫做椭圆在顶点 <span class="math">\((\pm a, 0)\)</span> 处密切圆(曲率圆)的曲率半径.<br>对于圆锥曲线来说, 其半通径也是最小曲率半径.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
 <h2 id="切线">切线</h2>
 <div class="spoiler collapsed"><div class="spoiler-title">懵逼时间</div><div class="spoiler-content">找出椭圆在点 $(x_0, y_0)$ 的切线的最简单方式是计算方程 $ \frac{x^2} {a^2}+\frac{y^2} {b^2} = 1 $ 的隐函数导数, 于是
 $${\frac {2x}{a^{2} } }+{\frac {2yy'}{b^{2} } }=0\ \rightarrow \ y'=-{\frac {x}{y} } {\frac {b^{2} } {a^{2} } }\ \rightarrow \ y=-{\frac {x_{0} } {y_{0} } }{\frac {b^{2} } {a^{2} } }(x-x_{0})+y_{0}.$$
 与 $ {\tfrac {x_{0}^{2} } {a^{2} } }+{\tfrac {y_{0}^{2} } {b^{2} } }=1 $ 联立, 得</div></div>
-<p>点 <span class="math inline">\((x_0, y_0)\)</span> 的切线方程为 <span class="math display">\[\frac{x_0}{a^2}x + \frac{y_0}{b^2}y = 1.\]</span></p>
-<p>通过向量方程来表述, 我们有 <span class="math display">\[{\vec {x}}={\begin{pmatrix}x_{0}\\y_{0}\end{pmatrix}}+s\;{\begin{pmatrix}-ay_{0}/b\\bx_{0}/a\end{pmatrix}}\quad {\text{其中}}\quad s\in \mathbb {R} \ .\]</span></p>
-<h2 id="第二定义">第二定义</h2>
+
+<p>点 <span class="math">\((x_0, y_0)\)</span> 的切线方程为 <span class="math">\[\frac{x_0}{a^2}x + \frac{y_0}{b^2}y = 1.\]</span></p>
+<p>通过向量方程来表述, 我们有 <span class="math">\[{\vec {x}}={\begin{pmatrix}x_{0}\\y_{0}\end{pmatrix}}+s\;{\begin{pmatrix}-ay_{0}/b\\bx_{0}/a\end{pmatrix}}\quad {\text{其中}}\quad s\in \mathbb {R} \ .\]</span></p>
+<h2 id="第二定义-圆锥曲线的统一定义">第二定义 (圆锥曲线的统一定义)</h2>
+<p>动点到一定点（焦点）的距离与其到一定直线（准线）的距离之比为常数（离心率<span class="math">\(e\)</span>）的点的集合是圆锥曲线。当 <span class="math">\(e &lt; 1\)</span> 得到椭圆<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>.</p>
+<p>对于椭圆和双曲线, 可以采用两种焦点 - 准线组合, 每个都给出同样完整的椭圆或双曲线. 从中心到焦点的距离是 <span class="math">\(ae = c\)</span>, 中心到准线的距离是 <span class="math">\(\frac{a}{e}=\frac{a^2}{c}\)</span>.<br>在圆的情况下, <span class="math">\(e = 0\)</span> 且假想为离中心无限远. 此时声称圆是由到 <span class="math">\(L\)</span> 的距离的 <span class="math">\(e\)</span> 倍的所有点组成是没有意义的. 圆锥曲线的离心率因此是对它<strong>偏离</strong>于圆的程度的度量。</p>
+<p>对于给定的 <span class="math">\(a\)</span>, <span class="math">\(e\)</span> 越小, 半短轴 <span class="math">\(b\)</span> 就越小.</p>
+<img src="/2017/09/06/ellipse/secdef.png" alt="椭圆的第二定义, 其中 $\frac{g}{n}=e$" title="椭圆的第二定义, 其中 $\frac{g}{n}=e$">
+
+<h1 id="各种性质">各种性质</h1>
+<h2 id="切线反射">切线反射</h2>
+<img src="/2017/09/06/ellipse/qxjj.gif" alt="Picture from matrix67" title="Picture from matrix67">
+
+<p>选取椭圆上任意一点 <span class="math">\(P\)</span>, 把它和两个焦点 <span class="math">\(A\)</span>, <span class="math">\(B\)</span> 相连, 则 <span class="math">\(PA\)</span> 和 <span class="math">\(PB\)</span> 与椭圆在 <span class="math">\(P\)</span> 点处的切线有相同的夹角. 换句话说, <span class="math">\(PA\)</span> 和 <span class="math">\(PB\)</span> 与法线的夹角相等, 即入射角等于反射角. 这样的话, 任意一条从A出发的光线, 经过椭圆壁的反射后总会经过另一个焦点B.</p>
+<blockquote>
+<p>假如有一个餐厅是椭圆形的，你的位置恰好位于椭圆的一个焦点上。这时你突然听到不知哪里传出的一男一女谈情说爱的声音，其肉麻程度不堪入耳，并且声音格外清晰。不用怕，这是因为那对男女正好坐在另一个焦点上，他们谈话的声音再小你也听得见，因为这些声音经过房间墙壁的反射后全汇聚到你这里来了。</p>
+<p>你可以用解析几何证明这一结论，不过其复杂程度令人望而生畏。这是我上学期做的最恶心的一道高数题。</p>
+<p><strong>matrix67</strong></p>
+</blockquote>
+<div class="spoiler collapsed"><div class="spoiler-title">证明 1 - 光学方法</div><div class="spoiler-content">
+<p>这个结论用 Fermat原理 (光总是沿所花时间最短的路径传播) 来解释十分简单.</p>
+<p>我们需要证明: 椭圆上一点 $P$ 与焦点 $A$, $B$ 的连线到过 $P$ 点的切线的夹角相等.<br>
+通过把 $P$ 点的切线做出来后, 我们一眼就可以看出来这个结论是正确的: 从点 $A$ 出发的光线经过切线后反射过 $B$, 反射点一定就是 $P$, 因为切线上处 $P$ 点以外的任意一点 $P^\prime$ 都在椭圆外, 折线 $A-P^\prime-B$ 都比 $A-P-B$ 长.</p></div></div>
+
+<div class="spoiler collapsed"><div class="spoiler-title">证明 2 - 力学方法</div><div class="spoiler-content">
+<img src="/2017/09/06/ellipse/qxjjp2.gif" alt="Picture from matrix67" title="Picture from matrix67">
+
+看上图，我们在两个焦点间连接一条长度为 $2a$ 的绳子，绳子上挂一个重物。注意到重物是挂在绳子上的，绳结处 $P$ 是可以活动的。显然，$P$ 点的轨迹形成了一个椭圆。重物有不断下落的趋势，此时重力势能转化为动能；当整个力学系统静止时，重力势能达到最小，因此最终绳结 $P$ 应该位于椭圆的最低点，该点处的切线正好是一条水平线。此时绳结P受到了三个力：重物M所产生的垂直向下的力，以及左右两边的绳子的拉力。由于物体保持平衡，两个拉力的合力必须竖直向上才行。但绳子内部的张力处处相等，两个方向上的拉力大小应该一样；如果它们的合力竖直向上，那么这两个力的方向与竖直方向的夹角必然相同。于是我们得到了和上面的讨论相同的结论：椭圆上的点与两焦点的连线到法线的夹角相等。</div></div>
+
 <h1 id="参考链接">参考链接</h1>
 <ul>
 <li>维基百科, 椭圆: <a href="https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86" target="_blank" rel="external">https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86</a></li>
-<li>韦培安, 关注圆锥曲线的“通径”: <a href="http://www2.chinaedu.com/101resource004/wenjianku/200338/101ktb/ztfd/F10S0501/F10S0501.htm" class="uri" target="_blank" rel="external">http://www2.chinaedu.com/101resource004/wenjianku/200338/101ktb/ztfd/F10S0501/F10S0501.htm</a></li>
+<li>韦培安, 关注圆锥曲线的“通径”: <a href="http://www2.chinaedu.com/101resource004/wenjianku/200338/101ktb/ztfd/F10S0501/F10S0501.htm" target="_blank" rel="external">http://www2.chinaedu.com/101resource004/wenjianku/200338/101ktb/ztfd/F10S0501/F10S0501.htm</a></li>
+<li>matrix67, 物理方法解决数学问题（五）：一个与椭圆有关的性质: <a href="http://www.matrix67.com/blog/archives/470" target="_blank" rel="external">http://www.matrix67.com/blog/archives/470</a></li>
 </ul>
 <div class="footnotes">
 <hr>
 <ol>
 <li id="fn1"><p>中文维基对长轴的定义是穿过两焦点并终止于椭圆上的<strong>线段</strong>, 而英文维基的定义是穿过两焦点的<strong>直线</strong>. 短轴同理<a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p>证明见<a href="https://www.zhihu.com/question/39877628" target="_blank" rel="external">怎么证明圆锥曲线的半通径是曲线的最小曲率半径？- 知乎</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><span class="math">\(e = 0\)</span> 时得到圆, <span class="math">\(e = 1\)</span> 时得到抛物线, <span class="math">\(e &gt; 1\)</span> 时得到双曲线<a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
@@ -593,7 +618,7 @@ $${\frac {2x}{a^{2} } }+{\frac {2yy'}{b^{2} } }=0\ \rightarrow \ y'=-{\frac {x}{
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -647,7 +672,7 @@ $${\frac {2x}{a^{2} } }+{\frac {2yy'}{b^{2} } }=0\ \rightarrow \ y'=-{\frac {x}{
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本概念"><span class="nav-number">1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方程"><span class="nav-number">1.2.</span> <span class="nav-text">方程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#圆锥曲线方程"><span class="nav-number">1.2.1.</span> <span class="nav-text">圆锥曲线方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标准方程"><span class="nav-number">1.2.2.</span> <span class="nav-text">标准方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#焦点在-x-轴上时"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">焦点在 \(x\) 轴上时</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#焦点在-y-轴上时"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">焦点在 \(y\) 轴上时</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数方程"><span class="nav-number">1.2.3.</span> <span class="nav-text">参数方程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离心率"><span class="nav-number">1.3.</span> <span class="nav-text">离心率</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#拓展内容"><span class="nav-number">2.</span> <span class="nav-text">拓展内容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#正焦弦与通径"><span class="nav-number">2.1.</span> <span class="nav-text">正焦弦与通径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#切线"><span class="nav-number">2.2.</span> <span class="nav-text">切线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二定义"><span class="nav-number">2.3.</span> <span class="nav-text">第二定义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考链接"><span class="nav-number">3.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本概念"><span class="nav-number">1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方程"><span class="nav-number">1.2.</span> <span class="nav-text">方程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#圆锥曲线方程"><span class="nav-number">1.2.1.</span> <span class="nav-text">圆锥曲线方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标准方程"><span class="nav-number">1.2.2.</span> <span class="nav-text">标准方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#焦点在-x-轴上时"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">焦点在 \(x\) 轴上时</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#焦点在-y-轴上时"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">焦点在 \(y\) 轴上时</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数方程"><span class="nav-number">1.2.3.</span> <span class="nav-text">参数方程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离心率"><span class="nav-number">1.3.</span> <span class="nav-text">离心率</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#拓展内容"><span class="nav-number">2.</span> <span class="nav-text">拓展内容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#正焦弦与通径"><span class="nav-number">2.1.</span> <span class="nav-text">正焦弦与通径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#切线"><span class="nav-number">2.2.</span> <span class="nav-text">切线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二定义-圆锥曲线的统一定义"><span class="nav-number">2.3.</span> <span class="nav-text">第二定义 (圆锥曲线的统一定义)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#各种性质"><span class="nav-number">3.</span> <span class="nav-text">各种性质</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#切线反射"><span class="nav-number">3.1.</span> <span class="nav-text">切线反射</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考链接"><span class="nav-number">4.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
             
 
           </div>

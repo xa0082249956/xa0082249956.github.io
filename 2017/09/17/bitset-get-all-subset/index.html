@@ -81,7 +81,7 @@
 <meta property="og:site_name" content="&gt;33&lt;">
 <meta property="og:description" content="代码 1234for (auto x(rua); x; x = (x - 1) &amp;amp; rua)&amp;#123;    ...;&amp;#125;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-17T15:32:00.690Z">
+<meta property="og:updated_time" content="2017-09-24T15:05:14.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用位运算枚举所有子集">
 <meta name="twitter:description" content="代码 1234for (auto x(rua); x; x = (x - 1) &amp;amp; rua)&amp;#123;    ...;&amp;#125;">
@@ -260,8 +260,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-17T23:32:00+08:00">
-                2017-09-17
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -352,19 +352,18 @@
       
         <h4 id="代码">代码</h4>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> x(rua); x; x = (x - <span class="number">1</span>) &amp; rua)</div><div class="line">&#123;</div><div class="line">    ...;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
 <a id="more"></a>
+
 <h4 id="原理">原理</h4>
-<p>给集合里的元素一个顺序，那么就可以用整数表示集合，某一位为 <span class="math inline">\(1\)</span> 表示对应元素被选取。</p>
-<p>设 <span class="math inline">\(x\)</span> 为表示集合的整数，那么这个整数有如下性质：<br>
-<span class="math inline">\(x\)</span> 的子集整数 <span class="math inline">\(y\)</span> 在数值上不会比 <span class="math inline">\(x\)</span> 大。因为 <span class="math inline">\(x\)</span> 的子集 <span class="math inline">\(y\)</span> 只是保留了 <span class="math inline">\(x\)</span> 某些位置上的 <span class="math inline">\(1\)</span> ，所以 <span class="math inline">\(y\)</span> 总可以加上一个非负的整数 <span class="math inline">\(z\)</span> 等于 <span class="math inline">\(x\)</span> ，相当于把没选的 <span class="math inline">\(1\)</span> 补上。</p>
-<p>根据这个性质可知，可以通过枚举所有比 <span class="math inline">\(x\)</span> 小的数 <span class="math inline">\(p\)</span> 并判断， <span class="math inline">\(p\)</span> 是否只含 <span class="math inline">\(x\)</span> 对应位上的 <span class="math inline">\(1\)</span> ，如果是则 <span class="math inline">\(p\)</span> 是 <span class="math inline">\(x\)</span> 的子集，否则不是。这样时间复杂度是严格的 <span class="math inline">\(x\)</span> 。</p>
-<p>有没有更快的呢，有的。<br>
-上述枚举 <span class="math inline">\(p\)</span> 是通过减一操作，并且我们知道减一操作一定是正确的，那么在枚举的时候如何快速的去掉多余的状态，答案就是和 <span class="math inline">\(x\)</span> 进行&amp;（与）运算。与运算可以快速跳到下一个子集。<br>
-<code>&amp;</code>运算本质就是保留 <span class="math inline">\(p\)</span> 在 <span class="math inline">\(x\)</span> 对应位为 <span class="math inline">\(1\)</span> 的数值，而根据二进制减法可知减一操作都是把 <span class="math inline">\(p\)</span> 最低位的 <span class="math inline">\(1\)</span> 消去，在那一位后全补上 <span class="math inline">\(1\)</span> ，如果在 <span class="math inline">\(x\)</span> 对应位为0的地方产生了 <span class="math inline">\(1\)</span> 其实是无效的，后续的减一操作也会把它消掉，所以直接&amp;运算可以快速去掉多余的状态。时间复杂度是 <span class="math inline">\(x\)</span> 的子集数。</p>
+<p>给集合里的元素一个顺序，那么就可以用整数表示集合，某一位为 <span class="math">\(1\)</span> 表示对应元素被选取。</p>
+<p>设 <span class="math">\(x\)</span> 为表示集合的整数，那么这个整数有如下性质：<br> <span class="math">\(x\)</span> 的子集整数 <span class="math">\(y\)</span> 在数值上不会比 <span class="math">\(x\)</span> 大。因为 <span class="math">\(x\)</span> 的子集 <span class="math">\(y\)</span> 只是保留了 <span class="math">\(x\)</span> 某些位置上的 <span class="math">\(1\)</span> ，所以 <span class="math">\(y\)</span> 总可以加上一个非负的整数 <span class="math">\(z\)</span> 等于 <span class="math">\(x\)</span> ，相当于把没选的 <span class="math">\(1\)</span> 补上。</p>
+<p>根据这个性质可知，可以通过枚举所有比 <span class="math">\(x\)</span> 小的数 <span class="math">\(p\)</span> 并判断， <span class="math">\(p\)</span> 是否只含 <span class="math">\(x\)</span> 对应位上的 <span class="math">\(1\)</span> ，如果是则 <span class="math">\(p\)</span> 是 <span class="math">\(x\)</span> 的子集，否则不是。这样时间复杂度是严格的 <span class="math">\(x\)</span> 。</p>
+<p>有没有更快的呢，有的。<br>上述枚举 <span class="math">\(p\)</span> 是通过减一操作，并且我们知道减一操作一定是正确的，那么在枚举的时候如何快速的去掉多余的状态，答案就是和 <span class="math">\(x\)</span> 进行&amp;（与）运算。与运算可以快速跳到下一个子集。<br><code>&amp;</code>运算本质就是保留 <span class="math">\(p\)</span> 在 <span class="math">\(x\)</span> 对应位为 <span class="math">\(1\)</span> 的数值，而根据二进制减法可知减一操作都是把 <span class="math">\(p\)</span> 最低位的 <span class="math">\(1\)</span> 消去，在那一位后全补上 <span class="math">\(1\)</span> ，如果在 <span class="math">\(x\)</span> 对应位为0的地方产生了 <span class="math">\(1\)</span> 其实是无效的，后续的减一操作也会把它消掉，所以直接&amp;运算可以快速去掉多余的状态。时间复杂度是 <span class="math">\(x\)</span> 的子集数。</p>
 <h4 id="参考">参考</h4>
 <ul>
-<li><a href="http://blog.csdn.net/mtrix/article/details/61200302" class="uri" target="_blank" rel="external">http://blog.csdn.net/mtrix/article/details/61200302</a></li>
-<li><a href="http://www.cnblogs.com/jffifa/archive/2012/01/16/2323999.html" class="uri" target="_blank" rel="external">http://www.cnblogs.com/jffifa/archive/2012/01/16/2323999.html</a></li>
+<li><a href="http://blog.csdn.net/mtrix/article/details/61200302" target="_blank" rel="external">http://blog.csdn.net/mtrix/article/details/61200302</a></li>
+<li><a href="http://www.cnblogs.com/jffifa/archive/2012/01/16/2323999.html" target="_blank" rel="external">http://www.cnblogs.com/jffifa/archive/2012/01/16/2323999.html</a></li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
@@ -493,7 +492,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

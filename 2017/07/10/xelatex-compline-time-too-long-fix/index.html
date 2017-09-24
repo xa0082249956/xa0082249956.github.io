@@ -73,17 +73,17 @@
 
 
 
-<meta name="description" content="XeLaTeX 编译过长的一般原因是找不到字体。 XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。 在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。 一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。 不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手">
+<meta name="description" content="XeLaTeX 编译过长的一般原因是找不到字体。XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。 在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。 一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷">
 <meta property="og:type" content="article">
 <meta property="og:title" content="修复 $\rm XeLaTeX$ 编译时间过长的问题">
 <meta property="og:url" content="http://xa0082249956.tk/2017/07/10/xelatex-compline-time-too-long-fix/index.html">
 <meta property="og:site_name" content="&gt;33&lt;">
-<meta property="og:description" content="XeLaTeX 编译过长的一般原因是找不到字体。 XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。 在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。 一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。 不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手">
+<meta property="og:description" content="XeLaTeX 编译过长的一般原因是找不到字体。XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。 在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。 一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-28T12:37:52.657Z">
+<meta property="og:updated_time" content="2017-09-24T15:05:14.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="修复 $\rm XeLaTeX$ 编译时间过长的问题">
-<meta name="twitter:description" content="XeLaTeX 编译过长的一般原因是找不到字体。 XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。 在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。 一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。 不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手">
+<meta name="twitter:description" content="XeLaTeX 编译过长的一般原因是找不到字体。XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。 在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。 一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷">
 
 
 
@@ -259,8 +259,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -338,25 +338,18 @@
       
 
       
-        <p>XeLaTeX 编译过长的一般原因是找不到字体。<br>
-XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。</p>
+        <p>XeLaTeX 编译过长的一般原因是找不到字体。<br>XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。</p>
 <p>在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。</p>
-<p>一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。<br>
-不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷新，即运行</p>
+<p>一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。<br>不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷新，即运行</p>
 <figure class="highlight bat"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fc-cache</div></pre></td></tr></table></figure>
-<p>-f 强制刷新<br>
--v 显示更详细的信息</p>
-<p>这两个命令一般不用加。<br>
-TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝试清除该路径下所有内容后重试。</p>
+
+<p>-f 强制刷新<br>-v 显示更详细的信息</p>
+<p>这两个命令一般不用加。<br>TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝试清除该路径下所有内容后重试。</p>
 <blockquote>
-<p><strong>注意</strong><br>
-在安装新字体后都需要重新刷新字体缓存。</p>
+<p><strong>注意</strong><br>在安装新字体后都需要重新刷新字体缓存。</p>
 </blockquote>
-<p>文档中使用了 PSTricks 作图也会延长编译时间。<br>
-因为此时 XeTeX 会额外花费较多时间调用 ghostscript。<br>
-可以考虑改用 tikz 画图。</p>
-<p>参考资料:<br>
-<a href="https://www.zhihu.com/question/53981204" class="uri" target="_blank" rel="external">https://www.zhihu.com/question/53981204</a></p>
+<p>文档中使用了 PSTricks 作图也会延长编译时间。<br>因为此时 XeTeX 会额外花费较多时间调用 ghostscript。<br>可以考虑改用 tikz 画图。</p>
+<p>参考资料:<br><a href="https://www.zhihu.com/question/53981204" target="_blank" rel="external">https://www.zhihu.com/question/53981204</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>
@@ -473,7 +466,7 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

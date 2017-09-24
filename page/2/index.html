@@ -262,8 +262,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -334,6 +334,9 @@
 </blockquote>
 <h2 id="更换渲染引擎">更换渲染引擎</h2>
 <figure class="highlight bat"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-renderer-marked --save</div><div class="line">npm install hexo-renderer-pandoc --save</div></pre></td></tr></table></figure>
+
+
+
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -419,8 +422,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -543,27 +546,20 @@
 </ul>
 <h4 id="目录生成">目录生成</h4>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">\<span class="name">tableofcontents</span></span></div></pre></td></tr></table></figure>
+
 <blockquote>
-<p><strong>注意</strong><br>
-正确生成目录项，一般需要<strong>编译两次源代码</strong></p>
+<p><strong>注意</strong><br>正确生成目录项，一般需要<strong>编译两次源代码</strong></p>
 </blockquote>
 <p>有时使用了 <code>\chapter*</code> 或 <code>\section*</code> 这样不生成目录项的章节标题命令，而又想手动生成该章节的目录项，可在标题后使用 <figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">\<span class="name">addcontentsline</span><span class="string">&#123;toc&#125;</span><span class="string">&#123;&lt;level&gt;&#125;</span><span class="string">&#123;&lt;title&gt;&#125;</span></span></div></pre></td></tr></table></figure></p>
 <p><code>&lt;level&gt;</code> 为章节层次(<code>chapter</code>, <code>section</code>, etc)。 <code>&lt;title&gt;</code> 为出现于目录项的章节标题。</p>
 <h4 id="结构划分">结构划分</h4>
 <ul>
-<li><code>\appendix</code> 附录<br>
-使用后，最高一级章节使用拉丁字母编号，从 A 开始。</li>
+<li><code>\appendix</code> 附录<br> 使用后，最高一级章节使用拉丁字母编号，从 A 开始。</li>
 <li><code>book</code> 类专用命令
 <ul>
-<li><code>\frontmatter</code> 前言部分。<br>
-页码为小写罗马字母格式。<br>
-其后的 <code>\chapter</code> 不编号。</li>
-<li><code>\mainmatter</code> 正文部分。<br>
-页码为阿拉伯数字格式，从 1 开始。<br>
-其后的 <code>\chapter</code> 编号正常。</li>
-<li><code>\backmatter</code> 后记部分。<br>
-页码格式不变，继续正常计数。<br>
-其后的 <code>\chapter</code> 不编号。</li>
+<li><code>\frontmatter</code> 前言部分。<br> 页码为小写罗马字母格式。<br> 其后的 <code>\chapter</code> 不编号。</li>
+<li><code>\mainmatter</code> 正文部分。<br> 页码为阿拉伯数字格式，从 1 开始。<br> 其后的 <code>\chapter</code> 编号正常。</li>
+<li><code>\backmatter</code> 后记部分。<br> 页码格式不变，继续正常计数。<br> 其后的 <code>\chapter</code> 不编号。</li>
 </ul></li>
 </ul>
 <h3 id="标题页">标题页</h3>
@@ -575,6 +571,9 @@
 <li><strong>可选</strong> <code>\thanks</code> - 在 <code>\title</code>, <code>\author</code> 等命令内使用，生成标题页的脚注。</li>
 </ul>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">\<span class="name">author</span><span class="string">&#123;33\thanks&#123;0x21&#125;</span></span>&#125;</div><div class="line">    <span class="tag">\<span class="name">and</span></span> You<span class="tag">\<span class="name">thanks</span><span class="string">&#123;0xDD&#125;</span></span></div><div class="line">    <span class="tag">\<span class="name">and</span></span> All</div></pre></td></tr></table></figure>
+
+
+
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -660,8 +659,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -741,25 +740,18 @@
       
         
           
-            <p>XeLaTeX 编译过长的一般原因是找不到字体。<br>
-XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。</p>
+            <p>XeLaTeX 编译过长的一般原因是找不到字体。<br>XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。</p>
 <p>在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。</p>
-<p>一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。<br>
-不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷新，即运行</p>
+<p>一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。<br>不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷新，即运行</p>
 <figure class="highlight bat"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fc-cache</div></pre></td></tr></table></figure>
-<p>-f 强制刷新<br>
--v 显示更详细的信息</p>
-<p>这两个命令一般不用加。<br>
-TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝试清除该路径下所有内容后重试。</p>
+
+<p>-f 强制刷新<br>-v 显示更详细的信息</p>
+<p>这两个命令一般不用加。<br>TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝试清除该路径下所有内容后重试。</p>
 <blockquote>
-<p><strong>注意</strong><br>
-在安装新字体后都需要重新刷新字体缓存。</p>
+<p><strong>注意</strong><br>在安装新字体后都需要重新刷新字体缓存。</p>
 </blockquote>
-<p>文档中使用了 PSTricks 作图也会延长编译时间。<br>
-因为此时 XeTeX 会额外花费较多时间调用 ghostscript。<br>
-可以考虑改用 tikz 画图。</p>
-<p>参考资料:<br>
-<a href="https://www.zhihu.com/question/53981204" class="uri" target="_blank" rel="external">https://www.zhihu.com/question/53981204</a></p>
+<p>文档中使用了 PSTricks 作图也会延长编译时间。<br>因为此时 XeTeX 会额外花费较多时间调用 ghostscript。<br>可以考虑改用 tikz 画图。</p>
+<p>参考资料:<br><a href="https://www.zhihu.com/question/53981204" target="_blank" rel="external">https://www.zhihu.com/question/53981204</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -950,11 +942,10 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
           <h1 id="题目分类">题目分类</h1>
 <p>选修 4-5: 不等式选讲.</p>
 <h1 id="题目内容">题目内容</h1>
-<p>已知 <span class="math inline">\(f(x)=2\left|x-2\right|+\left|x+1\right|\)</span>.</p>
+<p>已知 <span class="math">\(f(x)=2\left|x-2\right|+\left|x+1\right|\)</span>.</p>
 <ol style="list-style-type: decimal">
-<li>求不等式 <span class="math inline">\(f(x)\lt6\)</span> 的解集.<br>
-</li>
-<li>设 <span class="math inline">\(m\)</span>, <span class="math inline">\(n\)</span>, <span class="math inline">\(p\)</span> <span class="math inline">\(\in \mathbb{R}^+\)</span>, 且 <span class="math inline">\(m+n+p=f(2)\)</span>, 求证 <span class="math inline">\(mn+np+pm\le3\)</span>.</li>
+<li>求不等式 <span class="math">\(f(x)\lt6\)</span> 的解集.<br></li>
+<li>设 <span class="math">\(m\)</span>, <span class="math">\(n\)</span>, <span class="math">\(p\)</span> <span class="math">\(\in \mathbb{R}^+\)</span>, 且 <span class="math">\(m+n+p=f(2)\)</span>, 求证 <span class="math">\(mn+np+pm\le3\)</span>.</li>
 </ol>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1137,29 +1128,22 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
 
       
         
-          <div class="note info">
-<h4>未完成过的项目</h4>
+          <div class="note info"><h4>未完成过的项目</h4>
 
-该项目目前并未完成，以后也不一定会完成了。
-</div>
+该项目目前并未完成，以后也不一定会完成了。</div>
+
+
 <h4 id="section">1</h4>
 <p>1: 单糖 → 糖类 → 主要能源物质.</p>
 <blockquote>
 <strong>单糖</strong>是新陈代谢中的主要燃料, 能提供能量（当中以葡萄糖最主）及用于生物合成.<br>
-
 </blockquote>
 <blockquote>
-<strong>二糖</strong>可分类为还原性二糖与非还原性二糖. 通过两个单糖分子的半缩醛（酮）羟基脱去一分子水而相互连接. 这样的二糖, 分子中已没有半缩醛（酮）羟基存在, 因此其中任何一个单糖部分都不能再由环式转变成醛（酮）式.<br>
-这种双糖就没有变旋现象和还原性, 也不能生成糖脎, 因此称为非还原性二糖.<br>
-
+<strong>二糖</strong>可分类为还原性二糖与非还原性二糖. 通过两个单糖分子的半缩醛（酮）羟基脱去一分子水而相互连接. 这样的二糖, 分子中已没有半缩醛（酮）羟基存在, 因此其中任何一个单糖部分都不能再由环式转变成醛（酮）式.<br>这种双糖就没有变旋现象和还原性, 也不能生成糖脎, 因此称为非还原性二糖.<br>
 </blockquote>
 <blockquote>
-<p><strong>蔗糖</strong>和<strong>海藻糖</strong>在溶液中不生成醛基和酮基, 故<strong>不属于还原糖</strong>.<br>
-生物一般不能利用所有糖类转换成能量, 而葡萄糖是最普遍的能量来源.<br>
-许多生物都有能力把其他单糖及双糖代谢成能量, 但以葡萄糖为首选.<br>
-例如, 在大肠杆菌中, 当遇到乳糖, 乳糖操纵子会释出酶, 以消化乳糖, 但如果乳糖和葡萄糖都存在乳糖操纵子会受到压抑的, 葡萄糖会首先被消化.</p>
+<p><strong>蔗糖</strong>和<strong>海藻糖</strong>在溶液中不生成醛基和酮基, 故<strong>不属于还原糖</strong>.<br>生物一般不能利用所有糖类转换成能量, 而葡萄糖是最普遍的能量来源.<br>许多生物都有能力把其他单糖及双糖代谢成能量, 但以葡萄糖为首选.<br>例如, 在大肠杆菌中, 当遇到乳糖, 乳糖操纵子会释出酶, 以消化乳糖, 但如果乳糖和葡萄糖都存在乳糖操纵子会受到压抑的, 葡萄糖会首先被消化.</p>
 <strong>多糖</strong>也是常见的能量来源, 许多生物皆能分解淀粉成葡萄糖, 但大部份生物都不能消化纤维素、甲壳素等其他多糖. 这些糖只能由某些细菌及原生生物消化.<br>
-
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1251,8 +1235,8 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -1342,12 +1326,11 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
 
       
         
-          <div class="note info">
-<h4>未完成过的项目</h4>
+          <div class="note info"><h4>未完成过的项目</h4>
 
-该项目目前并未完成，以后也不一定会完成了。
-</div>
-<p><span class="math display">\[ 
+该项目目前并未完成，以后也不一定会完成了。</div>
+
+<p><span class="math">\[ 
 \require{cancel} 
 \newcommand{\xato}[1]{\stackrel{ #1 }{\longrightarrow}} 
 \]</span></p>
@@ -1355,17 +1338,10 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
 <p>金刚石、白磷都属于单质.</p>
 <blockquote>
 <p><strong>正确</strong></p>
-<p><a href="https://zh.wikipedia.org/wiki/%E9%92%BB%E7%9F%B3" target="_blank" rel="external">金刚石</a> <span class="math inline">\(\rm C\)</span>, 目前自然界中已知存在的最硬的物质.<br>
-金刚石中的 <span class="math inline">\(\rm C-C\)</span> 键很强, 所有的价电子都参与了共价键的形成, 没有自由电子, 所以金刚石硬度非常大, 不导电, 熔点在 3815℃.</p>
-<p><a href="https://zh.wikipedia.org/wiki/%E7%A3%B7%E7%9A%84%E5%90%8C%E7%B4%A0%E5%BC%82%E5%BD%A2%E4%BD%93#.E7.99.BD.E7.A3.B7" target="_blank" rel="external">白磷</a> <span class="math inline">\(\rm P_4\)</span> - 因商品白磷常带黄色, 故又称为<strong>黄磷</strong>.<br>
-白色固体 / 质软 / <strong>剧毒</strong>(致死量~50mg) / 熔点 44.1℃ / 不溶于水, 溶于大多有机溶剂.<br>
-空气中 34℃ 自燃, 白色烟雾：<span class="math inline">\(\rm 2\ P_2 + 5\ O_2 \longrightarrow 2\ P_2O_5\)</span><br>
-也可以发生<span id="1-1"> <a href="#PChainReaction"><strong>化学磷光支链反应</strong></a> </span>.</p>
-<p>白磷加热至 400℃ 以下或用紫外光照射可获得<strong>红磷</strong>, 在硫, 碘或钨丝的催化下加热可加快反应速率.<br>
-白磷在很高压强(12000 atm)和较高温度下转化为<strong>黑磷</strong>. 它有金属光泽, 是磷的同素异形体中密度最大、热力学最稳定以及性质最不活泼的一种. 它是高聚的不溶性固体.<br>
-无定形的黑磷 125℃ 时开始向红磷转变.</p>
-<p><strong>紫磷</strong><br>
-<strong>Monoclinic phosphorus</strong>, or <strong>violet phosphorus</strong>, is also known as <strong>Hittorf’s metallic phosphorus</strong>.In 1865, Johann Wilhelm Hittorf heated red phosphorus in a sealed tube at 530 °C. The upper part of the tube was kept at 444 °C. Brilliant opaque monoclinic, or rhombohedral, crystals sublime. Violet phosphorus can also be prepared by dissolving white phosphorus in molten lead in a sealed tube at 500 °C for 18 hours. Upon slow cooling, Hittorf’s allotrope crystallises out. The crystals can be revealed by dissolving the lead in dilute nitric acid followed by boiling in concentrated hydrochloric acid. In addition, a fibrous form exists with similar phosphorus cages.</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E9%92%BB%E7%9F%B3" target="_blank" rel="external">金刚石</a> <span class="math">\(\rm C\)</span>, 目前自然界中已知存在的最硬的物质.<br>金刚石中的 <span class="math">\(\rm C-C\)</span> 键很强, 所有的价电子都参与了共价键的形成, 没有自由电子, 所以金刚石硬度非常大, 不导电, 熔点在 3815℃.</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E7%A3%B7%E7%9A%84%E5%90%8C%E7%B4%A0%E5%BC%82%E5%BD%A2%E4%BD%93#.E7.99.BD.E7.A3.B7" target="_blank" rel="external">白磷</a> <span class="math">\(\rm P_4\)</span> - 因商品白磷常带黄色, 故又称为<strong>黄磷</strong>.<br>白色固体 / 质软 / <strong>剧毒</strong>(致死量~50mg) / 熔点 44.1℃ / 不溶于水, 溶于大多有机溶剂.<br>空气中 34℃ 自燃, 白色烟雾：<span class="math">\(\rm 2\ P_2 + 5\ O_2 \longrightarrow 2\ P_2O_5\)</span><br>也可以发生<span id="1-1"> <a href="#PChainReaction"><strong>化学磷光支链反应</strong></a> </span>.</p>
+<p>白磷加热至 400℃ 以下或用紫外光照射可获得<strong>红磷</strong>, 在硫, 碘或钨丝的催化下加热可加快反应速率.<br> 白磷在很高压强(12000 atm)和较高温度下转化为<strong>黑磷</strong>. 它有金属光泽, 是磷的同素异形体中密度最大、热力学最稳定以及性质最不活泼的一种. 它是高聚的不溶性固体.<br>无定形的黑磷 125℃ 时开始向红磷转变.</p>
+<p><strong>紫磷</strong><br><strong>Monoclinic phosphorus</strong>, or <strong>violet phosphorus</strong>, is also known as <strong>Hittorf’s metallic phosphorus</strong>.In 1865, Johann Wilhelm Hittorf heated red phosphorus in a sealed tube at 530 °C. The upper part of the tube was kept at 444 °C. Brilliant opaque monoclinic, or rhombohedral, crystals sublime. Violet phosphorus can also be prepared by dissolving white phosphorus in molten lead in a sealed tube at 500 °C for 18 hours. Upon slow cooling, Hittorf’s allotrope crystallises out. The crystals can be revealed by dissolving the lead in dilute nitric acid followed by boiling in concentrated hydrochloric acid. In addition, a fibrous form exists with similar phosphorus cages.</p>
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1457,8 +1433,8 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -1538,8 +1514,7 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
       
         
           <blockquote>
-<p><em>They twist, tangle, sometimes unravel, break, then connect again.</em><br>
-<em>Musubi – knotting. That is time.</em></p>
+<p><em>They twist, tangle, sometimes unravel, break, then connect again.</em><br><em>Musubi – knotting. That is time.</em></p>
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1631,8 +1606,8 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T21:38:03+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -1723,12 +1698,12 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
       
         
           
-            <div class="note danger">
-<h4> 格式问题 </h4>
+            <div class="note danger"><h4> 格式问题 </h4>
 该项目未被修改以适合 Pandoc's Markdown 渲染引擎渲染。
-无论如何，你仍然可以查看它的源代码。
-</div>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div></pre></td><td class="code"><pre><div class="line"><span class="section">#### 2</span></div><div class="line"></div><div class="line">下列各组物质的分类正确的是</div><div class="line"></div><div class="line">①混合物：水玻璃、~~水银~~、水煤气.</div><div class="line"><span class="quote">&gt; **错误**。</span></div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt; 水银不是混合物。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt; 水煤气主要由 $\rm&#123;CO&#125; $、 $\rm&#123;CO_2&#125; $ 和 $\rm&#123;H_2&#125; $ 组成。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt; 水玻璃 $\rm Na_2\stackrel&#123;+4&#125;&#123;Si&#125;O_3 $，又名玻璃胶。</div><div class="line"></div><div class="line">②电解质：明矾、冰醋酸、石膏.</div><div class="line">&gt;<span class="strong">***正确**</span>*。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;*电解质*是指在水溶液或熔融状态可以产生自由离子而导电的**化合物**。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;明矾 $\rm KAl(SO_4)_2\cdot12H_2O $ 可用作净化水质，其水溶液可使石蕊试纸变红。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;冰醋酸即乙酸 $\rm CH_3COOH $或 $\rm HAc $，常温液体，STP固体。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;&gt; 乙酸最常用的正式缩写是 $\rm AcOH $ 或 $\rm HOAc $，其中Ac代表了乙酸中的乙酰基（$\rm CH_3CO $）。酸碱中和反应中也可以用 $\rm HAc $ 表示乙酸，其中 $\rm Ac $ 代表了乙酸根阴离子（ $\rm CH3COO^− $），但很多人认为这样容易造成误解。上述两种情况中， $\rm Ac $ 都不应与化学元素中锕的缩写混淆。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;因为铝在空气中表面会形成氧化铝保护层，所以铝制容器能用来运输乙酸。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;石膏**纯净物**，主要成分 $\rm Ca_2SO_4 $。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;&gt;矿物是是指在地质作用下天然形成的结晶状**纯净物**（单质或化合物）。绝对的纯净物是不存在的，所以这里的纯净物是指物质化学成份相对单一的物质。</div><div class="line"></div><div class="line">③酸性氧化物： $\rm&#123;CO<span class="emphasis">_2&#125; $、 $\rm&#123;CO&#125; $、 $\rm&#123;SO_</span>3&#125; $</div><div class="line"></div><div class="line">&gt;<span class="strong">**错误**</span>。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;酸性氧化物，即可以与**碱**反应生成**盐**和**水**的**氧化物**，有时又被称为某酸酐。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt; $\rm CO $ 不是酸性氧化物。</div><div class="line"></div><div class="line">④同位素： $\rm&#123;^1H&#125; $、 $\rm&#123;^2H_2&#125; $ <span class="bullet">* $\leftarrow $ 叛徒*</span>、 $\rm&#123;^3H&#125; $.</div><div class="line"></div><div class="line"><span class="quote">&gt; **错误**。</span></div><div class="line"></div><div class="line">⑤同素异形体： $\rm&#123;C_&#123;80&#125;&#125; $、金刚石、石墨.</div><div class="line"></div><div class="line"><span class="quote">&gt; **正确**。</span></div><div class="line"></div><div class="line">⑥干冰、液氯都是非电解质.</div><div class="line"></div><div class="line">&gt;<span class="strong">**错误**</span>。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;非电解质是指在水中或熔融状态下都不能电离出离子的**化合物**。</div><div class="line"><span class="quote">&gt;</span></div><div class="line">&gt;液氯 $\rm Cl_2 $ 为单质。\</div><div class="line">&gt;实验室制取氯气</div><div class="line">&gt;$$</div><div class="line">\rm MnO<span class="emphasis">_2 +4\ H&#123;Cl&#125; \stackrel\Delta\longrightarrow MnCl_</span>2+Cl<span class="emphasis">_2+2\ H_</span>2O</div><div class="line">&gt;$$</div><div class="line">&gt;氯气的漂白性-<span class="emphasis">*湿润条件下*</span></div><div class="line">&gt;$$</div><div class="line">\rm</div><div class="line">Cl<span class="emphasis">_2+H_</span>2O\rightleftharpoons HCl+HClO \\</div><div class="line">HClO \rightleftharpoons HCl +[O]</div><div class="line">&gt;$$</div><div class="line">&gt;（生成的 $&#123;\rm &#123;[O]&#125;&#125; $ 是游离氧，正是这个游离氧，氧化了有机染料使之褪色）</div><div class="line">&gt;次氯酸的分解反应在光照或受热时速度加快。</div><div class="line"></div><div class="line"> <span class="xml"><span class="comment">&lt;!-- more --&gt;</span></span></div><div class="line"></div><div class="line"><span class="section">#### 4</span></div><div class="line"></div><div class="line">$0.1\ \rm mol\cdot L^&#123;-1&#125; $ 硫化钠溶液中，阴离子总数大于 $0.1\ N_A $。</div><div class="line"></div><div class="line"><span class="section">#### 5</span></div><div class="line"></div><div class="line">某温度下，物质 $\rm X<span class="emphasis">_2SO_</span>4 $ 的饱和溶液密度为 $\rho\ \rm g\cdot mL^&#123;-1&#125; $， $c(&#123;\rm&#123;X^+&#125;&#125;)=c\ \rm&#123;mol\cdot L^&#123;-1&#125;&#125; $，溶质的质量分数为 $a\% $，溶质的摩尔质量为 $M\ \rm g\cdot mol^&#123;-1&#125; $，溶解度为 $S\ \rm g $。</div><div class="line"></div><div class="line"><span class="quote">&gt; 设 $1 L $.</span></div><div class="line"><span class="quote">&gt; </span></div><div class="line">&gt; $n(&#123;\rm X^+&#125;)=c $</div><div class="line"><span class="quote">&gt; $n(&#123;\rm X_2SO_4&#125;)=\frac c2 $</span></div><div class="line"><span class="quote">&gt; </span></div><div class="line">&gt; $m(\rm&#123;aq&#125;)=1000\rho $</div><div class="line"><span class="quote">&gt; $m(&#123;\rm X_2SO_4&#125;)=1000\rho\cdot a\%=\frac&#123;M\cdot c&#125;2 $</span></div><div class="line"><span class="quote">&gt; </span></div><div class="line">&gt; $\begin&#123;align&#125;S&amp;=\frac&#123;m(&#123;\rm X_2SO_4&#125;)&#125;&#123;m(&#123;\rm aq&#125;)-m(&#123;\rm X_2SO_4&#125;)&#125;\cdot100\\&amp;=\frac&#123;100\cdot c M&#125;&#123;2000\rho-cM&#125;\end&#123;align&#125; $</div><div class="line"><span class="quote">&gt; </span></div><div class="line">&gt; $a\%=\frac&#123;M\cdot c&#125;&#123;2000\rho&#125; $</div><div class="line"><span class="quote">&gt; $M=\frac&#123;2000\rho\cdot a\%&#125;c $</span></div><div class="line"><span class="quote">&gt; $c=\frac&#123;2000\rho\cdot a\%&#125;&#123;M&#125; $</span></div><div class="line"></div><div class="line"><span class="section">#### 10</span></div><div class="line"></div><div class="line">如图所示，若锥形瓶内是水，分液漏斗内的液体也是水，向烧杯内滴加水时，发现U形管内液体慢慢右移，恢复到原温度后液面左边与右边基本相平，则烧杯内的物质。</div><div class="line"></div><div class="line">过氧化钠 / 钠 / 钾</div><div class="line"></div><div class="line"><span class="quote">&gt; **不可以**。产生气体，恢复后液面产生高度差。</span></div><div class="line"></div><div class="line">氧化钠</div><div class="line"></div><div class="line"><span class="quote">&gt; **可以**。反应放热导致右移，反应不产生气体满足题目所给条件。</span></div></pre></td></tr></table></figure>
+无论如何，你仍然可以查看它的源代码。</div>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div></pre></td><td class="code"><pre><div class="line"><span class="section">#### 2</span></div><div class="line"></div><div class="line">下列各组物质的分类正确的是</div><div class="line"></div><div class="line">①混合物：水玻璃、~~水银~~、水煤气.</div><div class="line"><span class="quote">&gt; **错误**。</span></div><div class="line">&gt;</div><div class="line"><span class="quote">&gt; 水银不是混合物。</span></div><div class="line">&gt;</div><div class="line"><span class="quote">&gt; 水煤气主要由 $\rm&#123;CO&#125; $、 $\rm&#123;CO_2&#125; $ 和 $\rm&#123;H_2&#125; $ 组成。</span></div><div class="line">&gt;</div><div class="line"><span class="quote">&gt; 水玻璃 $\rm Na_2\stackrel&#123;+4&#125;&#123;Si&#125;O_3 $，又名玻璃胶。</span></div><div class="line"></div><div class="line">②电解质：明矾、冰醋酸、石膏.</div><div class="line">&gt;<span class="strong">***正确**</span>*。</div><div class="line">&gt;</div><div class="line">&gt;<span class="emphasis">*电解质*</span>是指在水溶液或熔融状态可以产生自由离子而导电的<span class="strong">**化合物**</span>。</div><div class="line">&gt;</div><div class="line">&gt;明矾 $\rm KAl(SO<span class="emphasis">_4)_</span>2\cdot12H_2O $ 可用作净化水质，其水溶液可使石蕊试纸变红。</div><div class="line">&gt;</div><div class="line">&gt;冰醋酸即乙酸 $\rm CH_3COOH $或 $\rm HAc $，常温液体，STP固体。</div><div class="line">&gt;</div><div class="line">&gt;&gt; 乙酸最常用的正式缩写是 $\rm AcOH $ 或 $\rm HOAc $，其中Ac代表了乙酸中的乙酰基（$\rm CH_3CO $）。酸碱中和反应中也可以用 $\rm HAc $ 表示乙酸，其中 $\rm Ac $ 代表了乙酸根阴离子（ $\rm CH3COO^− $），但很多人认为这样容易造成误解。上述两种情况中， $\rm Ac $ 都不应与化学元素中锕的缩写混淆。</div><div class="line">&gt;</div><div class="line">&gt;因为铝在空气中表面会形成氧化铝保护层，所以铝制容器能用来运输乙酸。</div><div class="line">&gt;</div><div class="line">&gt;石膏<span class="strong">**纯净物**</span>，主要成分 $\rm Ca<span class="emphasis">_2SO_</span>4 $。</div><div class="line">&gt;</div><div class="line">&gt;&gt;矿物是是指在地质作用下天然形成的结晶状<span class="strong">**纯净物**</span>（单质或化合物）。绝对的纯净物是不存在的，所以这里的纯净物是指物质化学成份相对单一的物质。</div><div class="line"></div><div class="line">③酸性氧化物： $\rm&#123;CO<span class="emphasis">_2&#125; $、 $\rm&#123;CO&#125; $、 $\rm&#123;SO_</span>3&#125; $</div><div class="line"></div><div class="line">&gt;<span class="strong">**错误**</span>。</div><div class="line">&gt;</div><div class="line">&gt;酸性氧化物，即可以与<span class="strong">**碱**</span>反应生成<span class="strong">**盐**</span>和<span class="strong">**水**</span>的<span class="strong">**氧化物**</span>，有时又被称为某酸酐。</div><div class="line">&gt;</div><div class="line"><span class="quote">&gt; $\rm CO $ 不是酸性氧化物。</span></div><div class="line"></div><div class="line">④同位素： $\rm&#123;^1H&#125; $、 $\rm&#123;^2H_2&#125; $ <span class="bullet">* $\leftarrow $ 叛徒*</span>、 $\rm&#123;^3H&#125; $.</div><div class="line"></div><div class="line"><span class="quote">&gt; **错误**。</span></div><div class="line"></div><div class="line">⑤同素异形体： $\rm&#123;C_&#123;80&#125;&#125; $、金刚石、石墨.</div><div class="line"></div><div class="line"><span class="quote">&gt; **正确**。</span></div><div class="line"></div><div class="line">⑥干冰、液氯都是非电解质.</div><div class="line"></div><div class="line">&gt;<span class="strong">**错误**</span>。</div><div class="line">&gt;</div><div class="line">&gt;非电解质是指在水中或熔融状态下都不能电离出离子的<span class="strong">**化合物**</span>。</div><div class="line">&gt;</div><div class="line">&gt;液氯 $\rm Cl_2 $ 为单质。\</div><div class="line">&gt;实验室制取氯气</div><div class="line">&gt;$$</div><div class="line">\rm MnO<span class="emphasis">_2 +4\ H&#123;Cl&#125; \stackrel\Delta\longrightarrow MnCl_</span>2+Cl<span class="emphasis">_2+2\ H_</span>2O</div><div class="line">&gt;$$</div><div class="line">&gt;氯气的漂白性-<span class="emphasis">*湿润条件下*</span></div><div class="line">&gt;$$</div><div class="line">\rm</div><div class="line">Cl<span class="emphasis">_2+H_</span>2O\rightleftharpoons HCl+HClO \\</div><div class="line">HClO \rightleftharpoons HCl +[O]</div><div class="line">&gt;$$</div><div class="line">&gt;（生成的 $&#123;\rm &#123;[O]&#125;&#125; $ 是游离氧，正是这个游离氧，氧化了有机染料使之褪色）</div><div class="line">&gt;次氯酸的分解反应在光照或受热时速度加快。</div><div class="line"></div><div class="line"> <span class="xml"><span class="comment">&lt;!-- more --&gt;</span></span></div><div class="line"></div><div class="line"><span class="section">#### 4</span></div><div class="line"></div><div class="line">$0.1\ \rm mol\cdot L^&#123;-1&#125; $ 硫化钠溶液中，阴离子总数大于 $0.1\ N_A $。</div><div class="line"></div><div class="line"><span class="section">#### 5</span></div><div class="line"></div><div class="line">某温度下，物质 $\rm X<span class="emphasis">_2SO_</span>4 $ 的饱和溶液密度为 $\rho\ \rm g\cdot mL^&#123;-1&#125; $， $c(&#123;\rm&#123;X^+&#125;&#125;)=c\ \rm&#123;mol\cdot L^&#123;-1&#125;&#125; $，溶质的质量分数为 $a\% $，溶质的摩尔质量为 $M\ \rm g\cdot mol^&#123;-1&#125; $，溶解度为 $S\ \rm g $。</div><div class="line"></div><div class="line"><span class="quote">&gt; 设 $1 L $.</span></div><div class="line"><span class="quote">&gt; </span></div><div class="line"><span class="quote">&gt; $n(&#123;\rm X^+&#125;)=c $</span></div><div class="line"><span class="quote">&gt; $n(&#123;\rm X_2SO_4&#125;)=\frac c2 $</span></div><div class="line"><span class="quote">&gt; </span></div><div class="line"><span class="quote">&gt; $m(\rm&#123;aq&#125;)=1000\rho $</span></div><div class="line"><span class="quote">&gt; $m(&#123;\rm X_2SO_4&#125;)=1000\rho\cdot a\%=\frac&#123;M\cdot c&#125;2 $</span></div><div class="line"><span class="quote">&gt; </span></div><div class="line"><span class="quote">&gt; $\begin&#123;align&#125;S&amp;=\frac&#123;m(&#123;\rm X_2SO_4&#125;)&#125;&#123;m(&#123;\rm aq&#125;)-m(&#123;\rm X_2SO_4&#125;)&#125;\cdot100\\&amp;=\frac&#123;100\cdot c M&#125;&#123;2000\rho-cM&#125;\end&#123;align&#125; $</span></div><div class="line"><span class="quote">&gt; </span></div><div class="line"><span class="quote">&gt; $a\%=\frac&#123;M\cdot c&#125;&#123;2000\rho&#125; $</span></div><div class="line"><span class="quote">&gt; $M=\frac&#123;2000\rho\cdot a\%&#125;c $</span></div><div class="line"><span class="quote">&gt; $c=\frac&#123;2000\rho\cdot a\%&#125;&#123;M&#125; $</span></div><div class="line"></div><div class="line"><span class="section">#### 10</span></div><div class="line"></div><div class="line">如图所示，若锥形瓶内是水，分液漏斗内的液体也是水，向烧杯内滴加水时，发现U形管内液体慢慢右移，恢复到原温度后液面左边与右边基本相平，则烧杯内的物质。</div><div class="line"></div><div class="line">过氧化钠 / 钠 / 钾</div><div class="line"></div><div class="line"><span class="quote">&gt; **不可以**。产生气体，恢复后液面产生高度差。</span></div><div class="line"></div><div class="line">氧化钠</div><div class="line"></div><div class="line"><span class="quote">&gt; **可以**。反应放热导致右移，反应不产生气体满足题目所给条件。</span></div></pre></td></tr></table></figure>
+
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -1816,8 +1791,8 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -1897,39 +1872,36 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
       
         
           
-            <p>使用 <code>\rm</code> 输出正体字母。<br>
-使用 <code>\stackrel</code> 添加反应条件。<br>
-或使用 <code>\xrightarrow[下标]{上标}</code>。<br>
-<code>~</code> 表示空格。</p>
+            <p>使用 <code>\rm</code> 输出正体字母。<br>使用 <code>\stackrel</code> 添加反应条件。<br>或使用 <code>\xrightarrow[下标]{上标}</code>。<br><code>~</code> 表示空格。</p>
 <ol style="list-style-type: decimal">
-<li><p>湿法冶金 <span class="math display">\[
+<li><p>湿法冶金 <span class="math">\[
    \rm As + Cu \stackrel{Sb}\longrightarrow Cs+Au
    \]</span></p></li>
-<li><p>工业制香蕉 <span class="math display">\[
+<li><p>工业制香蕉 <span class="math">\[
    \rm Ba + Na_2 \stackrel{Sb}\longrightarrow Banana
    \]</span></p></li>
-<li><p>铝铜炼金术 <span class="math display">\[
+<li><p>铝铜炼金术 <span class="math">\[
    \rm 2Al + 2Cu \stackrel{Sb}\longrightarrow 2Au + 2Cl_2{\uparrow}
    \]</span></p></li>
-<li><p>工业制咖啡 <span class="math display">\[
+<li><p>工业制咖啡 <span class="math">\[
    \rm 2Fe + Co \stackrel{Sb}\longrightarrow Coffee
    \]</span></p></li>
-<li><p>工业制人并提升盐的品质 <span class="math display">\[
+<li><p>工业制人并提升盐的品质 <span class="math">\[
    \rm 食盐 \xrightarrow[发功]{Sb} 人 + 良盐
    \]</span></p></li>
-<li>用钕和袜子制妹子 <span class="math display">\[
+<li>用钕和袜子制妹子 <span class="math">\[
    \rm 钕+袜子\xrightarrow[发功]{Sb}铱+妹子
    \]</span> ​</li>
-<li><p>工业制猫 <span class="math display">\[
+<li><p>工业制猫 <span class="math">\[
    \rm 2Te + 2Ca + H_2 \stackrel{Sb}\longrightarrow 2Cat + 2He
    \]</span></p></li>
-<li><p>路由器工作原理 <span class="math display">\[
+<li><p>路由器工作原理 <span class="math">\[
    \rm 2W+4Li+2Hf+4Ca\xrightarrow[通电]{Sb}2Wifi + C_2H_2 +2C
    \]</span></p></li>
-<li><p>卡西欧发生氧化反应 <span class="math display">\[
+<li><p>卡西欧发生氧化反应 <span class="math">\[
    \rm CaSiO+O_2\stackrel{Sb}\longrightarrow CaSiO_3
    \]</span></p></li>
-<li><p>制作游戏 <span class="math display">\[
+<li><p>制作游戏 <span class="math">\[
   \rm 2C+F_2\stackrel{Sb}\longrightarrow2CF
   \]</span> ​</p></li>
 </ol>
@@ -2029,7 +2001,7 @@ TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝�
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

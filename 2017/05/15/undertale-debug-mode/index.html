@@ -73,18 +73,18 @@
 
 
 
-<meta name="description" content="Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。  * 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容， 因为它们充满了剧透。 * 当个好孩子，好吗？">
+<meta name="description" content="Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。  * 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容，因为它们充满了剧透。* 当个好孩子，好吗？">
 <meta name="keywords" content="undertale">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Undertale 的调试模式">
 <meta property="og:url" content="http://xa0082249956.tk/2017/05/15/undertale-debug-mode/index.html">
 <meta property="og:site_name" content="&gt;33&lt;">
-<meta property="og:description" content="Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。  * 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容， 因为它们充满了剧透。 * 当个好孩子，好吗？">
+<meta property="og:description" content="Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。  * 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容，因为它们充满了剧透。* 当个好孩子，好吗？">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-28T12:37:52.657Z">
+<meta property="og:updated_time" content="2017-09-24T15:05:14.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Undertale 的调试模式">
-<meta name="twitter:description" content="Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。  * 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容， 因为它们充满了剧透。 * 当个好孩子，好吗？">
+<meta name="twitter:description" content="Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。  * 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容，因为它们充满了剧透。* 当个好孩子，好吗？">
 
 
 
@@ -260,8 +260,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -352,18 +352,17 @@
       
         <p>Undertale 的调试模式可以使用十六进制编辑器修改游戏数据文件进入。</p>
 <blockquote>
-<p>* 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容，<br>
-因为它们充满了<strong>剧透</strong>。<br>
-* 当个好孩子，好吗？</p>
+<p>* 我的孩子，在你完成整个游戏之前最好先不要阅读这些内容，<br>因为它们充满了<strong>剧透</strong>。<br>* 当个好孩子，好吗？</p>
 </blockquote>
 <a id="more"></a>
+
 <h1 id="启用调试">启用调试</h1>
 <blockquote>
 <p><strong>警告</strong></p>
-<p>在继续之前，请确定你已经备份了 <code>Undertale.*</code> 和 <code>data.*</code> <a href="#windows">Windows</a> / <code>game.*</code> <a href="#linux">Linux</a>。<br>
-如果你的游戏如果打不开了，请找 Flowey 或者 Chara，那朵花和那只猹应该知道怎么做。</p>
+<p>在继续之前，请确定你已经备份了 <code>Undertale.*</code> 和 <code>data.*</code> <a href="#windows">Windows</a> / <code>game.*</code> <a href="#linux">Linux</a>。<br>如果你的游戏如果打不开了，请找 Flowey 或者 Chara，那朵花和那只猹应该知道怎么做。</p>
 </blockquote>
 <!-- aaa -->
+
 <blockquote>
 <p><strong>提示</strong></p>
 <p>你需要有 带十六进制编辑功能的编辑器 ( 以下简称 编辑器 ) 才能进行下面的操作，推荐使用 UltraEdit。</p>
@@ -372,8 +371,7 @@
 <p>使用类似 WinRAR 或 好压 等解压软件解压游戏目录下的 <code>Undertale.exe</code> 到游戏根目录，然后用编辑器打开 <code>data.win</code>，定位到 <code>0x725B24</code> ( UltraEdit 可以使用快捷键 <code>Ctrl + G</code> ) 后将值改为 <code>01</code>，保存退出。( 覆盖原先的 exe 文件 )</p>
 <blockquote>
 <p><strong>提示</strong></p>
-<p>如果你在玩 Steam 版，你只需要解压除了 steam_api.dll 外的文件，否则调试模式不能启用。<br>
-<em>If you are playing the Steam version, you should extract every file except steam_api.dll, or the debug mode won’t be activated.</em></p>
+<p>如果你在玩 Steam 版，你只需要解压除了 steam_api.dll 外的文件，否则调试模式不能启用。<br><em>If you are playing the Steam version, you should extract every file except steam_api.dll, or the debug mode won’t be activated.</em></p>
 </blockquote>
 <h2 id="version-1.001">Version 1.001</h2>
 <h3 id="windows">Windows</h3>
@@ -390,121 +388,117 @@
 <table>
 <thead>
 <tr class="header">
-<th>G [O/I]</th>
-<th>S / L</th>
-<th>P [W/F] Back</th>
-<th>M</th>
-<th>V</th>
-<th>Ins / Del</th>
+<th align="left">G [O/I]</th>
+<th align="left">S / L</th>
+<th align="left">P [W/F] Back</th>
+<th align="left">M</th>
+<th align="left">V</th>
+<th align="left">Ins / Del</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>箱子[取/放]</td>
-<td>存 / 读</td>
-<td>速度[慢/快]</td>
-<td>杀</td>
-<td>边缘</td>
-<td>下 / 上</td>
+<td align="left">箱子[取/放]</td>
+<td align="left">存 / 读</td>
+<td align="left">速度[慢/快]</td>
+<td align="left">杀</td>
+<td align="left">边缘</td>
+<td align="left">下 / 上</td>
 </tr>
 </tbody>
 </table>
 <h3 id="详细">详细</h3>
-<table style="width:71%;">
-<colgroup>
-<col width="13%">
-<col width="56%">
-</colgroup>
+<table>
 <thead>
 <tr class="header">
 <th align="left">按键</th>
-<th>影响</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">G</td>
-<td>使用箱子。</td>
+<td align="left">使用箱子。</td>
 </tr>
 <tr class="even">
 <td align="left">G - 在商店中</td>
-<td>设置金币数为 5000.</td>
+<td align="left">设置金币数为 5000.</td>
 </tr>
 <tr class="odd">
 <td align="left">I</td>
-<td>打开一个对话框，可以让你把东西放到箱子里。 ( 在正常游戏下没有出现过 )</td>
+<td align="left">打开一个对话框，可以让你把东西放到箱子里。 ( 在正常游戏下没有出现过 )</td>
 </tr>
 <tr class="even">
 <td align="left">O</td>
-<td>打开一个对话框，可以让你把东西从箱子取出。 ( 在正常游戏下没有出现过 )</td>
+<td align="left">打开一个对话框，可以让你把东西从箱子取出。 ( 在正常游戏下没有出现过 )</td>
 </tr>
 <tr class="odd">
 <td align="left">S</td>
-<td>打开存档对话框。</td>
+<td align="left">打开存档对话框。</td>
 </tr>
 <tr class="even">
 <td align="left">L</td>
-<td>即时读档。</td>
+<td align="left">即时读档。</td>
 </tr>
 <tr class="odd">
 <td align="left">M</td>
-<td>LOVE 加一。 ( 你想进屠杀路线吗？ ) ( 但是谁也没有来。 )</td>
+<td align="left">LOVE 加一。 ( 你想进屠杀路线吗？ ) ( 但是谁也没有来。 )</td>
 </tr>
 <tr class="even">
 <td align="left">W</td>
-<td>将 FPS 设为 10.</td>
+<td align="left">将 FPS 设为 10.</td>
 </tr>
 <tr class="odd">
 <td align="left">F</td>
-<td>将 FPS 设为 60 并两倍速游戏，不影响音乐播放。</td>
+<td align="left">将 FPS 设为 60 并两倍速游戏，不影响音乐播放。</td>
 </tr>
 <tr class="even">
 <td align="left">P</td>
-<td>在快和正常之间切换游戏速度。</td>
+<td align="left">在快和正常之间切换游戏速度。</td>
 </tr>
 <tr class="odd">
 <td align="left">R - 7 连击</td>
-<td>重启游戏。</td>
+<td align="left">重启游戏。</td>
 </tr>
 <tr class="even">
 <td align="left">U</td>
-<td>切换 Undyne 的电话。改变角色配色为 蓝 或 黄。</td>
+<td align="left">切换 Undyne 的电话。改变角色配色为 蓝 或 黄。</td>
 </tr>
 <tr class="odd">
 <td align="left">V</td>
-<td>显示房间边缘。</td>
+<td align="left">显示房间边缘。</td>
 </tr>
 <tr class="even">
 <td align="left">5</td>
-<td><em>Increase battle group by 5. Does not roll over to 0 after 256.</em></td>
+<td align="left"><em>Increase battle group by 5. Does not roll over to 0 after 256.</em></td>
 </tr>
 <tr class="odd">
 <td align="left">退格键</td>
-<td>按下时可以走快一些。</td>
+<td align="left">按下时可以走快一些。</td>
 </tr>
 <tr class="even">
 <td align="left">Page Up</td>
-<td><em>Increase ‘steps’ by 100.</em></td>
+<td align="left"><em>Increase ‘steps’ by 100.</em></td>
 </tr>
 <tr class="odd">
 <td align="left">Page Down</td>
-<td><em>Sets attack in the STAT menu to 989. Appears to be cosmetic only.</em></td>
+<td align="left"><em>Sets attack in the STAT menu to 989. Appears to be cosmetic only.</em></td>
 </tr>
 <tr class="even">
 <td align="left">End</td>
-<td>演示从 New Home 开始的下一个怪物，在屠杀路线中，是 Flowey.</td>
+<td align="left">演示从 New Home 开始的下一个怪物，在屠杀路线中，是 Flowey.</td>
 </tr>
 <tr class="odd">
 <td align="left">Home</td>
-<td>在当前 battle group 中开始一场战斗，默认是 140 - 真抱歉 [v1.0]</td>
+<td align="left">在当前 battle group 中开始一场战斗，默认是 140 - 真抱歉 [v1.0]</td>
 </tr>
 <tr class="even">
 <td align="left">Insert</td>
-<td>传送到下一个房间。将你放在一个确定的位置。( 如不能移动可以尝试 F10 )</td>
+<td align="left">传送到下一个房间。将你放在一个确定的位置。( 如不能移动可以尝试 F10 )</td>
 </tr>
 <tr class="odd">
 <td align="left">Delete</td>
-<td>传送到上一个房间。</td>
+<td align="left">传送到上一个房间。</td>
 </tr>
 </tbody>
 </table>
@@ -512,108 +506,104 @@
 <thead>
 <tr class="header">
 <th align="left">按键</th>
-<th>影响</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">F3</td>
-<td>在你的存档文件夹中放置文件 <code>system_information_962</code>。在游戏重新启动后，把你放在屠杀路线后的黑屏状态。<em>似乎不太好</em></td>
+<td align="left">在你的存档文件夹中放置文件 <code>system_information_962</code>。在游戏重新启动后，把你放在屠杀路线后的黑屏状态。<em>似乎不太好</em></td>
 </tr>
 <tr class="even">
 <td align="left">F7</td>
-<td>增加 500 金币。</td>
+<td align="left">增加 500 金币。</td>
 </tr>
 <tr class="odd">
 <td align="left">F9</td>
-<td>停止所有音乐。</td>
+<td align="left">停止所有音乐。</td>
 </tr>
 <tr class="even">
 <td align="left">F10</td>
-<td>自由移动。</td>
+<td align="left">自由移动。</td>
 </tr>
 <tr class="odd">
 <td align="left">F11</td>
-<td>传送到与 Papyrus 作战后的房间 [<code>room_water1</code>/id:<code>82</code>].</td>
+<td align="left">传送到与 Papyrus 作战后的房间 [<code>room_water1</code>/id:<code>82</code>].</td>
 </tr>
 <tr class="even">
 <td align="left">F12</td>
-<td>重新打开当前房间。</td>
+<td align="left">重新打开当前房间。</td>
 </tr>
 <tr class="odd">
 <td align="left">R + 6</td>
-<td>传送到 Ruins 中的谜题房间 [<code>room_ruins2</code>/id:<code>7</code>].</td>
+<td align="left">传送到 Ruins 中的谜题房间 [<code>room_ruins2</code>/id:<code>7</code>].</td>
 </tr>
 <tr class="even">
 <td align="left">T + 6</td>
-<td>传送到 Ruins 出口的外面 [<code>room_tundra1</code>/id:<code>44</code>].</td>
+<td align="left">传送到 Ruins 出口的外面 [<code>room_tundra1</code>/id:<code>44</code>].</td>
 </tr>
 <tr class="odd">
 <td align="left">W + 6</td>
-<td>传送到与 Papyrus 作战后的房间 [<code>room_water1</code>/id:<code>82</code>] ，与 F11 作用相同。</td>
+<td align="left">传送到与 Papyrus 作战后的房间 [<code>room_water1</code>/id:<code>82</code>] ，与 F11 作用相同。</td>
 </tr>
 <tr class="even">
 <td align="left">F + 6</td>
-<td>传送到 Hotlands 饮水机房间 [<code>room_fire2</code>/id:<code>138</code>].</td>
+<td align="left">传送到 Hotlands 饮水机房间 [<code>room_fire2</code>/id:<code>138</code>].</td>
 </tr>
 <tr class="odd">
 <td align="left">E + 6</td>
-<td>传送到 New Home 入口 [<code>room_castle_front</code>/id:<code>219</code>].</td>
+<td align="left">传送到 New Home 入口 [<code>room_castle_front</code>/id:<code>219</code>].</td>
 </tr>
 <tr class="even">
 <td align="left">Y + 6</td>
-<td>传送到 True Lab 入口 [<code>room_truelab_elevator</code>/id:<code>244</code>].</td>
+<td align="left">传送到 True Lab 入口 [<code>room_truelab_elevator</code>/id:<code>244</code>].</td>
 </tr>
 </tbody>
 </table>
 <h3 id="战斗中">战斗中</h3>
-<table style="width:67%;">
-<colgroup>
-<col width="9%">
-<col width="56%">
-</colgroup>
+<table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>减速。不能低于 1 FPS，否则崩溃。</td>
+<td align="left">1</td>
+<td align="left">减速。不能低于 1 FPS，否则崩溃。</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>加速。不能超过正常速度的两倍，否则崩溃。</td>
+<td align="left">2</td>
+<td align="left">加速。不能超过正常速度的两倍，否则崩溃。</td>
 </tr>
 <tr class="odd">
-<td>F</td>
-<td>加速到两倍速。</td>
+<td align="left">F</td>
+<td align="left">加速到两倍速。</td>
 </tr>
 <tr class="even">
-<td>W</td>
-<td>减速到 10 FPS.</td>
+<td align="left">W</td>
+<td align="left">减速到 10 FPS.</td>
 </tr>
 <tr class="odd">
-<td>8</td>
-<td>敌方回合减短。</td>
+<td align="left">8</td>
+<td align="left">敌方回合减短。</td>
 </tr>
 <tr class="even">
-<td>9</td>
-<td>敌方回合加长。</td>
+<td align="left">9</td>
+<td align="left">敌方回合加长。</td>
 </tr>
 <tr class="odd">
-<td>Delete</td>
-<td>当前战斗中 HP 设置为 999.</td>
+<td align="left">Delete</td>
+<td align="left">当前战斗中 HP 设置为 999.</td>
 </tr>
 <tr class="even">
-<td>F6</td>
-<td>设置仁慈为 0，攻击为 9999.</td>
+<td align="left">F6</td>
+<td align="left">设置仁慈为 0，攻击为 9999.</td>
 </tr>
 <tr class="odd">
-<td>O + P</td>
-<td>设置仁慈为 9999，可以直接仁慈。<em>Some enemies that cannot be normally spared turn into Aaron.</em></td>
+<td align="left">O + P</td>
+<td align="left">设置仁慈为 9999，可以直接仁慈。<em>Some enemies that cannot be normally spared turn into Aaron.</em></td>
 </tr>
 </tbody>
 </table>
@@ -621,31 +611,31 @@
 <table>
 <thead>
 <tr class="header">
-<th>Flag</th>
-<th>在 <code>file0</code> 中的位置</th>
-<th>描述</th>
+<th align="left">Flag</th>
+<th align="left">在 <code>file0</code> 中的位置</th>
+<th align="left">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>4</td>
-<td>5</td>
-<td>设置为 1 后，在与 Undyne 作战之前，她会认为你没有杀人。</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">设置为 1 后，在与 Undyne 作战之前，她会认为你没有杀人。</td>
 </tr>
 <tr class="even">
-<td>26</td>
-<td>57</td>
-<td>非 0 时覆盖 LOVE 的值。</td>
+<td align="left">26</td>
+<td align="left">57</td>
+<td align="left">非 0 时覆盖 LOVE 的值。</td>
 </tr>
 <tr class="odd">
-<td>28</td>
-<td>59</td>
-<td>设置为 1 后，可以按 C 来快速跳过对话。</td>
+<td align="left">28</td>
+<td align="left">59</td>
+<td align="left">设置为 1 后，可以按 C 来快速跳过对话。</td>
 </tr>
 <tr class="even">
-<td>69</td>
-<td>100</td>
-<td><em>If set to 1, changes Burgerpants’ dialogue slightly.</em></td>
+<td align="left">69</td>
+<td align="left">100</td>
+<td align="left"><em>If set to 1, changes Burgerpants’ dialogue slightly.</em></td>
 </tr>
 </tbody>
 </table>
@@ -655,14 +645,14 @@
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>J</td>
-<td>放大 Sans 并崩溃游戏。</td>
+<td align="left">J</td>
+<td align="left">放大 Sans 并崩溃游戏。</td>
 </tr>
 </tbody>
 </table>
@@ -671,14 +661,14 @@
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>空格</td>
-<td>变猹。</td>
+<td align="left">空格</td>
+<td align="left">变猹。</td>
 </tr>
 </tbody>
 </table>
@@ -689,56 +679,48 @@
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>J</td>
-<td>增加头的高度。</td>
+<td align="left">J</td>
+<td align="left">增加头的高度。</td>
 </tr>
 </tbody>
 </table>
 <h3 id="papyrus">Papyrus</h3>
-<table style="width:64%;">
-<colgroup>
-<col width="6%">
-<col width="56%">
-</colgroup>
+<table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>空格</td>
-<td>设置 Papyrus 的下一次攻击和对话内容为 “<em>THE KING WILL TRIM A HEDGE IN THE SHAPE OF MY SMILE!!!</em>” 「国王会以我笑容的图案建造一片树篱！！」</td>
+<td align="left">空格</td>
+<td align="left">设置 Papyrus 的下一次攻击和对话内容为 “<em>THE KING WILL TRIM A HEDGE IN THE SHAPE OF MY SMILE!!!</em>” 「国王会以我笑容的图案建造一片树篱！！」</td>
 </tr>
 <tr class="even">
-<td>O</td>
-<td>如果你在你变蓝时按下了它，Papyrus 不会攻击你，如果你尝试仁慈或攻击它，它会说“<em>…</em>”</td>
+<td align="left">O</td>
+<td align="left">如果你在你变蓝时按下了它，Papyrus 不会攻击你，如果你尝试仁慈或攻击它，它会说“<em>…</em>”</td>
 </tr>
 </tbody>
 </table>
 <h3 id="shyren">Shyren</h3>
-<table style="width:64%;">
-<colgroup>
-<col width="6%">
-<col width="56%">
-</colgroup>
+<table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>3</td>
-<td><em>Increases the emotion variable, used during the fight to affect her status.</em></td>
+<td align="left">3</td>
+<td align="left"><em>Increases the emotion variable, used during the fight to affect her status.</em></td>
 </tr>
 </tbody>
 </table>
@@ -747,14 +729,14 @@
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A</td>
-<td>设置假人 HP 为 180.</td>
+<td align="left">A</td>
+<td align="left">设置假人 HP 为 180.</td>
 </tr>
 </tbody>
 </table>
@@ -765,156 +747,153 @@
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>7</td>
-<td>设置 HP 为 999.</td>
+<td align="left">7</td>
+<td align="left">设置 HP 为 999.</td>
 </tr>
 <tr class="even">
-<td>A</td>
-<td>减少 1 回合计数。</td>
+<td align="left">A</td>
+<td align="left">减少 1 回合计数。</td>
 </tr>
 <tr class="odd">
-<td><del>O + P</del></td>
-<td><del>乖，不会有用的</del></td>
+<td align="left"><del>O + P</del></td>
+<td align="left"><del>乖，不会有用的</del></td>
 </tr>
 </tbody>
 </table>
 <h3 id="asgore">Asgore</h3>
-<p>一个从 0 开始的计数器会出现在游戏界面左上角。计数器的值越大，Asgore 的攻击力就越强，抵抗力就越弱。<br>
-按 A 来减少或按 S 来增加这个值。如果这个值大于 20，它会在 Asgore 来一次黄蓝攻击后变回 20…<br>
-如果你手动设置成大于 22 或小于 1 的值，游戏会在 Asgore 攻击时崩溃。</p>
+<p>一个从 0 开始的计数器会出现在游戏界面左上角。计数器的值越大，Asgore 的攻击力就越强，抵抗力就越弱。<br>按 A 来减少或按 S 来增加这个值。如果这个值大于 20，它会在 Asgore 来一次黄蓝攻击后变回 20…<br>如果你手动设置成大于 22 或小于 1 的值，游戏会在 Asgore 攻击时崩溃。</p>
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A</td>
-<td>减弱攻击，增强抵抗。</td>
+<td align="left">A</td>
+<td align="left">减弱攻击，增强抵抗。</td>
 </tr>
 <tr class="even">
-<td>S</td>
-<td>增强攻击，减弱抵抗。</td>
+<td align="left">S</td>
+<td align="left">增强攻击，减弱抵抗。</td>
 </tr>
 </tbody>
 </table>
 <h3 id="photoshop-flowey">Photoshop Flowey</h3>
 <blockquote>
-<p>你以为我是谁啊？<br>
-我是这个世界的神！</p>
+<p>你以为我是谁啊？<br>我是这个世界的神！</p>
 </blockquote>
 <p>黄色的<font color="#ffd000" face="Serif"> debug </font>会随着 Flowey 一起在游戏界面的右下角出现。</p>
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>F3</td>
-<td>在存档文件夹中创建 <code>system_information_962</code> 文件。</td>
+<td align="left">F3</td>
+<td align="left">在存档文件夹中创建 <code>system_information_962</code> 文件。</td>
 </tr>
 <tr class="even">
-<td>Home</td>
-<td>立刻攻击 Flowey. 如果所有灵魂指示器都变暗了，产生 6000 点伤害。</td>
+<td align="left">Home</td>
+<td align="left">立刻攻击 Flowey. 如果所有灵魂指示器都变暗了，产生 6000 点伤害。</td>
 </tr>
 <tr class="odd">
-<td>Page Up</td>
-<td>按顺序关闭灵魂指示器，在下一轮灵魂战斗中增加伤害。所有指示器均关闭时禁用，在下一次灵魂战斗开始时，游戏崩溃。</td>
+<td align="left">Page Up</td>
+<td align="left">按顺序关闭灵魂指示器，在下一轮灵魂战斗中增加伤害。所有指示器均关闭时禁用，在下一次灵魂战斗开始时，游戏崩溃。</td>
 </tr>
 <tr class="even">
-<td>右 Shift, 左 Shift, X</td>
-<td>按顺序关闭灵魂指示器，在下一轮灵魂战斗中增加伤害。</td>
+<td align="left">右 Shift, 左 Shift, X</td>
+<td align="left">按顺序关闭灵魂指示器，在下一轮灵魂战斗中增加伤害。</td>
 </tr>
 <tr class="odd">
-<td>Shift</td>
-<td>关闭灵魂指示器，一次一个。</td>
+<td align="left">Shift</td>
+<td align="left">关闭灵魂指示器，一次一个。</td>
 </tr>
 <tr class="even">
-<td>Q</td>
-<td>在载入时直接开始战斗。但它不会停止载入，所以直到 Flowey 接近你之前你都不能移动，而你也不会被攻击。</td>
+<td align="left">Q</td>
+<td align="left">在载入时直接开始战斗。但它不会停止载入，所以直到 Flowey 接近你之前你都不能移动，而你也不会被攻击。</td>
 </tr>
 <tr class="odd">
-<td>W</td>
-<td>将 FPS 设为 10. 如果在 Flowey 死亡状态下使用，将在 Flowey 生命值回复后开始攻击。<em>待确认：谁开始攻击？</em></td>
+<td align="left">W</td>
+<td align="left">将 FPS 设为 10. 如果在 Flowey 死亡状态下使用，将在 Flowey 生命值回复后开始攻击。<em>待确认：谁开始攻击？</em></td>
 </tr>
 <tr class="even">
-<td>E</td>
-<td>每只眼睛三颗星形炮弹。</td>
+<td align="left">E</td>
+<td align="left">每只眼睛三颗星形炮弹。</td>
 </tr>
 <tr class="odd">
-<td>R</td>
-<td>每只眼睛七颗星形炮弹。</td>
+<td align="left">R</td>
+<td align="left">每只眼睛七颗星形炮弹。</td>
 </tr>
 <tr class="even">
-<td>I</td>
-<td>让 Flowey 笑，然后重新开始战斗。可以在灵魂战斗中使用。</td>
+<td align="left">I</td>
+<td align="left">让 Flowey 笑，然后重新开始战斗。可以在灵魂战斗中使用。</td>
 </tr>
 <tr class="odd">
-<td>A</td>
-<td>切换火焰发射器。</td>
+<td align="left">A</td>
+<td align="left">切换火焰发射器。</td>
 </tr>
 <tr class="even">
-<td>F</td>
-<td>两倍速。锁定火球攻击。<em>Lock on pellet attack.</em></td>
+<td align="left">F</td>
+<td align="left">两倍速。锁定火球攻击。<em>Lock on pellet attack.</em></td>
 </tr>
 <tr class="odd">
-<td>H</td>
-<td>一次手指枪攻击。</td>
+<td align="left">H</td>
+<td align="left">一次手指枪攻击。</td>
 </tr>
 <tr class="even">
-<td>V</td>
-<td>一次藤条攻击。</td>
+<td align="left">V</td>
+<td align="left">一次藤条攻击。</td>
 </tr>
 <tr class="odd">
-<td>N</td>
-<td>一次掉落的炸弹攻击。</td>
+<td align="left">N</td>
+<td align="left">一次掉落的炸弹攻击。</td>
 </tr>
 <tr class="even">
-<td>M</td>
-<td>一次食蝇草攻击。<em>Ball of teeth/dentata attack.</em></td>
+<td align="left">M</td>
+<td align="left">一次食蝇草攻击。<em>Ball of teeth/dentata attack.</em></td>
 </tr>
 <tr class="odd">
-<td>C</td>
-<td>切换 Flowey 嘴唇的摆动状态。</td>
+<td align="left">C</td>
+<td align="left">切换 Flowey 嘴唇的摆动状态。</td>
 </tr>
 <tr class="even">
-<td>S</td>
-<td>存档。在游戏界面左下角显示「存档 2 已保存」。</td>
+<td align="left">S</td>
+<td align="left">存档。在游戏界面左下角显示「存档 2 已保存」。</td>
 </tr>
 <tr class="odd">
-<td>L</td>
-<td>读档。在游戏界面左下角显示「存档 2 已读取」。</td>
+<td align="left">L</td>
+<td align="left">读档。在游戏界面左下角显示「存档 2 已读取」。</td>
 </tr>
 <tr class="even">
-<td>O</td>
-<td>紫色灵魂战斗 ( 书 ) 。</td>
+<td align="left">O</td>
+<td align="left">紫色灵魂战斗 ( 书 ) 。</td>
 </tr>
 <tr class="odd">
-<td>P</td>
-<td>绿色灵魂战斗 ( 平底锅 ) 。</td>
+<td align="left">P</td>
+<td align="left">绿色灵魂战斗 ( 平底锅 ) 。</td>
 </tr>
 <tr class="even">
-<td>G</td>
-<td>橘色灵魂战斗 ( 手套 ) 。</td>
+<td align="left">G</td>
+<td align="left">橘色灵魂战斗 ( 手套 ) 。</td>
 </tr>
 <tr class="odd">
-<td>J</td>
-<td>黄色灵魂战斗 ( 枪 ) 。</td>
+<td align="left">J</td>
+<td align="left">黄色灵魂战斗 ( 枪 ) 。</td>
 </tr>
 <tr class="even">
-<td>K</td>
-<td>蓝色灵魂战斗 ( 刀子 ) 。</td>
+<td align="left">K</td>
+<td align="left">蓝色灵魂战斗 ( 刀子 ) 。</td>
 </tr>
 </tbody>
 </table>
@@ -925,38 +904,38 @@
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>C</td>
-<td>切换 Asriel 四处浮动 / 在屏幕中间静止。</td>
+<td align="left">C</td>
+<td align="left">切换 Asriel 四处浮动 / 在屏幕中间静止。</td>
 </tr>
 <tr class="even">
-<td>空格</td>
-<td>和 G 相同，主要在文本框上部浮动。Asriel 还必须和下面的任意一个按键一起使用。攻击立刻开始，可以叠加。</td>
+<td align="left">空格</td>
+<td align="left">和 G 相同，主要在文本框上部浮动。Asriel 还必须和下面的任意一个按键一起使用。攻击立刻开始，可以叠加。</td>
 </tr>
 <tr class="odd">
-<td>G</td>
-<td>混沌冲击 / 混沌爆发。<em>Chaos Buster/Chaos Blaster.</em></td>
+<td align="left">G</td>
+<td align="left">混沌冲击 / 混沌爆发。<em>Chaos Buster/Chaos Blaster.</em></td>
 </tr>
 <tr class="even">
-<td>B</td>
-<td>无尽雷霆 / 无尽雷霆 II。<em>Shocker Breaker/Shocker Breaker II</em></td>
+<td align="left">B</td>
+<td align="left">无尽雷霆 / 无尽雷霆 II。<em>Shocker Breaker/Shocker Breaker II</em></td>
 </tr>
 <tr class="odd">
-<td>W</td>
-<td>混沌之刃 / 混沌魔刃。<em>Chaos Saber/Chaos Slicer</em> 将 FPS 设为 10.</td>
+<td align="left">W</td>
+<td align="left">混沌之刃 / 混沌魔刃。<em>Chaos Saber/Chaos Slicer</em> 将 FPS 设为 10.</td>
 </tr>
 <tr class="even">
-<td>S</td>
-<td>爆热星辰 / 爆热银河。<em>Star Blazing/Galacta Blazing</em></td>
+<td align="left">S</td>
+<td align="left">爆热星辰 / 爆热银河。<em>Star Blazing/Galacta Blazing</em></td>
 </tr>
 <tr class="odd">
-<td>H</td>
-<td>终极毁灭。<em>HYPER GONER</em></td>
+<td align="left">H</td>
+<td align="left">终极毁灭。<em>HYPER GONER</em></td>
 </tr>
 </tbody>
 </table>
@@ -967,22 +946,22 @@
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>7</td>
-<td>设置 HP 为 999.</td>
+<td align="left">7</td>
+<td align="left">设置 HP 为 999.</td>
 </tr>
 <tr class="even">
-<td>A</td>
-<td>减少 1 回合计数。</td>
+<td align="left">A</td>
+<td align="left">减少 1 回合计数。</td>
 </tr>
 <tr class="odd">
-<td><del>O + P</del></td>
-<td><del>乖，不会有用的</del></td>
+<td align="left"><del>O + P</del></td>
+<td align="left"><del>乖，不会有用的</del></td>
 </tr>
 </tbody>
 </table>
@@ -990,18 +969,18 @@
 <table>
 <thead>
 <tr class="header">
-<th>按键</th>
-<th>影响</th>
+<th align="left">按键</th>
+<th align="left">影响</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>E</td>
-<td>设置下一次攻击为他的「特殊攻击」。</td>
+<td align="left">E</td>
+<td align="left">设置下一次攻击为他的「特殊攻击」。</td>
 </tr>
 <tr class="even">
-<td>A</td>
-<td>设置下一次攻击为他饶恕你的那一部分。</td>
+<td align="left">A</td>
+<td align="left">设置下一次攻击为他饶恕你的那一部分。</td>
 </tr>
 </tbody>
 </table>
@@ -1154,7 +1133,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

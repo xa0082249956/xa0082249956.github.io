@@ -262,8 +262,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-17T23:32:00+08:00">
-                2017-09-17
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -445,8 +445,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-18T22:48:22+08:00">
-                2017-09-18
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -552,35 +552,32 @@
 <h2 id="定义">定义</h2>
 <blockquote class="blockquote-center">在数学中，<b>椭圆</b>是平面上到两个固定点的距离之和为常数的点之轨迹。<br>
 In mathematics, an <b>ellipse</b> is a curve in a plane surrounding two focal points such that the sum of the distances to the two focal points is constant for every point on the curve.</blockquote>
-<p>椭圆的定义可表示为 <span class="math display">\[
+
+<p>椭圆的定义可表示为 <span class="math">\[
 E = \{P \mid |PF_1| + |PF_2| = 2a\}
-\]</span> 其中 <span class="math inline">\((0 &lt; |F_1F_2| = 2c &lt; 2a)\)</span>, <span class="math inline">\(E\)</span> 为椭圆.<br>
-<span class="math inline">\(F_1\)</span>, <span class="math inline">\(F_2\)</span> 为椭圆的两个<strong>焦点</strong>(foci).<br>
-两焦点连线中点 <span class="math inline">\(C\)</span> 为椭圆的<strong>中心</strong>(center).</p>
-<p>穿过两焦点并终止于椭圆上的线段 <span class="math inline">\(AB\)</span> 为<strong>长轴</strong>(major axis)<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.<br>
-穿过中心垂直于长轴并终止于椭圆的线段 <span class="math inline">\(CD\)</span> 叫<strong>短轴</strong>(minor axis).</p>
-<p><strong>半长轴</strong> <span class="math inline">\(a\)</span> 为长轴的一半.<br>
-<strong>半短轴</strong> <span class="math inline">\(b\)</span> 为短轴的一半.<br>
-<strong>半焦距</strong> <span class="math inline">\(c\)</span> 为焦距的一半.<br>
-它们满足 <span class="math inline">\(a^2 = b^2 + c^2\)</span>.</p>
+\]</span> 其中 <span class="math">\((0 &lt; |F_1F_2| = 2c &lt; 2a)\)</span>, <span class="math">\(E\)</span> 为椭圆.<br><span class="math">\(F_1\)</span>, <span class="math">\(F_2\)</span> 为椭圆的两个<strong>焦点</strong>(foci).<br>两焦点连线中点 <span class="math">\(C\)</span> 为椭圆的<strong>中心</strong>(center).</p>
+<p>穿过两焦点并终止于椭圆上的线段 <span class="math">\(AB\)</span> 为<strong>长轴</strong>(major axis)<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.<br>穿过中心垂直于长轴并终止于椭圆的线段 <span class="math">\(CD\)</span> 叫<strong>短轴</strong>(minor axis).</p>
+<p><strong>半长轴</strong> <span class="math">\(a\)</span> 为长轴的一半.<br><strong>半短轴</strong> <span class="math">\(b\)</span> 为短轴的一半.<br><strong>半焦距</strong> <span class="math">\(c\)</span> 为焦距的一半.<br>它们满足 <span class="math">\(a^2 = b^2 + c^2\)</span>.</p>
 <p>如果两个焦点重合, 这个椭圆就是圆.</p>
 <img src="/2017/09/06/ellipse/Ellipse-def-e.svg" alt="椭圆的定义 by Ag2gaeh, CC-BY-SA-4.0" title="椭圆的定义 by Ag2gaeh, CC-BY-SA-4.0">
+
 <h2 id="方程">方程</h2>
 <h3 id="圆锥曲线方程">圆锥曲线方程</h3>
-<p>椭圆是在笛卡尔平面上如下形式的方程所定义的曲线 <span class="math display">\[
+<p>椭圆是在笛卡尔平面上如下形式的方程所定义的曲线 <span class="math">\[
 Ax^2+Bx^2+Cxy+Dx+Ey+F=0
-\]</span> 其中 <span class="math inline">\(B^2 &lt; 4AC\)</span>, 这里的系数均为实数, 并存在定义在椭圆上的点对 (x, y) 的多于一个的解.</p>
-<p>当原点位于中心时, 方程可以写作 <span class="math display">\[
+\]</span> 其中 <span class="math">\(B^2 &lt; 4AC\)</span>, 这里的系数均为实数, 并存在定义在椭圆上的点对 (x, y) 的多于一个的解.</p>
+<p>当原点位于中心时, 方程可以写作 <span class="math">\[
 Ax^2+Bxy+Cy^2 = 1
 \]</span></p>
 <div class="spoiler collapsed"><div class="spoiler-title">懵逼时间</div><div class="spoiler-content">> 中心位于原点的椭圆 $Ax^{2}+Bxy+Cy^{2}=1$ 可以被看作单位圆在关联于对称矩阵 $$ A^{\prime }={\begin{bmatrix}A&B/2\\B/2&C\end{bmatrix} }  = PDP^{T} $$ 的线性映射下的图像，这里的 $D$ 是带有 $ A^{\prime } $ 的特征值的对角矩阵，二者沿着主对角线都是正实数的，而 $P$ 是拥有 $ A^{\prime } $ 的特征向量作为纵列的实数的酉矩阵。椭圆的长短轴分别沿着 $ A^{\prime } $ 的两个特征向量的方向，而两个与之对应的特征值分别是半长轴和半短轴的长度的平方的倒数。</div></div>
-<p>椭圆可以通过对一个圆的所有点的 <span class="math inline">\(x\)</span> 坐标乘以一个常数而不改变 <span class="math inline">\(y\)</span> 坐标来生成。</p>
+
+<p>椭圆可以通过对一个圆的所有点的 <span class="math">\(x\)</span> 坐标乘以一个常数而不改变 <span class="math">\(y\)</span> 坐标来生成。</p>
 <h3 id="标准方程">标准方程</h3>
-<p>对于这里的标准方程, 椭圆的中心均与原点 <span class="math inline">\((0, 0)\)</span> 重合.</p>
-<h4 id="焦点在-x-轴上时">焦点在 <span class="math inline">\(x\)</span> 轴上时</h4>
-<p>椭圆的标准方程为 <span class="math display">\[
+<p>对于这里的标准方程, 椭圆的中心均与原点 <span class="math">\((0, 0)\)</span> 重合.</p>
+<h4 id="焦点在-x-轴上时">焦点在 <span class="math">\(x\)</span> 轴上时</h4>
+<p>椭圆的标准方程为 <span class="math">\[
 \frac{x^2}{a^2}+\frac{y^2}{b^2} = 1\quad (a &gt; b &gt; 0)
-\]</span> 其中 <span class="math inline">\(-a \le x \le a\)</span>, <span class="math inline">\(-b \le y \le b\)</span>.</p>
+\]</span> 其中 <span class="math">\(-a \le x \le a\)</span>, <span class="math">\(-b \le y \le b\)</span>.</p>
 <div class="spoiler collapsed"><div class="spoiler-title">推导过程</div><div class="spoiler-content">
 假设动点为 $P(x, y)$, 两个定点 $F_1(-c, 0)$, $F_2(c, 0)$, 根据定义有
 $$
@@ -606,52 +603,77 @@ $$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$$
 
 该方程即为动点 $P$ 的轨迹方程, 也即椭圆的标准方程.
 </div></div>
-<h4 id="焦点在-y-轴上时">焦点在 <span class="math inline">\(y\)</span> 轴上时</h4>
-<p>椭圆的标准方程为 <span class="math display">\[
+
+<h4 id="焦点在-y-轴上时">焦点在 <span class="math">\(y\)</span> 轴上时</h4>
+<p>椭圆的标准方程为 <span class="math">\[
 \frac{y^2}{a^2}+\frac{x^2}{b^2} = 1\quad (a &gt; b &gt; 0)
-\]</span> 其中 <span class="math inline">\(-a \le y \le a\)</span>, <span class="math inline">\(-b \le x \le b\)</span>.</p>
+\]</span> 其中 <span class="math">\(-a \le y \le a\)</span>, <span class="math">\(-b \le x \le b\)</span>.</p>
 <h3 id="参数方程">参数方程</h3>
-<p>中心位于点 <span class="math inline">\((h, k)\)</span> 的长轴平行于 <span class="math inline">\(x\)</span> 轴的椭圆: <span class="math display">\[
+<p>中心位于点 <span class="math">\((h, k)\)</span> 的长轴平行于 <span class="math">\(x\)</span> 轴的椭圆: <span class="math">\[
 \left\{
     \begin{align}
         x &amp;= h + a \cos t \\
         y &amp;= k + b \sin t
     \end{align}
 \right.
-\]</span> 其中 <span class="math inline">\(t\)</span> 为参数且 <span class="math inline">\(t \in [-\pi, \pi]\)</span>.</p>
+\]</span> 其中 <span class="math">\(t\)</span> 为参数且 <span class="math">\(t \in [-\pi, \pi]\)</span>.</p>
 <blockquote>
-<p>长轴平行于 <span class="math inline">\(y\)</span> 轴的时候, 交换一下 <span class="math inline">\(a\)</span> 和 <span class="math inline">\(b\)</span> 就苟啦~</p>
+<p>长轴平行于 <span class="math">\(y\)</span> 轴的时候, 交换一下 <span class="math">\(a\)</span> 和 <span class="math">\(b\)</span> 就苟啦~</p>
 </blockquote>
 <h2 id="离心率">离心率</h2>
-<p>椭圆的形状可以用<strong>椭圆的离心率</strong>来表达, 高中大多数数学课本把它指示为 <span class="math inline">\(e\)</span>.<br>
-椭圆的离心率 <span class="math inline">\(e\)</span> 取值范围为 <span class="math inline">\((0,1)\)</span>. <span class="math inline">\(e = 1\)</span> 时, 椭圆的两个焦点重合, 也就是说这是个圆.</p>
-<p>对于有半长轴 <span class="math inline">\(a\)</span> 和半短轴 <span class="math inline">\(b\)</span> 的椭圆, 离心率 <span class="math display">\[
+<p>椭圆的形状可以用<strong>椭圆的离心率</strong>来表达, 高中大多数数学课本把它指示为 <span class="math">\(e\)</span>.<br>椭圆的离心率 <span class="math">\(e\)</span> 取值范围为 <span class="math">\((0,1)\)</span>. <span class="math">\(e = 1\)</span> 时, 椭圆的两个焦点重合, 也就是说这是个圆.</p>
+<p>对于有半长轴 <span class="math">\(a\)</span> 和半短轴 <span class="math">\(b\)</span> 的椭圆, 离心率 <span class="math">\[
 e = \frac{c}{a} = \sqrt{1 - \frac{b^2}{a^2} } 
 \]</span></p>
-<p>半焦距 <span class="math inline">\(c\)</span> 也叫椭圆的<strong>线性离心率</strong>.<br>
-两个焦点之间的距离 <span class="math inline">\(2c = 2ae\)</span>.</p>
+<p>半焦距 <span class="math">\(c\)</span> 也叫椭圆的<strong>线性离心率</strong>.<br>两个焦点之间的距离 <span class="math">\(2c = 2ae\)</span>.</p>
 <h1 id="拓展内容">拓展内容</h1>
 <h2 id="正焦弦与通径">正焦弦与通径</h2>
-<p>过椭圆的焦点, 作垂直于长轴的直线, 则直线被椭圆截得的线段叫做椭圆的<strong>正焦弦</strong>(latus rectum)或<strong>通径</strong>.<br>
-通径长度的一半叫<strong>半正焦弦</strong>(simi-latus rectum)或<strong>半通径</strong> <span class="math inline">\(p\)</span>. <span class="math display">\[p = \frac{b^2}{a}\]</span> 半正焦弦 <span class="math inline">\(p\)</span> 也被叫做椭圆在顶点 <span class="math inline">\((\pm a, 0)\)</span> 处密切圆(曲率圆)的曲率半径.<br>
-对于圆锥曲线来说, 其半通径也是最小曲率半径.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>过椭圆的焦点, 作垂直于长轴的直线, 则直线被椭圆截得的线段叫做椭圆的<strong>正焦弦</strong>(latus rectum)或<strong>通径</strong>.<br>通径长度的一半叫<strong>半正焦弦</strong>(simi-latus rectum)或<strong>半通径</strong> <span class="math">\(p\)</span>. <span class="math">\[p = \frac{b^2}{a}\]</span> 半正焦弦 <span class="math">\(p\)</span> 也被叫做椭圆在顶点 <span class="math">\((\pm a, 0)\)</span> 处密切圆(曲率圆)的曲率半径.<br>对于圆锥曲线来说, 其半通径也是最小曲率半径.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
 <h2 id="切线">切线</h2>
 <div class="spoiler collapsed"><div class="spoiler-title">懵逼时间</div><div class="spoiler-content">找出椭圆在点 $(x_0, y_0)$ 的切线的最简单方式是计算方程 $ \frac{x^2} {a^2}+\frac{y^2} {b^2} = 1 $ 的隐函数导数, 于是
 $${\frac {2x}{a^{2} } }+{\frac {2yy'}{b^{2} } }=0\ \rightarrow \ y'=-{\frac {x}{y} } {\frac {b^{2} } {a^{2} } }\ \rightarrow \ y=-{\frac {x_{0} } {y_{0} } }{\frac {b^{2} } {a^{2} } }(x-x_{0})+y_{0}.$$
 与 $ {\tfrac {x_{0}^{2} } {a^{2} } }+{\tfrac {y_{0}^{2} } {b^{2} } }=1 $ 联立, 得</div></div>
-<p>点 <span class="math inline">\((x_0, y_0)\)</span> 的切线方程为 <span class="math display">\[\frac{x_0}{a^2}x + \frac{y_0}{b^2}y = 1.\]</span></p>
-<p>通过向量方程来表述, 我们有 <span class="math display">\[{\vec {x}}={\begin{pmatrix}x_{0}\\y_{0}\end{pmatrix}}+s\;{\begin{pmatrix}-ay_{0}/b\\bx_{0}/a\end{pmatrix}}\quad {\text{其中}}\quad s\in \mathbb {R} \ .\]</span></p>
-<h2 id="第二定义">第二定义</h2>
+
+<p>点 <span class="math">\((x_0, y_0)\)</span> 的切线方程为 <span class="math">\[\frac{x_0}{a^2}x + \frac{y_0}{b^2}y = 1.\]</span></p>
+<p>通过向量方程来表述, 我们有 <span class="math">\[{\vec {x}}={\begin{pmatrix}x_{0}\\y_{0}\end{pmatrix}}+s\;{\begin{pmatrix}-ay_{0}/b\\bx_{0}/a\end{pmatrix}}\quad {\text{其中}}\quad s\in \mathbb {R} \ .\]</span></p>
+<h2 id="第二定义-圆锥曲线的统一定义">第二定义 (圆锥曲线的统一定义)</h2>
+<p>动点到一定点（焦点）的距离与其到一定直线（准线）的距离之比为常数（离心率<span class="math">\(e\)</span>）的点的集合是圆锥曲线。当 <span class="math">\(e &lt; 1\)</span> 得到椭圆<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>.</p>
+<p>对于椭圆和双曲线, 可以采用两种焦点 - 准线组合, 每个都给出同样完整的椭圆或双曲线. 从中心到焦点的距离是 <span class="math">\(ae = c\)</span>, 中心到准线的距离是 <span class="math">\(\frac{a}{e}=\frac{a^2}{c}\)</span>.<br>在圆的情况下, <span class="math">\(e = 0\)</span> 且假想为离中心无限远. 此时声称圆是由到 <span class="math">\(L\)</span> 的距离的 <span class="math">\(e\)</span> 倍的所有点组成是没有意义的. 圆锥曲线的离心率因此是对它<strong>偏离</strong>于圆的程度的度量。</p>
+<p>对于给定的 <span class="math">\(a\)</span>, <span class="math">\(e\)</span> 越小, 半短轴 <span class="math">\(b\)</span> 就越小.</p>
+<img src="/2017/09/06/ellipse/secdef.png" alt="椭圆的第二定义, 其中 $\frac{g}{n}=e$" title="椭圆的第二定义, 其中 $\frac{g}{n}=e$">
+
+<h1 id="各种性质">各种性质</h1>
+<h2 id="切线反射">切线反射</h2>
+<img src="/2017/09/06/ellipse/qxjj.gif" alt="Picture from matrix67" title="Picture from matrix67">
+
+<p>选取椭圆上任意一点 <span class="math">\(P\)</span>, 把它和两个焦点 <span class="math">\(A\)</span>, <span class="math">\(B\)</span> 相连, 则 <span class="math">\(PA\)</span> 和 <span class="math">\(PB\)</span> 与椭圆在 <span class="math">\(P\)</span> 点处的切线有相同的夹角. 换句话说, <span class="math">\(PA\)</span> 和 <span class="math">\(PB\)</span> 与法线的夹角相等, 即入射角等于反射角. 这样的话, 任意一条从A出发的光线, 经过椭圆壁的反射后总会经过另一个焦点B.</p>
+<blockquote>
+<p>假如有一个餐厅是椭圆形的，你的位置恰好位于椭圆的一个焦点上。这时你突然听到不知哪里传出的一男一女谈情说爱的声音，其肉麻程度不堪入耳，并且声音格外清晰。不用怕，这是因为那对男女正好坐在另一个焦点上，他们谈话的声音再小你也听得见，因为这些声音经过房间墙壁的反射后全汇聚到你这里来了。</p>
+<p>你可以用解析几何证明这一结论，不过其复杂程度令人望而生畏。这是我上学期做的最恶心的一道高数题。</p>
+<p><strong>matrix67</strong></p>
+</blockquote>
+<div class="spoiler collapsed"><div class="spoiler-title">证明 1 - 光学方法</div><div class="spoiler-content">
+<p>这个结论用 Fermat原理 (光总是沿所花时间最短的路径传播) 来解释十分简单.</p>
+<p>我们需要证明: 椭圆上一点 $P$ 与焦点 $A$, $B$ 的连线到过 $P$ 点的切线的夹角相等.<br>
+通过把 $P$ 点的切线做出来后, 我们一眼就可以看出来这个结论是正确的: 从点 $A$ 出发的光线经过切线后反射过 $B$, 反射点一定就是 $P$, 因为切线上处 $P$ 点以外的任意一点 $P^\prime$ 都在椭圆外, 折线 $A-P^\prime-B$ 都比 $A-P-B$ 长.</p></div></div>
+
+<div class="spoiler collapsed"><div class="spoiler-title">证明 2 - 力学方法</div><div class="spoiler-content">
+<img src="/2017/09/06/ellipse/qxjjp2.gif" alt="Picture from matrix67" title="Picture from matrix67">
+
+看上图，我们在两个焦点间连接一条长度为 $2a$ 的绳子，绳子上挂一个重物。注意到重物是挂在绳子上的，绳结处 $P$ 是可以活动的。显然，$P$ 点的轨迹形成了一个椭圆。重物有不断下落的趋势，此时重力势能转化为动能；当整个力学系统静止时，重力势能达到最小，因此最终绳结 $P$ 应该位于椭圆的最低点，该点处的切线正好是一条水平线。此时绳结P受到了三个力：重物M所产生的垂直向下的力，以及左右两边的绳子的拉力。由于物体保持平衡，两个拉力的合力必须竖直向上才行。但绳子内部的张力处处相等，两个方向上的拉力大小应该一样；如果它们的合力竖直向上，那么这两个力的方向与竖直方向的夹角必然相同。于是我们得到了和上面的讨论相同的结论：椭圆上的点与两焦点的连线到法线的夹角相等。</div></div>
+
 <h1 id="参考链接">参考链接</h1>
 <ul>
 <li>维基百科, 椭圆: <a href="https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86" target="_blank" rel="external">https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86</a></li>
-<li>韦培安, 关注圆锥曲线的“通径”: <a href="http://www2.chinaedu.com/101resource004/wenjianku/200338/101ktb/ztfd/F10S0501/F10S0501.htm" class="uri" target="_blank" rel="external">http://www2.chinaedu.com/101resource004/wenjianku/200338/101ktb/ztfd/F10S0501/F10S0501.htm</a></li>
+<li>韦培安, 关注圆锥曲线的“通径”: <a href="http://www2.chinaedu.com/101resource004/wenjianku/200338/101ktb/ztfd/F10S0501/F10S0501.htm" target="_blank" rel="external">http://www2.chinaedu.com/101resource004/wenjianku/200338/101ktb/ztfd/F10S0501/F10S0501.htm</a></li>
+<li>matrix67, 物理方法解决数学问题（五）：一个与椭圆有关的性质: <a href="http://www.matrix67.com/blog/archives/470" target="_blank" rel="external">http://www.matrix67.com/blog/archives/470</a></li>
 </ul>
 <div class="footnotes">
 <hr>
 <ol>
 <li id="fn1"><p>中文维基对长轴的定义是穿过两焦点并终止于椭圆上的<strong>线段</strong>, 而英文维基的定义是穿过两焦点的<strong>直线</strong>. 短轴同理<a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p>证明见<a href="https://www.zhihu.com/question/39877628" target="_blank" rel="external">怎么证明圆锥曲线的半通径是曲线的最小曲率半径？- 知乎</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><span class="math">\(e = 0\)</span> 时得到圆, <span class="math">\(e = 1\)</span> 时得到抛物线, <span class="math">\(e &gt; 1\)</span> 时得到双曲线<a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
@@ -739,8 +761,8 @@ $${\frac {2x}{a^{2} } }+{\frac {2yy'}{b^{2} } }=0\ \rightarrow \ y'=-{\frac {x}{
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-06T22:23:36+08:00">
-                2017-09-06
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -842,11 +864,10 @@ $${\frac {2x}{a^{2} } }+{\frac {2yy'}{b^{2} } }=0\ \rightarrow \ y'=-{\frac {x}{
       
         
           
-            <p>直线 <span class="math inline">\(l: Ax + By + C = 0\)</span>,<br>
-求 <span class="math inline">\(P(x_0, y_0)\)</span> 关于 <span class="math inline">\(l\)</span> 的对称点 <span class="math inline">\(P&#39;\)</span>.</p>
+            <p>直线 <span class="math">\(l: Ax + By + C = 0\)</span>,<br>求 <span class="math">\(P(x_0, y_0)\)</span> 关于 <span class="math">\(l\)</span> 的对称点 <span class="math">\(P&#39;\)</span>.</p>
 <h2 id="way1">方法一 经典方法</h2>
-<p>设 <span class="math inline">\(P&#39;(x, y)\)</span>. 求解方程组：</p>
-<p><span class="math display">\[
+<p>设 <span class="math">\(P&#39;(x, y)\)</span>. 求解方程组：</p>
+<p><span class="math">\[
 \left\{
 \begin{array}{}
 A\cdot\frac{x_0 + x}2 + B\cdot\frac{y_0+y}2 + C = 0 \\
@@ -855,7 +876,7 @@ A\cdot\frac{x_0 + x}2 + B\cdot\frac{y_0+y}2 + C = 0 \\
 \right.
 \]</span></p>
 <p>解得:</p>
-<p><span class="math display">\[
+<p><span class="math">\[
 \left\{
 \begin{array}{}
 x = \frac{-A^2x_0+B^2x_0-2ABy_0 - 2AC}{A^2+B^2} \\
@@ -865,35 +886,33 @@ y = \frac{A^2y_0-B^2y_0-2ABx_0 - 2BC}{A^2+B^2}
 \]</span></p>
 <h2 id="方法二-简化记忆">方法二 简化记忆</h2>
 <p>这种方法将以上公式做适当改进, 体现出数学的对称美, 而且有很明显的几何意义, 因而便于记忆和运用<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
-<p>将<a href="#way1">方法一</a>的 <span class="math inline">\(x = \frac{-A^2x_0+B^2x_0-2ABy_0 - 2AC}{A^2+B^2}\)</span> 变为 <span class="math display">\[
+<p>将<a href="#way1">方法一</a>的 <span class="math">\(x = \frac{-A^2x_0+B^2x_0-2ABy_0 - 2AC}{A^2+B^2}\)</span> 变为 <span class="math">\[
 \begin{align}
 x &amp;= \frac{\left(A^2+B^2\right)x_0 - 2A\left(Ax_0+By_0+C\right)}{A^2+B^2} \\
   &amp;= x_0 - \frac{2A\left(Ax_0+By_0+C\right)}{A^2+B^2} \\
   &amp;= x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot \frac{2\left(Ax_0+By_0+C\right)}{\sqrt{A^2+B^2}} \\
   &amp;= x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;
 \end{align}
-\]</span> (其中 <span class="math inline">\(d&#39; = \frac{Ax_0+By_0+C}{\sqrt{A^2+B^2}}\)</span> 的绝对值是点 <span class="math inline">\((x_0, y_0)\)</span> 到直线 <span class="math inline">\(l\)</span> 的距离) 同理 <span class="math display">\[
+\]</span> (其中 <span class="math">\(d&#39; = \frac{Ax_0+By_0+C}{\sqrt{A^2+B^2}}\)</span> 的绝对值是点 <span class="math">\((x_0, y_0)\)</span> 到直线 <span class="math">\(l\)</span> 的距离) 同理 <span class="math">\[
 y = y_0 - \frac{B}{\sqrt{A^2+B^2}} \cdot 2d&#39;
-\]</span> 于是, 点 <span class="math inline">\(P\)</span> 关于直线 <span class="math inline">\(l\)</span> 的对称点为 <span class="math display">\[
+\]</span> 于是, 点 <span class="math">\(P\)</span> 关于直线 <span class="math">\(l\)</span> 的对称点为 <span class="math">\[
 P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^2}} \cdot 2d&#39;)
 \]</span></p>
-<p>记 <span class="math inline">\(\vec{e}\)</span> 为直线 <span class="math inline">\(l: Ax+By+C=0\)</span> 的法向量 <span class="math inline">\((A, B)\)</span> 的单位向量, 则有 <span class="math display">\[
+<p>记 <span class="math">\(\vec{e}\)</span> 为直线 <span class="math">\(l: Ax+By+C=0\)</span> 的法向量 <span class="math">\((A, B)\)</span> 的单位向量, 则有 <span class="math">\[
 \vec{e} = \left(\frac{A}{\sqrt{A^2+B^2}}, \frac{B}{\sqrt{A^2+B^2}}\right) \\
 \begin{align}
 \vec{PP&#39;} &amp;= \left(- \frac{A}{\sqrt{A^2+B^2}}, - \frac{B}{\sqrt{A^2+B^2}} \cdot 2d&#39;\right) \\
           &amp;= 2\vec{e}
 \end{align}
-\]</span> 其中 <span class="math inline">\(\vec{PP&#39;}\)</span> 的几何意义为将 <span class="math inline">\(P\)</span> 点向垂直于直线 <span class="math inline">\(l\)</span> 并指向直线 <span class="math inline">\(l\)</span> 的方向移动该点到直线距离的两倍得到对称点 <span class="math inline">\(P&#39;\)</span>.</p>
+\]</span> 其中 <span class="math">\(\vec{PP&#39;}\)</span> 的几何意义为将 <span class="math">\(P\)</span> 点向垂直于直线 <span class="math">\(l\)</span> 并指向直线 <span class="math">\(l\)</span> 的方向移动该点到直线距离的两倍得到对称点 <span class="math">\(P&#39;\)</span>.</p>
 <h2 id="方法三-比利方程">方法三 比利方程</h2>
-<p>解这个方程<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>, 解出来的结果和上面一样. <span class="math display">\[
+<p>解这个方程<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>, 解出来的结果和上面一样. <span class="math">\[
 \frac{x-x_0}{A} = \frac{y-y_0}{B} = \frac{-2\left(Ax_0+By_0+C\right)}{A^2+B^2}
 \]</span></p>
 <h2 id="方法四-用的向量">方法四 用的向量</h2>
-<p>取直线 <span class="math inline">\(l: Ax+By+C=0\)</span> 的方向向量 <span class="math inline">\(vec{a} = (B, -A)\)</span><br>
-在直线上任取一点 <span class="math inline">\(A(x_1, y_1)\)</span><br>
-则 <span class="math display">\[
+<p>取直线 <span class="math">\(l: Ax+By+C=0\)</span> 的方向向量 <span class="math">\(vec{a} = (B, -A)\)</span><br>在直线上任取一点 <span class="math">\(A(x_1, y_1)\)</span><br>则 <span class="math">\[
 \vec{PP&#39;} = 2 \cdot \left( \frac{\vec{AP}\cdot\vec{a}}{\vec{a} \cdot \vec{a}} - \vec {AP} \right)
-\]</span> 可求出 <span class="math inline">\(P&#39;\)</span> 的坐标.</p>
+\]</span> 可求出 <span class="math">\(P&#39;\)</span> 的坐标.</p>
 <div class="footnotes">
 <hr>
 <ol>
@@ -986,8 +1005,8 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-11T00:04:24+08:00">
-                2017-09-11
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -1045,19 +1064,10 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
       
         
           <blockquote>
-<p>这是梦到的一些场景。<br>
-为了记录梦中的一切——语言不会多么优美。</p>
+<p>这是梦到的一些场景。<br>为了记录梦中的一切——语言不会多么优美。</p>
 </blockquote>
 <h1 id="section">1</h1>
-<p>那里白如纱一般，她睡的床浮在房子的正中央。<br>
-在房顶的边上有银色的金属轨道，通过它，电梯连接到每一间房子。<br>
-说是电梯，只是内部比较像而已。<br>
-每天，她按下墙壁上的白色按钮。<br>
-牵一发而动全身。<br>
-白色纱帘由远及近打开。<br>
-电梯摆动着移过来，同时逐渐向上升起。<br>
-床向电梯的方向靠拢。<br>
-电梯门缓缓打开，进入之后，就是下一个梦了。</p>
+<p>那里白如纱一般，她睡的床浮在房子的正中央。<br>在房顶的边上有银色的金属轨道，通过它，电梯连接到每一间房子。<br>说是电梯，只是内部比较像而已。<br>每天，她按下墙壁上的白色按钮。<br>牵一发而动全身。<br>白色纱帘由远及近打开。<br>电梯摆动着移过来，同时逐渐向上升起。<br>床向电梯的方向靠拢。<br>电梯门缓缓打开，进入之后，就是下一个梦了。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/08/28/dreams/#more" rel="contents">
@@ -1357,8 +1367,8 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -1437,12 +1447,11 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
 
       
         
-          <div class="note warning">
-<h2>不稳定的火星科技</h2>
+          <div class="note warning"><h2>不稳定的火星科技</h2>
 
-测试发现部分命令并不能正常执行，或许这是高端的火星科技？
-</div>
-<p>项目地址: <a href="https://github.com/oneget/oneget" class="uri" target="_blank" rel="external">https://github.com/oneget/oneget</a></p>
+测试发现部分命令并不能正常执行，或许这是高端的火星科技？</div>
+
+<p>项目地址: <a href="https://github.com/oneget/oneget" target="_blank" rel="external">https://github.com/oneget/oneget</a></p>
 <p>PackageManagement 可以用来在 Windows 系统上管理软件，无论是 <a href="http://chocolatey.org/" target="_blank" rel="external">chocolatey</a>，<a href="https://www.powershellgallery.com/" target="_blank" rel="external">PowerShellGet</a>……都可以用相同的 PackageManagement cmdlet 解决。</p>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1534,8 +1543,8 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -1705,8 +1714,8 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-28T20:37:52+08:00">
-                2017-08-28
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -1788,11 +1797,9 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
           
             <h2 id="语法规则">语法规则</h2>
 <h3 id="字符">字符</h3>
-<table style="width:76%;">
-<colgroup>
+<table>
 <col width="27%">
 <col width="48%">
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">语法</th>
@@ -1824,11 +1831,9 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
 </table>
 <h3 id="预定义字符集">预定义字符集</h3>
 <p>可以写在字符集<code>[…]</code>中</p>
-<table style="width:76%;">
-<colgroup>
+<table>
 <col width="26%">
 <col width="50%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td align="left"><code>\d</code></td>
@@ -1858,11 +1863,9 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
 </table>
 <h3 id="数量词">数量词</h3>
 <p>用在字符或<code>(…)</code>之后</p>
-<table style="width:76%;">
-<colgroup>
+<table>
 <col width="26%">
 <col width="50%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td align="left"><code>{m, n}</code></td>
@@ -1892,11 +1895,9 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
 </table>
 <h3 id="边界匹配">边界匹配</h3>
 <p>不消耗待匹配字符串中的字符.</p>
-<table style="width:76%;">
-<colgroup>
+<table>
 <col width="26%">
 <col width="50%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td align="left"><code>^</code></td>
@@ -1925,11 +1926,9 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
 </tbody>
 </table>
 <h3 id="逻辑与分组">逻辑与分组</h3>
-<table style="width:76%;">
-<colgroup>
+<table>
 <col width="26%">
 <col width="50%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td align="left"><code>|</code></td>
@@ -1955,11 +1954,9 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
 </table>
 <h3 id="特殊构造">特殊构造</h3>
 <p>特殊构造不分组.</p>
-<table style="width:76%;">
-<colgroup>
+<table>
 <col width="26%">
 <col width="50%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td align="left"><code>(?#…)</code></td>
@@ -1982,12 +1979,8 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
 <td align="center">字符串之前的内容不匹配<code>…</code></td>
 </tr>
 <tr class="even">
-<td align="left"><code>(?(&lt;id&gt;/&lt;name&gt;)</code><br>
-<code>yes-pattern</code><br>
-<code>|no-pattern)</code></td>
-<td align="center">如果<code>&lt;id&gt;/&lt;name&gt;</code>匹配成功,<br>
-则匹配 <code>yes-pattern</code>,<br>
-否则匹配 <code>no-pattern</code></td>
+<td align="left"><code>(?(&lt;id&gt;/&lt;name&gt;)</code><br><code>yes-pattern</code><br><code>|no-pattern)</code></td>
+<td align="center">如果<code>&lt;id&gt;/&lt;name&gt;</code>匹配成功,<br>则匹配 <code>yes-pattern</code>,<br>否则匹配 <code>no-pattern</code></td>
 </tr>
 </tbody>
 </table>
@@ -2076,8 +2069,8 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-04T00:04:14+08:00">
-                2017-09-04
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T23:05:14+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -2135,11 +2128,10 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
       
         
           
-            <div class="note warning">
-<h2>未完成的项目</h2>
+            <div class="note warning"><h2>未完成的项目</h2>
 
-该项目目前并未完成。
-</div>
+该项目目前并未完成。</div>
+
 <h2 id="哲学">哲学</h2>
 <blockquote>
 <p>一份Markdown格式的文件应该要能以纯文字形式直接发表，并且一眼看过去不存在任何标记用的标签或格式指令。</p>
@@ -2149,19 +2141,19 @@ P&#39;(x_0 - \frac{A}{\sqrt{A^2+B^2}} \cdot 2d&#39;, y_0 - \frac{B}{\sqrt{A^2+B^
 <p><strong><code>&gt;</code> 符号</strong>不一定要在该行最左边，但也不能缩进超过三个空白。</p>
 <p>可以只在引言区块的第一行行首输入 <code>&gt;</code>，后面的行首可以省略符号：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; 这是一个引言区块\</span></div><div class="line">这是它的第二行</div></pre></td></tr></table></figure>
+
 <p><em>效果：</em></p>
 <blockquote>
-<p>这是一个引言区块<br>
-这是它的第二行</p>
+<p>这是一个引言区块<br>这是它的第二行</p>
 </blockquote>
 <blockquote>
-<p><strong>注意</strong><br>
-Pandoc 需要在引言之前预留空白行。</p>
+<p><strong>注意</strong><br>Pandoc 需要在引言之前预留空白行。</p>
 </blockquote>
 <h2 id="代码">代码</h2>
 <h3 id="缩进代码区块">缩进代码区块</h3>
 <p>以四个空白缩进为开始的区块。</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">一</div><div class="line">个</div><div class="line">区</div><div class="line">块</div></pre></td></tr></table></figure>
+
 <p><em>效果：</em></p>
 <pre><code>一
 个
@@ -2170,32 +2162,25 @@ Pandoc 需要在引言之前预留空白行。</p>
 <h3 id="围栏代码区块">围栏代码区块</h3>
 <p>以三个以上 <code>~</code> 或 <code>`</code> 的一行作为开始，并以同一符号至少同样长度的一行作为结束。</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">~~~~~~</div><div class="line">FindingParadise</div><div class="line">~~~~~~</div></pre></td></tr></table></figure>
+
 <p><em>效果：</em></p>
 <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">FindingParadise</span></div></pre></td></tr></table></figure>
+
 <p>如果代码本身有一整行这种东西，你比它更长一点就好了。</p>
 <h4 id="附加属性">附加属性</h4>
-<p><code>#mycode</code> 为 ID.<br>
-<code>.tex</code> 和 <code>.numberLines</code> 为类别.<br>
-<code>startFrom=&quot;0&quot;</code> 为属性.</p>
+<p><code>#mycode</code> 为 ID.<br><code>.tex</code> 和 <code>.numberLines</code> 为类别.<br><code>startFrom=&quot;0&quot;</code> 为属性.</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">~~~~ &#123;#mycode .tex .numberLines startFrom="0"&#125;</div><div class="line"></div><div class="line">\usepackage&#123;ctexart&#125;</div><div class="line"></div><div class="line">\begin&#123;document&#125;</div><div class="line"><span class="code">    Finding Paradise.</span></div><div class="line">\end&#123;document&#125;</div><div class="line">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</div></pre></td></tr></table></figure>
+
 <p><em>效果：</em></p>
 <p><strong>不支持。</strong></p>
 <h3 id="行">行</h3>
 <p>行区块以 <code>|</code> 开头，行与行间的间隔在输出时将会以原样保留，行首空白同理。而这些行依然会以 Markdown 格式处理。</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">| Mitsuha, Yotsuha, do you know "Musubi"?</div><div class="line">|</div><div class="line">| Musubi?</div><div class="line">|</div><div class="line">| Musubi is the old way of calling the local guardian god.</div><div class="line">| This word has profound meaning.</div><div class="line">|     Tying thread is Musubi.</div><div class="line">|     Conneting people is Musubi.</div><div class="line">|     The flow of time is Musubi.</div><div class="line">|     They're all the god's power.</div><div class="line">| So the braided cords that we make are the god's art and represent the flow of time itself.</div><div class="line">| They converge and take shape.</div><div class="line">| They twist, tangle, sometimes unravel, break, then connect agagin.</div><div class="line">| Musubi - knotting. That's time.</div></pre></td></tr></table></figure>
+
 <p><em>效果：</em></p>
 <p>Mitsuha, Yotsuha, do you know “Musubi”?</p>
 <p>Musubi?</p>
-<p>Musubi is the old way of calling the local guardian god.<br>
-This word has profound meaning.<br>
-    Tying thread is Musubi.<br>
-    Conneting people is Musubi.<br>
-    The flow of time is Musubi.<br>
-    They’re all the god’s power.<br>
-So the braided cords that we make are the god’s art and represent the flow of time itself.<br>
-They converge and take shape.<br>
-They twist, tangle, sometimes unravel, break, then connect agagin.<br>
-Musubi - knotting. That’s time.</p>
+<p>Musubi is the old way of calling the local guardian god.<br>This word has profound meaning.<br>    Tying thread is Musubi.<br>    Conneting people is Musubi.<br>    The flow of time is Musubi.<br>    They’re all the god’s power.<br>So the braided cords that we make are the god’s art and represent the flow of time itself.<br>They converge and take shape.<br>They twist, tangle, sometimes unravel, break, then connect agagin.<br>Musubi - knotting. That’s time.</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
           
         
@@ -2292,7 +2277,7 @@ Musubi - knotting. That’s time.</p>
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
