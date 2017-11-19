@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +12,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -42,7 +34,7 @@
   
     
   
-  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css">
 
 
 
@@ -52,9 +44,9 @@
 
   
 
-<link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
@@ -72,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="Chocolatey,PowerShell," />
+  <meta name="keywords" content="Chocolatey,PowerShell,">
 
 
 
@@ -83,18 +75,18 @@
 
 
 
-<meta name="description" content="可用的火星科技  测试发现所有命令都可以正常执行，不过这是高端的火星科技。  Chocolatey 是 Windows 下的第三方包管理器。它没有 OneGet 强大，但用起来还是很方便的。 安装 先决条件  Windows 7 / Windows Server 2003 或更高 PowerShell v2 或更高 .">
+<meta name="description" content="&#x53EF;&#x7528;&#x7684;&#x706B;&#x661F;&#x79D1;&#x6280;   &#x6D4B;&#x8BD5;&#x53D1;&#x73B0;&#x6240;&#x6709;&#x547D;&#x4EE4;&#x90FD;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x662F;&#x9AD8;&#x7AEF;&#x7684;&#x706B;&#x661F;&#x79D1;&#x6280;&#x3002;  Chocolatey &#x662F; Windows &#x4E0B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7BA1;&#x7406;&#x5668;&#x3002; &#x5B83;&#x6CA1;&#x6709; OneGet &#x5F3A;&#x5927;&#xFF0C;&#x4F46;&#x7528;&#x8D77;&#x6765;&#x8FD8;&#x662F;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x3002;  &#x5B89;&#x88C5;   &#x5148;&#x51B3;&#x6761;&#x4EF6;   Windows 7 / Windows Server 2003 &#x6216;&#x66F4;&#x9AD8;  PowerShell v">
 <meta name="keywords" content="Chocolatey,PowerShell">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chocolatey: Windows 下的第三方包管理器">
+<meta property="og:title" content="Chocolatey: Windows &#x4E0B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7BA1;&#x7406;&#x5668;">
 <meta property="og:url" content="http://xa0082249956.tk/2017/08/05/choco-on-windows-10/index.html">
 <meta property="og:site_name" content="&gt;33&lt;">
-<meta property="og:description" content="可用的火星科技  测试发现所有命令都可以正常执行，不过这是高端的火星科技。  Chocolatey 是 Windows 下的第三方包管理器。它没有 OneGet 强大，但用起来还是很方便的。 安装 先决条件  Windows 7 / Windows Server 2003 或更高 PowerShell v2 或更高 .NET 4.x  当然，Linux 和 macOS 都不受支持。 注意，您可能需">
+<meta property="og:description" content="&#x53EF;&#x7528;&#x7684;&#x706B;&#x661F;&#x79D1;&#x6280;   &#x6D4B;&#x8BD5;&#x53D1;&#x73B0;&#x6240;&#x6709;&#x547D;&#x4EE4;&#x90FD;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x662F;&#x9AD8;&#x7AEF;&#x7684;&#x706B;&#x661F;&#x79D1;&#x6280;&#x3002;  Chocolatey &#x662F; Windows &#x4E0B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7BA1;&#x7406;&#x5668;&#x3002; &#x5B83;&#x6CA1;&#x6709; OneGet &#x5F3A;&#x5927;&#xFF0C;&#x4F46;&#x7528;&#x8D77;&#x6765;&#x8FD8;&#x662F;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x3002;  &#x5B89;&#x88C5;   &#x5148;&#x51B3;&#x6761;&#x4EF6;   Windows 7 / Windows Server 2003 &#x6216;&#x66F4;&#x9AD8;  PowerShell v2 &#x6216;&#x66F4;&#x9AD8;  .NET 4.x   &#x5F53;&#x7136;&#xFF0C;Linux &#x548C; macOS &#x90FD;&#x4E0D;&#x53D7;&#x652F;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-19T11:10:48.143Z">
+<meta property="og:updated_time" content="2017-11-19T14:09:11.248Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chocolatey: Windows 下的第三方包管理器">
-<meta name="twitter:description" content="可用的火星科技  测试发现所有命令都可以正常执行，不过这是高端的火星科技。  Chocolatey 是 Windows 下的第三方包管理器。它没有 OneGet 强大，但用起来还是很方便的。 安装 先决条件  Windows 7 / Windows Server 2003 或更高 PowerShell v2 或更高 .NET 4.x  当然，Linux 和 macOS 都不受支持。 注意，您可能需">
+<meta name="twitter:title" content="Chocolatey: Windows &#x4E0B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7BA1;&#x7406;&#x5668;">
+<meta name="twitter:description" content="&#x53EF;&#x7528;&#x7684;&#x706B;&#x661F;&#x79D1;&#x6280;   &#x6D4B;&#x8BD5;&#x53D1;&#x73B0;&#x6240;&#x6709;&#x547D;&#x4EE4;&#x90FD;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x662F;&#x9AD8;&#x7AEF;&#x7684;&#x706B;&#x661F;&#x79D1;&#x6280;&#x3002;  Chocolatey &#x662F; Windows &#x4E0B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7BA1;&#x7406;&#x5668;&#x3002; &#x5B83;&#x6CA1;&#x6709; OneGet &#x5F3A;&#x5927;&#xFF0C;&#x4F46;&#x7528;&#x8D77;&#x6765;&#x8FD8;&#x662F;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x3002;  &#x5B89;&#x88C5;   &#x5148;&#x51B3;&#x6761;&#x4EF6;   Windows 7 / Windows Server 2003 &#x6216;&#x66F4;&#x9AD8;  PowerShell v2 &#x6216;&#x66F4;&#x9AD8;  .NET 4.x   &#x5F53;&#x7136;&#xFF0C;Linux &#x548C; macOS &#x90FD;&#x4E0D;&#x53D7;&#x652F;">
 
 
 
@@ -124,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://xa0082249956.tk/2017/08/05/choco-on-windows-10/"/>
+  <link rel="canonical" href="http://xa0082249956.tk/2017/08/05/choco-on-windows-10/">
 
 
 
 
 
-  <title>Chocolatey: Windows 下的第三方包管理器 | >33<</title>
+  <title>Chocolatey: Windows &#x4E0B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7BA1;&#x7406;&#x5668; | &gt;33&lt;</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -142,25 +134,25 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">>33<</span>
+        <span class="site-title">&gt;33&lt;</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -188,9 +180,9 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            关于
+            &#x5173;&#x4E8E;
           </a>
         </li>
       
@@ -198,9 +190,9 @@
         <li class="menu-item menu-item-quicknote">
           <a href="/quicknote/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br>
             
-            快速笔记
+            &#x5FEB;&#x901F;&#x7B14;&#x8BB0;
           </a>
         </li>
       
@@ -232,21 +224,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://xa0082249956.tk/2017/08/05/choco-on-windows-10/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xa0082249956">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content=">33<">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="&gt;33&lt;">
     </span>
 
     
@@ -254,7 +246,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Chocolatey: Windows 下的第三方包管理器</h1>
+          <h1 class="post-title" itemprop="name headline">Chocolatey: Windows &#x4E0B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7BA1;&#x7406;&#x5668;</h1>
         
 
         <div class="post-meta">
@@ -268,16 +260,16 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-19T19:10:48+08:00">
+              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2017-11-19T22:09:11+08:00">
                 2017-11-19
               </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -285,10 +277,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">&#x5206;&#x7C7B;&#x4E8E;</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/windows/" itemprop="url" rel="index">
                     <span itemprop="name">Windows</span>
                   </a>
@@ -318,13 +310,13 @@
 
           
           
-             <span id="/2017/08/05/choco-on-windows-10/" class="leancloud_visitors" data-flag-title="Chocolatey: Windows 下的第三方包管理器">
+             <span id="/2017/08/05/choco-on-windows-10/" class="leancloud_visitors" data-flag-title="Chocolatey: Windows &#x4E0B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7BA1;&#x7406;&#x5668;">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -349,41 +341,41 @@
       
 
       
-        <div class="note success"><h2>可用的火星科技</h2>
+        <div class="note success"><h2> &#x53EF;&#x7528;&#x7684;&#x706B;&#x661F;&#x79D1;&#x6280; </h2>
 
-测试发现所有命令都可以正常执行，不过这是高端的火星科技。</div>
+&#x6D4B;&#x8BD5;&#x53D1;&#x73B0;&#x6240;&#x6709;&#x547D;&#x4EE4;&#x90FD;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x662F;&#x9AD8;&#x7AEF;&#x7684;&#x706B;&#x661F;&#x79D1;&#x6280;&#x3002;</div>
 
-<p>Chocolatey 是 Windows 下的第三方包管理器。<br>它没有 OneGet 强大，但用起来还是很方便的。</p>
-<h2 id="安装">安装</h2>
-<h3 id="先决条件">先决条件</h3>
+<p>Chocolatey &#x662F; Windows &#x4E0B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7BA1;&#x7406;&#x5668;&#x3002;<br> &#x5B83;&#x6CA1;&#x6709; OneGet &#x5F3A;&#x5927;&#xFF0C;&#x4F46;&#x7528;&#x8D77;&#x6765;&#x8FD8;&#x662F;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x3002;</p>
+<h2 id="&#x5B89;&#x88C5;"> &#x5B89;&#x88C5; </h2>
+<h3 id="&#x5148;&#x51B3;&#x6761;&#x4EF6;"> &#x5148;&#x51B3;&#x6761;&#x4EF6; </h3>
 <ul>
-<li>Windows 7 / Windows Server 2003 或更高</li>
-<li>PowerShell v2 或更高</li>
+<li>Windows 7 / Windows Server 2003 &#x6216;&#x66F4;&#x9AD8; </li>
+<li>PowerShell v2 &#x6216;&#x66F4;&#x9AD8; </li>
 <li>.NET 4.x</li>
 </ul>
-<p>当然，Linux 和 macOS 都不受支持。 注意，您可能需要管理员权限才能更好地进行下面的步骤。</p>
-<h2 id="开始">开始</h2>
-<p>对于 CMD 执行： <figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@"<span class="variable">%SystemRoot%</span>\System32\WindowsPowerShell\v1.<span class="number">0</span>\powershell.exe" -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.<span class="built_in">Net</span>.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; <span class="built_in">SET</span> "<span class="built_in">PATH</span>=<span class="variable">%PATH%</span>;<span class="variable">%ALLUSERSPROFILE%</span>\chocolatey\bin"</span><br></pre></td></tr></table></figure></p>
-<p>对于 POWERSHELL 执行 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ((<span class="built_in">Get-ExecutionPolicy</span>) <span class="nomarkup">-eq</span> <span class="string">'Restricted'</span>)&#123;</span><br><span class="line">    <span class="built_in">Set-ExecutionPolicy</span> Bypass</span><br><span class="line">    <span class="comment"># Or Set-ExecutionPolicy AllSigned</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># Don't forget to ensure ExecutionPolicy above</span></span><br><span class="line">iex ((<span class="built_in">New-Object</span> System.Net.WebClient).DownloadString(<span class="string">'https://chocolatey.org/install.ps1'</span>))</span><br></pre></td></tr></table></figure></p>
-<h2 id="尝试">尝试</h2>
-<h3 id="搜索或列出软件">搜索或列出软件</h3>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco list</span><br></pre></td></tr></table></figure>
+<p> &#x5F53;&#x7136;&#xFF0C;Linux &#x548C; macOS &#x90FD;&#x4E0D;&#x53D7;&#x652F;&#x6301;&#x3002; &#x6CE8;&#x610F;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x624D;&#x80FD;&#x66F4;&#x597D;&#x5730;&#x8FDB;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x6B65;&#x9AA4;&#x3002;</p>
+<h2 id="&#x5F00;&#x59CB;"> &#x5F00;&#x59CB; </h2>
+<p> &#x5BF9;&#x4E8E; CMD &#x6267;&#x884C;&#xFF1A; </p><figure class="highlight bat"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@&quot;<span class="variable">%SystemRoot%</span>\System32\WindowsPowerShell\v1.<span class="number">0</span>\powershell.exe&quot; -NoProfile -ExecutionPolicy Bypass -Command &quot;iex ((New-Object System.<span class="built_in">Net</span>.WebClient).DownloadString(&apos;https://chocolatey.org/install.ps1&apos;))&quot; &amp;&amp; <span class="built_in">SET</span> &quot;<span class="built_in">PATH</span>=<span class="variable">%PATH%</span>;<span class="variable">%ALLUSERSPROFILE%</span>\chocolatey\bin&quot;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p> &#x5BF9;&#x4E8E; POWERSHELL &#x6267;&#x884C; </p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ((<span class="built_in">Get-ExecutionPolicy</span>) <span class="nomarkup">-eq</span> <span class="string">&apos;Restricted&apos;</span>){</span><br><span class="line">    <span class="built_in">Set-ExecutionPolicy</span> Bypass</span><br><span class="line">    <span class="comment"># Or Set-ExecutionPolicy AllSigned</span></span><br><span class="line">}</span><br><span class="line"><span class="comment"># Don&apos;t forget to ensure ExecutionPolicy above</span></span><br><span class="line">iex ((<span class="built_in">New-Object</span> System.Net.WebClient).DownloadString(<span class="string">&apos;https://chocolatey.org/install.ps1&apos;</span>))</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="&#x5C1D;&#x8BD5;"> &#x5C1D;&#x8BD5; </h2>
+<h3 id="&#x641C;&#x7D22;&#x6216;&#x5217;&#x51FA;&#x8F6F;&#x4EF6;"> &#x641C;&#x7D22;&#x6216;&#x5217;&#x51FA;&#x8F6F;&#x4EF6; </h3>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco list</span><br></pre></td></tr></tbody></table></figure>
 
-<h3 id="安装软件">安装软件</h3>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco install wox</span><br></pre></td></tr></table></figure>
+<h3 id="&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;"> &#x5B89;&#x88C5;&#x8F6F;&#x4EF6; </h3>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco install wox</span><br></pre></td></tr></tbody></table></figure>
 
-<h3 id="更新软件">更新软件</h3>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco update wox</span><br></pre></td></tr></table></figure>
+<h3 id="&#x66F4;&#x65B0;&#x8F6F;&#x4EF6;"> &#x66F4;&#x65B0;&#x8F6F;&#x4EF6; </h3>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco update wox</span><br></pre></td></tr></tbody></table></figure>
 
-<h4 id="更新全部软件">更新全部软件</h4>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco update all</span><br></pre></td></tr></table></figure>
+<h4 id="&#x66F4;&#x65B0;&#x5168;&#x90E8;&#x8F6F;&#x4EF6;"> &#x66F4;&#x65B0;&#x5168;&#x90E8;&#x8F6F;&#x4EF6; </h4>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco update all</span><br></pre></td></tr></tbody></table></figure>
 
-<h3 id="卸载软件">卸载软件</h3>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco uninstall wox</span><br></pre></td></tr></table></figure>
+<h3 id="&#x5378;&#x8F7D;&#x8F6F;&#x4EF6;"> &#x5378;&#x8F7D;&#x8F6F;&#x4EF6; </h3>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco uninstall wox</span><br></pre></td></tr></tbody></table></figure>
 
-<h3 id="更多命令">更多命令</h3>
-<p>输入 <code>choco</code> 后按 <code>tab</code> 即可搜索命令。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<h3 id="&#x66F4;&#x591A;&#x547D;&#x4EE4;"> &#x66F4;&#x591A;&#x547D;&#x4EE4; </h3>
+<p> &#x8F93;&#x5165; <code>choco</code> &#x540E;&#x6309; <code>tab</code> &#x5373;&#x53EF;&#x641C;&#x7D22;&#x547D;&#x4EE4;&#x3002;</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css">
       
     </div>
     
@@ -415,8 +407,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/04/oneget-on-windows-10/" rel="next" title="PackageManagement: Windows 的包管理器?">
-                <i class="fa fa-chevron-left"></i> PackageManagement: Windows 的包管理器?
+              <a href="/2017/08/04/oneget-on-windows-10/" rel="next" title="PackageManagement: Windows &#x7684;&#x5305;&#x7BA1;&#x7406;&#x5668;?">
+                <i class="fa fa-chevron-left"></i> PackageManagement: Windows &#x7684;&#x5305;&#x7BA1;&#x7406;&#x5668;?
               </a>
             
           </div>
@@ -425,8 +417,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/18/thu-english/" rel="prev" title="这很清华英语">
-                这很清华英语 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/18/thu-english/" rel="prev" title="&#x8FD9;&#x5F88;&#x6E05;&#x534E;&#x82F1;&#x8BED;">
+                &#x8FD9;&#x5F88;&#x6E05;&#x534E;&#x82F1;&#x8BED; <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -486,17 +478,17 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
+            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
+            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
           </li>
         </ul>
       
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">xa0082249956</p>
               <p class="site-description motion-element" itemprop="description">Finding Paradise.</p>
@@ -510,7 +502,7 @@
                 <a href="/archives">
               
                   <span class="site-state-item-count">27</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
                 </a>
               </div>
             
@@ -521,7 +513,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">分类</span>
+                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
                 </a>
               </div>
             
@@ -532,7 +524,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">13</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
                 </a>
               </div>
             
@@ -566,7 +558,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">可用的火星科技</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先决条件"><span class="nav-number">2.1.</span> <span class="nav-text">先决条件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">3.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尝试"><span class="nav-number">4.</span> <span class="nav-text">尝试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索或列出软件"><span class="nav-number">4.1.</span> <span class="nav-text">搜索或列出软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装软件"><span class="nav-number">4.2.</span> <span class="nav-text">安装软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新软件"><span class="nav-number">4.3.</span> <span class="nav-text">更新软件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#更新全部软件"><span class="nav-number">4.3.1.</span> <span class="nav-text">更新全部软件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卸载软件"><span class="nav-number">4.4.</span> <span class="nav-text">卸载软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多命令"><span class="nav-number">4.5.</span> <span class="nav-text">更多命令</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text"> &#x53EF;&#x7528;&#x7684;&#x706B;&#x661F;&#x79D1;&#x6280; </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#&#x5B89;&#x88C5;"><span class="nav-number">2.</span> <span class="nav-text"> &#x5B89;&#x88C5; </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x5148;&#x51B3;&#x6761;&#x4EF6;"><span class="nav-number">2.1.</span> <span class="nav-text"> &#x5148;&#x51B3;&#x6761;&#x4EF6; </span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#&#x5F00;&#x59CB;"><span class="nav-number">3.</span> <span class="nav-text"> &#x5F00;&#x59CB; </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#&#x5C1D;&#x8BD5;"><span class="nav-number">4.</span> <span class="nav-text"> &#x5C1D;&#x8BD5; </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x641C;&#x7D22;&#x6216;&#x5217;&#x51FA;&#x8F6F;&#x4EF6;"><span class="nav-number">4.1.</span> <span class="nav-text"> &#x641C;&#x7D22;&#x6216;&#x5217;&#x51FA;&#x8F6F;&#x4EF6; </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;"><span class="nav-number">4.2.</span> <span class="nav-text"> &#x5B89;&#x88C5;&#x8F6F;&#x4EF6; </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x66F4;&#x65B0;&#x8F6F;&#x4EF6;"><span class="nav-number">4.3.</span> <span class="nav-text"> &#x66F4;&#x65B0;&#x8F6F;&#x4EF6; </span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#&#x66F4;&#x65B0;&#x5168;&#x90E8;&#x8F6F;&#x4EF6;"><span class="nav-number">4.3.1.</span> <span class="nav-text"> &#x66F4;&#x65B0;&#x5168;&#x90E8;&#x8F6F;&#x4EF6; </span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x5378;&#x8F7D;&#x8F6F;&#x4EF6;"><span class="nav-number">4.4.</span> <span class="nav-text"> &#x5378;&#x8F7D;&#x8F6F;&#x4EF6; </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x66F4;&#x591A;&#x547D;&#x4EE4;"><span class="nav-number">4.5.</span> <span class="nav-text"> &#x66F4;&#x591A;&#x547D;&#x4EE4; </span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -593,7 +585,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -603,7 +595,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">&#x7531; <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> &#x5F3A;&#x529B;&#x9A71;&#x52A8;</div>
 
 
 
@@ -611,7 +603,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+  <div class="theme-info">&#x4E3B;&#x9898; &#x2014; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
 
 
 
@@ -697,9 +689,9 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+  
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+  
 
 
 
@@ -707,22 +699,22 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
-
-
-
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
-
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+  
+  
+
+
+
+
+  
+
+
+  
 
 
 
@@ -915,7 +907,7 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -923,5 +915,6 @@
 
   
 
-</body>
-</html>
+
+
+<script type="text/javascript" src="/js/bundle.js"></script></body></html>

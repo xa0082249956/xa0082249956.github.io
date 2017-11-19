@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +12,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -42,7 +34,7 @@
   
     
   
-  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css">
 
 
 
@@ -52,9 +44,9 @@
 
   
 
-<link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
@@ -72,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="regex," />
+  <meta name="keywords" content="regex,">
 
 
 
@@ -83,18 +75,18 @@
 
 
 
-<meta name="description" content="语法规则 字符      语法 说明     \ 转义   . 除\n以外的任意字符   […] 字符集…中的任意一个字符   [a-c] a-c中的任意一个字符   [^…] 除字符集…外的任意字符    预定义字符集 可以写在字符集[…]中      \d [0-9]   \D [^\d]   \s [\t\r\n">
+<meta name="description" content="&#x8BED;&#x6CD5;&#x89C4;&#x5219; &#x5B57;&#x7B26;      &#x8BED;&#x6CD5; &#x8BF4;&#x660E;     \ &#x8F6C;&#x4E49;   . &#x9664; \n &#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;   [&#x2026;] &#x5B57;&#x7B26;&#x96C6; &#x2026; &#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;   [a-c] a-c&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;   [^&#x2026;] &#x9664;&#x5B57;&#x7B26;&#x96C6; &#x2026; &#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;    &#x9884;&#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x96C6; &#x53EF;&#x4EE5;&#x5199;&#x5728;&#x5B57;&#x7B26;&#x96C6; [&#x2026;] &#x4E2D;      \d [0-9]   \D [^\d]   \s">
 <meta name="keywords" content="regex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正则表达式基础">
+<meta property="og:title" content="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x57FA;&#x7840;">
 <meta property="og:url" content="http://xa0082249956.tk/2017/07/30/regular-expression-get-started/index.html">
 <meta property="og:site_name" content="&gt;33&lt;">
-<meta property="og:description" content="语法规则 字符      语法 说明     \ 转义   . 除\n以外的任意字符   […] 字符集…中的任意一个字符   [a-c] a-c中的任意一个字符   [^…] 除字符集…外的任意字符    预定义字符集 可以写在字符集[…]中      \d [0-9]   \D [^\d]   \s [\t\r\n\f\v]   \S [^\S]   \w [a-zA-Z0-9]   \W [">
+<meta property="og:description" content="&#x8BED;&#x6CD5;&#x89C4;&#x5219; &#x5B57;&#x7B26;      &#x8BED;&#x6CD5; &#x8BF4;&#x660E;     \ &#x8F6C;&#x4E49;   . &#x9664; \n &#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;   [&#x2026;] &#x5B57;&#x7B26;&#x96C6; &#x2026; &#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;   [a-c] a-c&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;   [^&#x2026;] &#x9664;&#x5B57;&#x7B26;&#x96C6; &#x2026; &#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;    &#x9884;&#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x96C6; &#x53EF;&#x4EE5;&#x5199;&#x5728;&#x5B57;&#x7B26;&#x96C6; [&#x2026;] &#x4E2D;      \d [0-9]   \D [^\d]   \s [\t\r\n\f\v]   \S [^\S]   \w [a-zA-Z0-9">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-19T11:10:48.143Z">
+<meta property="og:updated_time" content="2017-11-19T14:09:11.248Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="正则表达式基础">
-<meta name="twitter:description" content="语法规则 字符      语法 说明     \ 转义   . 除\n以外的任意字符   […] 字符集…中的任意一个字符   [a-c] a-c中的任意一个字符   [^…] 除字符集…外的任意字符    预定义字符集 可以写在字符集[…]中      \d [0-9]   \D [^\d]   \s [\t\r\n\f\v]   \S [^\S]   \w [a-zA-Z0-9]   \W [">
+<meta name="twitter:title" content="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x57FA;&#x7840;">
+<meta name="twitter:description" content="&#x8BED;&#x6CD5;&#x89C4;&#x5219; &#x5B57;&#x7B26;      &#x8BED;&#x6CD5; &#x8BF4;&#x660E;     \ &#x8F6C;&#x4E49;   . &#x9664; \n &#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;   [&#x2026;] &#x5B57;&#x7B26;&#x96C6; &#x2026; &#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;   [a-c] a-c&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;   [^&#x2026;] &#x9664;&#x5B57;&#x7B26;&#x96C6; &#x2026; &#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;    &#x9884;&#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x96C6; &#x53EF;&#x4EE5;&#x5199;&#x5728;&#x5B57;&#x7B26;&#x96C6; [&#x2026;] &#x4E2D;      \d [0-9]   \D [^\d]   \s [\t\r\n\f\v]   \S [^\S]   \w [a-zA-Z0-9">
 
 
 
@@ -124,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://xa0082249956.tk/2017/07/30/regular-expression-get-started/"/>
+  <link rel="canonical" href="http://xa0082249956.tk/2017/07/30/regular-expression-get-started/">
 
 
 
 
 
-  <title>正则表达式基础 | >33<</title>
+  <title>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x57FA;&#x7840; | &gt;33&lt;</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -142,25 +134,25 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">>33<</span>
+        <span class="site-title">&gt;33&lt;</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -188,9 +180,9 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            关于
+            &#x5173;&#x4E8E;
           </a>
         </li>
       
@@ -198,9 +190,9 @@
         <li class="menu-item menu-item-quicknote">
           <a href="/quicknote/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br>
             
-            快速笔记
+            &#x5FEB;&#x901F;&#x7B14;&#x8BB0;
           </a>
         </li>
       
@@ -232,21 +224,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://xa0082249956.tk/2017/07/30/regular-expression-get-started/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xa0082249956">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content=">33<">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="&gt;33&lt;">
     </span>
 
     
@@ -254,7 +246,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">正则表达式基础</h1>
+          <h1 class="post-title" itemprop="name headline">&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x57FA;&#x7840;</h1>
         
 
         <div class="post-meta">
@@ -268,16 +260,16 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-19T19:10:48+08:00">
+              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2017-11-19T22:09:11+08:00">
                 2017-11-19
               </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -285,10 +277,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">&#x5206;&#x7C7B;&#x4E8E;</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/coding/" itemprop="url" rel="index">
                     <span itemprop="name">coding</span>
                   </a>
@@ -318,13 +310,13 @@
 
           
           
-             <span id="/2017/07/30/regular-expression-get-started/" class="leancloud_visitors" data-flag-title="正则表达式基础">
+             <span id="/2017/07/30/regular-expression-get-started/" class="leancloud_visitors" data-flag-title="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x57FA;&#x7840;">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -349,46 +341,46 @@
       
 
       
-        <h2 id="语法规则">语法规则</h2>
-<h3 id="字符">字符</h3>
+        <h2 id="&#x8BED;&#x6CD5;&#x89C4;&#x5219;">&#x8BED;&#x6CD5;&#x89C4;&#x5219;</h2>
+<h3 id="&#x5B57;&#x7B26;">&#x5B57;&#x7B26;</h3>
 <table>
-<col width="27%">
+<colgroup><col width="27%">
 <col width="48%">
-<thead>
+</colgroup><thead>
 <tr class="header">
-<th align="left">语法</th>
-<th align="left">说明</th>
+<th align="left">&#x8BED;&#x6CD5;</th>
+<th align="left">&#x8BF4;&#x660E;</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><code>\</code></td>
-<td align="left">转义</td>
+<td align="left">&#x8F6C;&#x4E49;</td>
 </tr>
 <tr class="even">
 <td align="left"><code>.</code></td>
-<td align="left">除<code>\n</code>以外的任意字符</td>
+<td align="left">&#x9664; <code>\n</code> &#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>[…]</code></td>
-<td align="left">字符集<code>…</code>中的任意一个字符</td>
+<td align="left"><code>[&#x2026;]</code></td>
+<td align="left">&#x5B57;&#x7B26;&#x96C6; <code>&#x2026;</code> &#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</td>
 </tr>
 <tr class="even">
 <td align="left"><code>[a-c]</code></td>
-<td align="left"><code>a</code>-<code>c</code>中的任意一个字符</td>
+<td align="left"><code>a</code>-<code>c</code>&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>[^…]</code></td>
-<td align="left">除字符集<code>…</code>外的任意字符</td>
+<td align="left"><code>[^&#x2026;]</code></td>
+<td align="left">&#x9664;&#x5B57;&#x7B26;&#x96C6; <code>&#x2026;</code> &#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;</td>
 </tr>
 </tbody>
 </table>
-<h3 id="预定义字符集">预定义字符集</h3>
-<p>可以写在字符集<code>[…]</code>中</p>
+<h3 id="&#x9884;&#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x96C6;">&#x9884;&#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x96C6;</h3>
+<p>&#x53EF;&#x4EE5;&#x5199;&#x5728;&#x5B57;&#x7B26;&#x96C6; <code>[&#x2026;]</code> &#x4E2D;</p>
 <table>
-<col width="26%">
+<colgroup><col width="26%">
 <col width="50%">
-<tbody>
+</colgroup><tbody>
 <tr class="odd">
 <td align="left"><code>\d</code></td>
 <td align="center"><code>[0-9]</code></td>
@@ -399,7 +391,7 @@
 </tr>
 <tr class="odd">
 <td align="left"><code>\s</code></td>
-<td align="center"><code>[</code><空格><code>\t\r\n\f\v]</code></空格></td>
+<td align="center"><code>[</code>&lt;&#x7A7A;&#x683C;&gt;<code>\t\r\n\f\v]</code><!-- 空格--></td>
 </tr>
 <tr class="even">
 <td align="left"><code>\S</code></td>
@@ -415,15 +407,15 @@
 </tr>
 </tbody>
 </table>
-<h3 id="数量词">数量词</h3>
-<p>用在字符或<code>(…)</code>之后</p>
+<h3 id="&#x6570;&#x91CF;&#x8BCD;">&#x6570;&#x91CF;&#x8BCD;</h3>
+<p>&#x7528;&#x5728;&#x5B57;&#x7B26;&#x6216; <code>(&#x2026;)</code> &#x4E4B;&#x540E;</p>
 <table>
-<col width="26%">
+<colgroup><col width="26%">
 <col width="50%">
-<tbody>
+</colgroup><tbody>
 <tr class="odd">
 <td align="left"><code>{m, n}</code></td>
-<td align="center">前一个字符 <code>m</code> - <code>n</code> 次</td>
+<td align="center">&#x524D;&#x4E00;&#x4E2A;&#x5B57;&#x7B26; <code>m</code> - <code>n</code> &#x6B21;</td>
 </tr>
 <tr class="even">
 <td align="left"><code>{m}</code></td>
@@ -443,35 +435,35 @@
 </tr>
 <tr class="even">
 <td align="left"><code>{m, n}?</code></td>
-<td align="center">非贪婪模式</td>
+<td align="center">&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;</td>
 </tr>
 </tbody>
 </table>
-<h3 id="边界匹配">边界匹配</h3>
-<p>不消耗待匹配字符串中的字符.</p>
+<h3 id="&#x8FB9;&#x754C;&#x5339;&#x914D;">&#x8FB9;&#x754C;&#x5339;&#x914D;</h3>
+<p>&#x4E0D;&#x6D88;&#x8017;&#x5F85;&#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x7B26;.</p>
 <table>
-<col width="26%">
+<colgroup><col width="26%">
 <col width="50%">
-<tbody>
+</colgroup><tbody>
 <tr class="odd">
 <td align="left"><code>^</code></td>
-<td align="center">字符串开头 在多行模式中匹配每一行的开头</td>
+<td align="center">&#x5B57;&#x7B26;&#x4E32;&#x5F00;&#x5934; &#x5728;&#x591A;&#x884C;&#x6A21;&#x5F0F;&#x4E2D;&#x5339;&#x914D;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x5F00;&#x5934;</td>
 </tr>
 <tr class="even">
 <td align="left"><code>$</code></td>
-<td align="center">字符串末尾 在多行模式中匹配每一行的末尾</td>
+<td align="center">&#x5B57;&#x7B26;&#x4E32;&#x672B;&#x5C3E; &#x5728;&#x591A;&#x884C;&#x6A21;&#x5F0F;&#x4E2D;&#x5339;&#x914D;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x672B;&#x5C3E;</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>\A</code></td>
-<td align="center">仅字符串开头</td>
+<td align="center">&#x4EC5;&#x5B57;&#x7B26;&#x4E32;&#x5F00;&#x5934;</td>
 </tr>
 <tr class="even">
 <td align="left"><code>\B</code></td>
-<td align="center">仅字符串末尾</td>
+<td align="center">&#x4EC5;&#x5B57;&#x7B26;&#x4E32;&#x672B;&#x5C3E;</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>\b</code></td>
-<td align="center"><code>\w</code>与<code>\W</code>之间</td>
+<td align="center"><code>\w</code>&#x4E0E; <code>\W</code> &#x4E4B;&#x95F4;</td>
 </tr>
 <tr class="even">
 <td align="left"><code>\B</code></td>
@@ -479,66 +471,66 @@
 </tr>
 </tbody>
 </table>
-<h3 id="逻辑与分组">逻辑与分组</h3>
+<h3 id="&#x903B;&#x8F91;&#x4E0E;&#x5206;&#x7EC4;">&#x903B;&#x8F91;&#x4E0E;&#x5206;&#x7EC4;</h3>
 <table>
-<col width="26%">
+<colgroup><col width="26%">
 <col width="50%">
-<tbody>
+</colgroup><tbody>
 <tr class="odd">
 <td align="left"><code>|</code></td>
-<td align="center">左右表达式任意一个，先左后右</td>
+<td align="center">&#x5DE6;&#x53F3;&#x8868;&#x8FBE;&#x5F0F;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#xFF0C;&#x5148;&#x5DE6;&#x540E;&#x53F3;</td>
 </tr>
 <tr class="even">
-<td align="left"><code>(…)</code></td>
-<td align="center">分组，编号1, 2, 3……</td>
+<td align="left"><code>(&#x2026;)</code></td>
+<td align="center">&#x5206;&#x7EC4;&#xFF0C;&#x7F16;&#x53F7; 1, 2, 3&#x2026;&#x2026;</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>(?P&lt;name&gt;...)</code></td>
-<td align="center">分组，除原有编号外指定组名<code>&lt;name&gt;</code></td>
+<td align="center">&#x5206;&#x7EC4;&#xFF0C;&#x9664;&#x539F;&#x6709;&#x7F16;&#x53F7;&#x5916;&#x6307;&#x5B9A;&#x7EC4;&#x540D;<code>&lt;name&gt;</code></td>
 </tr>
 <tr class="even">
 <td align="left"><code>\&lt;number&gt;</code></td>
-<td align="center">引用组<code>&lt;number&gt;</code></td>
+<td align="center">&#x5F15;&#x7528;&#x7EC4;<code>&lt;number&gt;</code></td>
 </tr>
 <tr class="odd">
-<td align="left"><code>(P=&lt;name&gt;)</code> <code>(?:…)</code></td>
-<td align="center">引用组<code>&lt;name&gt;</code> <code>(?…)</code>的不分组版本</td>
+<td align="left"><code>(P=&lt;name&gt;)</code> <code>(?:&#x2026;)</code></td>
+<td align="center">&#x5F15;&#x7528;&#x7EC4; <code>&lt;name&gt;</code> <code>(?&#x2026;)</code> &#x7684;&#x4E0D;&#x5206;&#x7EC4;&#x7248;&#x672C;</td>
 </tr>
 </tbody>
 </table>
-<h3 id="特殊构造">特殊构造</h3>
-<p>特殊构造不分组.</p>
+<h3 id="&#x7279;&#x6B8A;&#x6784;&#x9020;">&#x7279;&#x6B8A;&#x6784;&#x9020;</h3>
+<p>&#x7279;&#x6B8A;&#x6784;&#x9020;&#x4E0D;&#x5206;&#x7EC4;.</p>
 <table>
-<col width="26%">
+<colgroup><col width="26%">
 <col width="50%">
-<tbody>
+</colgroup><tbody>
 <tr class="odd">
-<td align="left"><code>(?#…)</code></td>
-<td align="center">注释</td>
+<td align="left"><code>(?#&#x2026;)</code></td>
+<td align="center">&#x6CE8;&#x91CA;</td>
 </tr>
 <tr class="even">
-<td align="left"><code>(?=…)</code></td>
-<td align="center">字符串之后的内容匹配<code>…</code></td>
+<td align="left"><code>(?=&#x2026;)</code></td>
+<td align="center">&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x540E;&#x7684;&#x5185;&#x5BB9;&#x5339;&#x914D;<code>&#x2026;</code></td>
 </tr>
 <tr class="odd">
-<td align="left"><code>(?!…)</code></td>
-<td align="center">字符串之后的内容不匹配<code>…</code></td>
+<td align="left"><code>(?!&#x2026;)</code></td>
+<td align="center">&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x540E;&#x7684;&#x5185;&#x5BB9;&#x4E0D;&#x5339;&#x914D;<code>&#x2026;</code></td>
 </tr>
 <tr class="even">
-<td align="left"><code>(?&lt;=…)</code></td>
-<td align="center">字符串之前的内容匹配<code>…</code></td>
+<td align="left"><code>(?&lt;=&#x2026;)</code></td>
+<td align="center">&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#x5339;&#x914D;<code>&#x2026;</code></td>
 </tr>
 <tr class="odd">
-<td align="left"><code>(?&lt;!…)</code></td>
-<td align="center">字符串之前的内容不匹配<code>…</code></td>
+<td align="left"><code>(?&lt;!&#x2026;)</code></td>
+<td align="center">&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#x4E0D;&#x5339;&#x914D;<code>&#x2026;</code></td>
 </tr>
 <tr class="even">
 <td align="left"><code>(?(&lt;id&gt;/&lt;name&gt;)</code><br><code>yes-pattern</code><br><code>|no-pattern)</code></td>
-<td align="center">如果<code>&lt;id&gt;/&lt;name&gt;</code>匹配成功,<br>则匹配 <code>yes-pattern</code>,<br>否则匹配 <code>no-pattern</code></td>
+<td align="center">&#x5982;&#x679C; <code>&lt;id&gt;/&lt;name&gt;</code> &#x5339;&#x914D;&#x6210;&#x529F;,<br>&#x5219;&#x5339;&#x914D; <code>yes-pattern</code>,<br>&#x5426;&#x5219;&#x5339;&#x914D; <code>no-pattern</code></td>
 </tr>
 </tbody>
 </table>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css">
       
     </div>
     
@@ -568,8 +560,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/29/pandoc-s-markdown/" rel="next" title="Pandoc's Markdown 摘要">
-                <i class="fa fa-chevron-left"></i> Pandoc's Markdown 摘要
+              <a href="/2017/07/29/pandoc-s-markdown/" rel="next" title="Pandoc&apos;s Markdown &#x6458;&#x8981;">
+                <i class="fa fa-chevron-left"></i> Pandoc&apos;s Markdown &#x6458;&#x8981;
               </a>
             
           </div>
@@ -578,8 +570,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/03/remove-the-write-protect-of-a-broken-sd-card/" rel="prev" title="去除丢失「写保护开关」SD 卡的写保护">
-                去除丢失「写保护开关」SD 卡的写保护 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/03/remove-the-write-protect-of-a-broken-sd-card/" rel="prev" title="&#x53BB;&#x9664;&#x4E22;&#x5931;&#x300C;&#x5199;&#x4FDD;&#x62A4;&#x5F00;&#x5173;&#x300D;SD &#x5361;&#x7684;&#x5199;&#x4FDD;&#x62A4;">
+                &#x53BB;&#x9664;&#x4E22;&#x5931;&#x300C;&#x5199;&#x4FDD;&#x62A4;&#x5F00;&#x5173;&#x300D;SD &#x5361;&#x7684;&#x5199;&#x4FDD;&#x62A4; <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -639,17 +631,17 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
+            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
+            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
           </li>
         </ul>
       
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">xa0082249956</p>
               <p class="site-description motion-element" itemprop="description">Finding Paradise.</p>
@@ -663,7 +655,7 @@
                 <a href="/archives">
               
                   <span class="site-state-item-count">27</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
                 </a>
               </div>
             
@@ -674,7 +666,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">分类</span>
+                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
                 </a>
               </div>
             
@@ -685,7 +677,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">13</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
                 </a>
               </div>
             
@@ -719,7 +711,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#语法规则"><span class="nav-number">1.</span> <span class="nav-text">语法规则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#字符"><span class="nav-number">1.1.</span> <span class="nav-text">字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预定义字符集"><span class="nav-number">1.2.</span> <span class="nav-text">预定义字符集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数量词"><span class="nav-number">1.3.</span> <span class="nav-text">数量词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边界匹配"><span class="nav-number">1.4.</span> <span class="nav-text">边界匹配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑与分组"><span class="nav-number">1.5.</span> <span class="nav-text">逻辑与分组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊构造"><span class="nav-number">1.6.</span> <span class="nav-text">特殊构造</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#&#x8BED;&#x6CD5;&#x89C4;&#x5219;"><span class="nav-number">1.</span> <span class="nav-text">&#x8BED;&#x6CD5;&#x89C4;&#x5219;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x5B57;&#x7B26;"><span class="nav-number">1.1.</span> <span class="nav-text">&#x5B57;&#x7B26;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x9884;&#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x96C6;"><span class="nav-number">1.2.</span> <span class="nav-text">&#x9884;&#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x96C6;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x6570;&#x91CF;&#x8BCD;"><span class="nav-number">1.3.</span> <span class="nav-text">&#x6570;&#x91CF;&#x8BCD;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x8FB9;&#x754C;&#x5339;&#x914D;"><span class="nav-number">1.4.</span> <span class="nav-text">&#x8FB9;&#x754C;&#x5339;&#x914D;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x903B;&#x8F91;&#x4E0E;&#x5206;&#x7EC4;"><span class="nav-number">1.5.</span> <span class="nav-text">&#x903B;&#x8F91;&#x4E0E;&#x5206;&#x7EC4;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x7279;&#x6B8A;&#x6784;&#x9020;"><span class="nav-number">1.6.</span> <span class="nav-text">&#x7279;&#x6B8A;&#x6784;&#x9020;</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -746,7 +738,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -756,7 +748,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">&#x7531; <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> &#x5F3A;&#x529B;&#x9A71;&#x52A8;</div>
 
 
 
@@ -764,7 +756,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+  <div class="theme-info">&#x4E3B;&#x9898; &#x2014; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
 
 
 
@@ -850,9 +842,9 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+  
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+  
 
 
 
@@ -860,22 +852,22 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
-
-
-
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
-
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+  
+  
+
+
+
+
+  
+
+
+  
 
 
 
@@ -1068,7 +1060,7 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -1076,5 +1068,6 @@
 
   
 
-</body>
-</html>
+
+
+<script type="text/javascript" src="/js/bundle.js"></script></body></html>

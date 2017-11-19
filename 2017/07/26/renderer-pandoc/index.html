@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +12,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -42,7 +34,7 @@
   
     
   
-  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css">
 
 
 
@@ -52,9 +44,9 @@
 
   
 
-<link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
@@ -72,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="Pandoc,Hexo," />
+  <meta name="keywords" content="Pandoc,Hexo,">
 
 
 
@@ -83,18 +75,18 @@
 
 
 
-<meta name="description" content="为什么使用 Pandoc  Hexo 默认的渲染引擎和 MathJax 存在冲突，导致公式输入十分繁琐 Hexo 默认的渲染引擎常出现模板渲染错误的问题  替换方法 安装 Pandoc Pandoc 的安装程序可以在 https://github.com/jgm/pandoc/releases 找到。  Chocola">
+<meta name="description" content="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528; Pandoc  Hexo &#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x548C; MathJax &#x5B58;&#x5728;&#x51B2;&#x7A81;&#xFF0C;&#x5BFC;&#x81F4;&#x516C;&#x5F0F;&#x8F93;&#x5165;&#x5341;&#x5206;&#x7E41;&#x7410;  Hexo &#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x5E38;&#x51FA;&#x73B0;&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x9519;&#x8BEF;&#x7684;&#x95EE;&#x9898;    &#x66FF;&#x6362;&#x65B9;&#x6CD5;   &#x5B89;&#x88C5; Pandoc Pandoc &#x7684;&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x5728; https://github.com/jgm/pandoc/releases &#x627E;&#x5230;&#x3002;  Ch">
 <meta name="keywords" content="Pandoc,Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="将 Pandoc 作为 Hexo Markdown 渲染引擎">
+<meta property="og:title" content="&#x5C06; Pandoc &#x4F5C;&#x4E3A; Hexo Markdown &#x6E32;&#x67D3;&#x5F15;&#x64CE;">
 <meta property="og:url" content="http://xa0082249956.tk/2017/07/26/renderer-pandoc/index.html">
 <meta property="og:site_name" content="&gt;33&lt;">
-<meta property="og:description" content="为什么使用 Pandoc  Hexo 默认的渲染引擎和 MathJax 存在冲突，导致公式输入十分繁琐 Hexo 默认的渲染引擎常出现模板渲染错误的问题  替换方法 安装 Pandoc Pandoc 的安装程序可以在 https://github.com/jgm/pandoc/releases 找到。  Chocolatey 中的 Pandoc 版本似乎是 2.0 版，暂不推荐使用。  更换渲染引">
+<meta property="og:description" content="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528; Pandoc  Hexo &#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x548C; MathJax &#x5B58;&#x5728;&#x51B2;&#x7A81;&#xFF0C;&#x5BFC;&#x81F4;&#x516C;&#x5F0F;&#x8F93;&#x5165;&#x5341;&#x5206;&#x7E41;&#x7410;  Hexo &#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x5E38;&#x51FA;&#x73B0;&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x9519;&#x8BEF;&#x7684;&#x95EE;&#x9898;    &#x66FF;&#x6362;&#x65B9;&#x6CD5;   &#x5B89;&#x88C5; Pandoc Pandoc &#x7684;&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x5728; https://github.com/jgm/pandoc/releases &#x627E;&#x5230;&#x3002;  Chocolatey &#x4E2D;&#x7684; Pandoc &#x7248;&#x672C;&#x4F3C;&#x4E4E;&#x662F; 2.0 &#x7248;&#xFF0C;&#x6682;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x3002;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-19T11:10:48.147Z">
+<meta property="og:updated_time" content="2017-11-19T14:09:11.252Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="将 Pandoc 作为 Hexo Markdown 渲染引擎">
-<meta name="twitter:description" content="为什么使用 Pandoc  Hexo 默认的渲染引擎和 MathJax 存在冲突，导致公式输入十分繁琐 Hexo 默认的渲染引擎常出现模板渲染错误的问题  替换方法 安装 Pandoc Pandoc 的安装程序可以在 https://github.com/jgm/pandoc/releases 找到。  Chocolatey 中的 Pandoc 版本似乎是 2.0 版，暂不推荐使用。  更换渲染引">
+<meta name="twitter:title" content="&#x5C06; Pandoc &#x4F5C;&#x4E3A; Hexo Markdown &#x6E32;&#x67D3;&#x5F15;&#x64CE;">
+<meta name="twitter:description" content="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528; Pandoc  Hexo &#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x548C; MathJax &#x5B58;&#x5728;&#x51B2;&#x7A81;&#xFF0C;&#x5BFC;&#x81F4;&#x516C;&#x5F0F;&#x8F93;&#x5165;&#x5341;&#x5206;&#x7E41;&#x7410;  Hexo &#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x5E38;&#x51FA;&#x73B0;&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x9519;&#x8BEF;&#x7684;&#x95EE;&#x9898;    &#x66FF;&#x6362;&#x65B9;&#x6CD5;   &#x5B89;&#x88C5; Pandoc Pandoc &#x7684;&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x5728; https://github.com/jgm/pandoc/releases &#x627E;&#x5230;&#x3002;  Chocolatey &#x4E2D;&#x7684; Pandoc &#x7248;&#x672C;&#x4F3C;&#x4E4E;&#x662F; 2.0 &#x7248;&#xFF0C;&#x6682;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x3002;">
 
 
 
@@ -124,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://xa0082249956.tk/2017/07/26/renderer-pandoc/"/>
+  <link rel="canonical" href="http://xa0082249956.tk/2017/07/26/renderer-pandoc/">
 
 
 
 
 
-  <title>将 Pandoc 作为 Hexo Markdown 渲染引擎 | >33<</title>
+  <title>&#x5C06; Pandoc &#x4F5C;&#x4E3A; Hexo Markdown &#x6E32;&#x67D3;&#x5F15;&#x64CE; | &gt;33&lt;</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -142,25 +134,25 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">>33<</span>
+        <span class="site-title">&gt;33&lt;</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -188,9 +180,9 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            关于
+            &#x5173;&#x4E8E;
           </a>
         </li>
       
@@ -198,9 +190,9 @@
         <li class="menu-item menu-item-quicknote">
           <a href="/quicknote/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br>
             
-            快速笔记
+            &#x5FEB;&#x901F;&#x7B14;&#x8BB0;
           </a>
         </li>
       
@@ -232,21 +224,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://xa0082249956.tk/2017/07/26/renderer-pandoc/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xa0082249956">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content=">33<">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="&gt;33&lt;">
     </span>
 
     
@@ -254,7 +246,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">将 Pandoc 作为 Hexo Markdown 渲染引擎</h1>
+          <h1 class="post-title" itemprop="name headline">&#x5C06; Pandoc &#x4F5C;&#x4E3A; Hexo Markdown &#x6E32;&#x67D3;&#x5F15;&#x64CE;</h1>
         
 
         <div class="post-meta">
@@ -268,9 +260,9 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-19T19:10:48+08:00">
+              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2017-11-19T22:09:11+08:00">
                 2017-11-19
               </time>
             
@@ -296,13 +288,13 @@
 
           
           
-             <span id="/2017/07/26/renderer-pandoc/" class="leancloud_visitors" data-flag-title="将 Pandoc 作为 Hexo Markdown 渲染引擎">
+             <span id="/2017/07/26/renderer-pandoc/" class="leancloud_visitors" data-flag-title="&#x5C06; Pandoc &#x4F5C;&#x4E3A; Hexo Markdown &#x6E32;&#x67D3;&#x5F15;&#x64CE;">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -327,23 +319,23 @@
       
 
       
-        <h1 id="为什么使用-pandoc">为什么使用 Pandoc</h1>
+        <h1 id="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528; -pandoc"> &#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528; Pandoc</h1>
 <ul>
-<li>Hexo 默认的渲染引擎和 MathJax 存在冲突，导致公式输入十分繁琐</li>
-<li>Hexo 默认的渲染引擎常出现模板渲染错误的问题</li>
+<li>Hexo &#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x548C; MathJax &#x5B58;&#x5728;&#x51B2;&#x7A81;&#xFF0C;&#x5BFC;&#x81F4;&#x516C;&#x5F0F;&#x8F93;&#x5165;&#x5341;&#x5206;&#x7E41;&#x7410; </li>
+<li>Hexo &#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x5E38;&#x51FA;&#x73B0;&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x9519;&#x8BEF;&#x7684;&#x95EE;&#x9898; </li>
 </ul>
-<h1 id="替换方法">替换方法</h1>
-<h2 id="安装-pandoc">安装 Pandoc</h2>
-<p>Pandoc 的安装程序可以在 https://github.com/jgm/pandoc/releases 找到。</p>
+<h1 id="&#x66FF;&#x6362;&#x65B9;&#x6CD5;"> &#x66FF;&#x6362;&#x65B9;&#x6CD5; </h1>
+<h2 id="&#x5B89;&#x88C5; -pandoc"> &#x5B89;&#x88C5; Pandoc</h2>
+<p>Pandoc &#x7684;&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x5728; https://github.com/jgm/pandoc/releases &#x627E;&#x5230;&#x3002;</p>
 <blockquote>
-<p>Chocolatey 中的 Pandoc 版本似乎是 2.0 版，暂不推荐使用。</p>
+<p>Chocolatey &#x4E2D;&#x7684; Pandoc &#x7248;&#x672C;&#x4F3C;&#x4E4E;&#x662F; 2.0 &#x7248;&#xFF0C;&#x6682;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x3002;</p>
 </blockquote>
-<h2 id="更换渲染引擎">更换渲染引擎</h2>
-<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<h2 id="&#x66F4;&#x6362;&#x6E32;&#x67D3;&#x5F15;&#x64CE;"> &#x66F4;&#x6362;&#x6E32;&#x67D3;&#x5F15;&#x64CE; </h2>
+<figure class="highlight bat"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></tbody></table></figure>
 
 
 
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css">
       
     </div>
     
@@ -375,8 +367,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/10/latex-study-1/" rel="next" title="$\rm \LaTeX$ 学习笔记 (1)">
-                <i class="fa fa-chevron-left"></i> $\rm \LaTeX$ 学习笔记 (1)
+              <a href="/2017/07/10/latex-study-1/" rel="next" title="$\rm \LaTeX$ &#x5B66;&#x4E60;&#x7B14;&#x8BB0; (1)">
+                <i class="fa fa-chevron-left"></i> $\rm \LaTeX$ &#x5B66;&#x4E60;&#x7B14;&#x8BB0; (1)
               </a>
             
           </div>
@@ -385,8 +377,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/29/pandoc-s-markdown/" rel="prev" title="Pandoc's Markdown 摘要">
-                Pandoc's Markdown 摘要 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/07/29/pandoc-s-markdown/" rel="prev" title="Pandoc&apos;s Markdown &#x6458;&#x8981;">
+                Pandoc&apos;s Markdown &#x6458;&#x8981; <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -446,17 +438,17 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
+            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
+            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
           </li>
         </ul>
       
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">xa0082249956</p>
               <p class="site-description motion-element" itemprop="description">Finding Paradise.</p>
@@ -470,7 +462,7 @@
                 <a href="/archives">
               
                   <span class="site-state-item-count">27</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
                 </a>
               </div>
             
@@ -481,7 +473,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">分类</span>
+                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
                 </a>
               </div>
             
@@ -492,7 +484,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">13</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
                 </a>
               </div>
             
@@ -526,7 +518,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么使用-pandoc"><span class="nav-number">1.</span> <span class="nav-text">为什么使用 Pandoc</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#替换方法"><span class="nav-number">2.</span> <span class="nav-text">替换方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-pandoc"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Pandoc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换渲染引擎"><span class="nav-number">2.2.</span> <span class="nav-text">更换渲染引擎</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528; -pandoc"><span class="nav-number">1.</span> <span class="nav-text"> &#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528; Pandoc</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#&#x66FF;&#x6362;&#x65B9;&#x6CD5;"><span class="nav-number">2.</span> <span class="nav-text"> &#x66FF;&#x6362;&#x65B9;&#x6CD5; </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#&#x5B89;&#x88C5; -pandoc"><span class="nav-number">2.1.</span> <span class="nav-text"> &#x5B89;&#x88C5; Pandoc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#&#x66F4;&#x6362;&#x6E32;&#x67D3;&#x5F15;&#x64CE;"><span class="nav-number">2.2.</span> <span class="nav-text"> &#x66F4;&#x6362;&#x6E32;&#x67D3;&#x5F15;&#x64CE; </span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -553,7 +545,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -563,7 +555,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">&#x7531; <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> &#x5F3A;&#x529B;&#x9A71;&#x52A8;</div>
 
 
 
@@ -571,7 +563,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+  <div class="theme-info">&#x4E3B;&#x9898; &#x2014; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
 
 
 
@@ -657,9 +649,9 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+  
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+  
 
 
 
@@ -667,22 +659,22 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
-
-
-
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
-
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+  
+  
+
+
+
+
+  
+
+
+  
 
 
 
@@ -875,7 +867,7 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -883,5 +875,6 @@
 
   
 
-</body>
-</html>
+
+
+<script type="text/javascript" src="/js/bundle.js"></script></body></html>

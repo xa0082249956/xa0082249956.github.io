@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +12,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -42,7 +34,7 @@
   
     
   
-  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css">
 
 
 
@@ -52,9 +44,9 @@
 
   
 
-<link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
@@ -72,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="33" />
+  <meta name="keywords" content="33">
 
 
 
@@ -83,17 +75,17 @@
 
 
 
-<meta name="description" content="XeLaTeX 编译过长的一般原因是找不到字体。XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。 在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。 一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。不过，在 Windows 下 TeX">
+<meta name="description" content="XeLaTeX &#x7F16;&#x8BD1;&#x8FC7;&#x957F;&#x7684;&#x4E00;&#x822C;&#x539F;&#x56E0;&#x662F;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x3002;XeLaTeX &#x5728;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4E2D;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x65F6;&#x4F1A;&#x91CD;&#x65B0;&#x5237;&#x65B0;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5F88;&#x6162;&#x3002; &#x5728;&#x957F;&#x65F6;&#x95F4;&#x7684;&#x7B49;&#x5F85;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x80FD;&#x627E;&#x5230;&#x6B63;&#x5E38;&#x7684;&#x5B57;&#x4F53;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF1B;&#x4E5F;&#x53EF;&#x80FD;&#x663E;&#x793A;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x7684;&#x9519;&#x8BEF;&#x3002; &#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x627E;&#x5230;&#x5B57;&#x4F53;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF0C;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4E5F;&#x4F1A;&#x5F97;&#x5230;&#x5237;&#x65B0;&#xFF0C;&#x4E8E;&#x662F;&#x540E;&#x7EED;&#x7684;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#x4F1A;&#x6B63;&#x5E38;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5728; Windows &#x4E0B; TeX">
 <meta property="og:type" content="article">
-<meta property="og:title" content="修复 $\rm XeLaTeX$ 编译时间过长的问题">
+<meta property="og:title" content="&#x4FEE;&#x590D; $\rm XeLaTeX$ &#x7F16;&#x8BD1;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#x7684;&#x95EE;&#x9898;">
 <meta property="og:url" content="http://xa0082249956.tk/2017/07/10/xelatex-compline-time-too-long-fix/index.html">
 <meta property="og:site_name" content="&gt;33&lt;">
-<meta property="og:description" content="XeLaTeX 编译过长的一般原因是找不到字体。XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。 在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。 一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷">
+<meta property="og:description" content="XeLaTeX &#x7F16;&#x8BD1;&#x8FC7;&#x957F;&#x7684;&#x4E00;&#x822C;&#x539F;&#x56E0;&#x662F;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x3002;XeLaTeX &#x5728;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4E2D;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x65F6;&#x4F1A;&#x91CD;&#x65B0;&#x5237;&#x65B0;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5F88;&#x6162;&#x3002; &#x5728;&#x957F;&#x65F6;&#x95F4;&#x7684;&#x7B49;&#x5F85;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x80FD;&#x627E;&#x5230;&#x6B63;&#x5E38;&#x7684;&#x5B57;&#x4F53;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF1B;&#x4E5F;&#x53EF;&#x80FD;&#x663E;&#x793A;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x7684;&#x9519;&#x8BEF;&#x3002; &#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x627E;&#x5230;&#x5B57;&#x4F53;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF0C;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4E5F;&#x4F1A;&#x5F97;&#x5230;&#x5237;&#x65B0;&#xFF0C;&#x4E8E;&#x662F;&#x540E;&#x7EED;&#x7684;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#x4F1A;&#x6B63;&#x5E38;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5728; Windows &#x4E0B; TeXLive 2017 &#x4F3C;&#x4E4E;&#x5B9E;&#x73B0;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4F1A;&#x51FA;&#x95EE;&#x9898;&#xFF0C;&#x6B64;&#x65F6;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x5237;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-19T11:10:48.147Z">
+<meta property="og:updated_time" content="2017-11-19T14:09:11.252Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="修复 $\rm XeLaTeX$ 编译时间过长的问题">
-<meta name="twitter:description" content="XeLaTeX 编译过长的一般原因是找不到字体。XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。 在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。 一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷">
+<meta name="twitter:title" content="&#x4FEE;&#x590D; $\rm XeLaTeX$ &#x7F16;&#x8BD1;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#x7684;&#x95EE;&#x9898;">
+<meta name="twitter:description" content="XeLaTeX &#x7F16;&#x8BD1;&#x8FC7;&#x957F;&#x7684;&#x4E00;&#x822C;&#x539F;&#x56E0;&#x662F;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x3002;XeLaTeX &#x5728;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4E2D;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x65F6;&#x4F1A;&#x91CD;&#x65B0;&#x5237;&#x65B0;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5F88;&#x6162;&#x3002; &#x5728;&#x957F;&#x65F6;&#x95F4;&#x7684;&#x7B49;&#x5F85;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x80FD;&#x627E;&#x5230;&#x6B63;&#x5E38;&#x7684;&#x5B57;&#x4F53;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF1B;&#x4E5F;&#x53EF;&#x80FD;&#x663E;&#x793A;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x7684;&#x9519;&#x8BEF;&#x3002; &#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x627E;&#x5230;&#x5B57;&#x4F53;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF0C;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4E5F;&#x4F1A;&#x5F97;&#x5230;&#x5237;&#x65B0;&#xFF0C;&#x4E8E;&#x662F;&#x540E;&#x7EED;&#x7684;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#x4F1A;&#x6B63;&#x5E38;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5728; Windows &#x4E0B; TeXLive 2017 &#x4F3C;&#x4E4E;&#x5B9E;&#x73B0;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4F1A;&#x51FA;&#x95EE;&#x9898;&#xFF0C;&#x6B64;&#x65F6;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x5237;">
 
 
 
@@ -123,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://xa0082249956.tk/2017/07/10/xelatex-compline-time-too-long-fix/"/>
+  <link rel="canonical" href="http://xa0082249956.tk/2017/07/10/xelatex-compline-time-too-long-fix/">
 
 
 
 
 
-  <title>修复 $\rm XeLaTeX$ 编译时间过长的问题 | >33<</title>
+  <title>&#x4FEE;&#x590D; $\rm XeLaTeX$ &#x7F16;&#x8BD1;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#x7684;&#x95EE;&#x9898; | &gt;33&lt;</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -141,25 +133,25 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">>33<</span>
+        <span class="site-title">&gt;33&lt;</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -187,9 +179,9 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
-            关于
+            &#x5173;&#x4E8E;
           </a>
         </li>
       
@@ -197,9 +189,9 @@
         <li class="menu-item menu-item-quicknote">
           <a href="/quicknote/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br>
             
-            快速笔记
+            &#x5FEB;&#x901F;&#x7B14;&#x8BB0;
           </a>
         </li>
       
@@ -231,21 +223,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://xa0082249956.tk/2017/07/10/xelatex-compline-time-too-long-fix/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xa0082249956">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content=">33<">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="&gt;33&lt;">
     </span>
 
     
@@ -253,7 +245,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">修复 $\rm XeLaTeX$ 编译时间过长的问题</h1>
+          <h1 class="post-title" itemprop="name headline">&#x4FEE;&#x590D; $\rm XeLaTeX$ &#x7F16;&#x8BD1;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#x7684;&#x95EE;&#x9898;</h1>
         
 
         <div class="post-meta">
@@ -267,16 +259,16 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                <span class="post-meta-item-text">&#x66F4;&#x65B0;&#x4E8E;:</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-19T19:10:48+08:00">
+              <time title="&#x66F4;&#x65B0;&#x4E8E;" itemprop="dateModified" datetime="2017-11-19T22:09:11+08:00">
                 2017-11-19
               </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -284,10 +276,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">&#x5206;&#x7C7B;&#x4E8E;</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/rm-latex/" itemprop="url" rel="index">
                     <span itemprop="name">$\rm \LaTeX$</span>
                   </a>
@@ -317,13 +309,13 @@
 
           
           
-             <span id="/2017/07/10/xelatex-compline-time-too-long-fix/" class="leancloud_visitors" data-flag-title="修复 $\rm XeLaTeX$ 编译时间过长的问题">
+             <span id="/2017/07/10/xelatex-compline-time-too-long-fix/" class="leancloud_visitors" data-flag-title="&#x4FEE;&#x590D; $\rm XeLaTeX$ &#x7F16;&#x8BD1;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#x7684;&#x95EE;&#x9898;">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -348,19 +340,19 @@
       
 
       
-        <p>XeLaTeX 编译过长的一般原因是找不到字体。<br>XeLaTeX 在字体缓存中找不到字体时会重新刷新字体缓存，这个过程很慢。</p>
-<p>在长时间的等待之后，可能找到正常的字体编译完成；也可能显示找不到字体的错误。</p>
-<p>一般情况下，如果找到字体编译完成，字体缓存也会得到刷新，于是后续的编译速度会正常。<br>不过，在 Windows 下 TeXLive 2017 似乎实现有问题，自动刷新字体缓存会出问题，此时可能需要手工刷新，即运行</p>
-<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fc-cache</span><br></pre></td></tr></table></figure>
+        <p>XeLaTeX &#x7F16;&#x8BD1;&#x8FC7;&#x957F;&#x7684;&#x4E00;&#x822C;&#x539F;&#x56E0;&#x662F;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x3002;<br>XeLaTeX &#x5728;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4E2D;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x65F6;&#x4F1A;&#x91CD;&#x65B0;&#x5237;&#x65B0;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5F88;&#x6162;&#x3002;</p>
+<p>&#x5728;&#x957F;&#x65F6;&#x95F4;&#x7684;&#x7B49;&#x5F85;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x80FD;&#x627E;&#x5230;&#x6B63;&#x5E38;&#x7684;&#x5B57;&#x4F53;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF1B;&#x4E5F;&#x53EF;&#x80FD;&#x663E;&#x793A;&#x627E;&#x4E0D;&#x5230;&#x5B57;&#x4F53;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x627E;&#x5230;&#x5B57;&#x4F53;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF0C;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4E5F;&#x4F1A;&#x5F97;&#x5230;&#x5237;&#x65B0;&#xFF0C;&#x4E8E;&#x662F;&#x540E;&#x7EED;&#x7684;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#x4F1A;&#x6B63;&#x5E38;&#x3002;<br>&#x4E0D;&#x8FC7;&#xFF0C;&#x5728; Windows &#x4E0B; TeXLive 2017 &#x4F3C;&#x4E4E;&#x5B9E;&#x73B0;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4F1A;&#x51FA;&#x95EE;&#x9898;&#xFF0C;&#x6B64;&#x65F6;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x5237;&#x65B0;&#xFF0C;&#x5373;&#x8FD0;&#x884C;</p>
+<figure class="highlight bat"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fc-cache</span><br></pre></td></tr></tbody></table></figure>
 
-<p>-f 强制刷新<br>-v 显示更详细的信息</p>
-<p>这两个命令一般不用加。<br>TeXLive 2017 字体缓存保存在 texlive017-var, 刷新出问题时可以尝试清除该路径下所有内容后重试。</p>
+<p>-f &#x5F3A;&#x5236;&#x5237;&#x65B0;<br>-v &#x663E;&#x793A;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x4FE1;&#x606F;</p>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#x4E00;&#x822C;&#x4E0D;&#x7528;&#x52A0;&#x3002;<br>TeXLive 2017 &#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x4FDD;&#x5B58;&#x5728; texlive017-var, &#x5237;&#x65B0;&#x51FA;&#x95EE;&#x9898;&#x65F6;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x6E05;&#x9664;&#x8BE5;&#x8DEF;&#x5F84;&#x4E0B;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x540E;&#x91CD;&#x8BD5;&#x3002;</p>
 <blockquote>
-<p><strong>注意</strong><br>在安装新字体后都需要重新刷新字体缓存。</p>
+<p><strong>&#x6CE8;&#x610F; </strong><br> &#x5728;&#x5B89;&#x88C5;&#x65B0;&#x5B57;&#x4F53;&#x540E;&#x90FD;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x5237;&#x65B0;&#x5B57;&#x4F53;&#x7F13;&#x5B58;&#x3002;</p>
 </blockquote>
-<p>文档中使用了 PSTricks 作图也会延长编译时间。<br>因为此时 XeTeX 会额外花费较多时间调用 ghostscript。<br>可以考虑改用 tikz 画图。</p>
-<p>参考资料:<br><a href="https://www.zhihu.com/question/53981204" target="_blank" rel="noopener">https://www.zhihu.com/question/53981204</a></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<p>&#x6587;&#x6863;&#x4E2D;&#x4F7F;&#x7528;&#x4E86; PSTricks &#x4F5C;&#x56FE;&#x4E5F;&#x4F1A;&#x5EF6;&#x957F;&#x7F16;&#x8BD1;&#x65F6;&#x95F4;&#x3002;<br>&#x56E0;&#x4E3A;&#x6B64;&#x65F6; XeTeX &#x4F1A;&#x989D;&#x5916;&#x82B1;&#x8D39;&#x8F83;&#x591A;&#x65F6;&#x95F4;&#x8C03;&#x7528; ghostscript&#x3002;<br>&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x6539;&#x7528; tikz &#x753B;&#x56FE;&#x3002;</p>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;:<br><a href="https://www.zhihu.com/question/53981204" target="_blank" rel="noopener">https://www.zhihu.com/question/53981204</a></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css">
       
     </div>
     
@@ -384,8 +376,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/06/2016-2017-2-math-end-term-23/" rel="next" title="2016-2017-2 数学期末 23 题">
-                <i class="fa fa-chevron-left"></i> 2016-2017-2 数学期末 23 题
+              <a href="/2017/07/06/2016-2017-2-math-end-term-23/" rel="next" title="2016-2017-2 &#x6570;&#x5B66;&#x671F;&#x672B; 23 &#x9898;">
+                <i class="fa fa-chevron-left"></i> 2016-2017-2 &#x6570;&#x5B66;&#x671F;&#x672B; 23 &#x9898;
               </a>
             
           </div>
@@ -394,8 +386,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/10/latex-study-1/" rel="prev" title="$\rm \LaTeX$ 学习笔记 (1)">
-                $\rm \LaTeX$ 学习笔记 (1) <i class="fa fa-chevron-right"></i>
+              <a href="/2017/07/10/latex-study-1/" rel="prev" title="$\rm \LaTeX$ &#x5B66;&#x4E60;&#x7B14;&#x8BB0; (1)">
+                $\rm \LaTeX$ &#x5B66;&#x4E60;&#x7B14;&#x8BB0; (1) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -456,7 +448,7 @@
 
       <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">xa0082249956</p>
               <p class="site-description motion-element" itemprop="description">Finding Paradise.</p>
@@ -470,7 +462,7 @@
                 <a href="/archives">
               
                   <span class="site-state-item-count">27</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
                 </a>
               </div>
             
@@ -481,7 +473,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">分类</span>
+                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
                 </a>
               </div>
             
@@ -492,7 +484,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">13</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
                 </a>
               </div>
             
@@ -537,7 +529,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -547,7 +539,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">&#x7531; <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> &#x5F3A;&#x529B;&#x9A71;&#x52A8;</div>
 
 
 
@@ -555,7 +547,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+  <div class="theme-info">&#x4E3B;&#x9898; &#x2014; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
 
 
 
@@ -641,9 +633,9 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+  
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+  
 
 
 
@@ -651,22 +643,22 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
-
-
-
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
-
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+  
+  
+
+
+
+
+  
+
+
+  
 
 
 
@@ -859,7 +851,7 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -867,5 +859,6 @@
 
   
 
-</body>
-</html>
+
+
+<script type="text/javascript" src="/js/bundle.js"></script></body></html>
