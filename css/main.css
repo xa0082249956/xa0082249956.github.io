@@ -547,10 +547,9 @@ body {
 }
 pre,
 .highlight {
-  border-radius: 1px;
   overflow: auto;
   margin: 20px 0;
-  padding: 10px;
+  padding: 0;
   font-size: 13px;
   color: #4d4d4c;
   background: #f7f7f7;
@@ -572,17 +571,15 @@ pre {
   padding: 10px;
 }
 pre code {
-  padding: 0px;
+  padding: 0;
   color: #4d4d4c;
   background: none;
   text-shadow: none;
 }
 .highlight {
-/* border-radius: 1px; */
-  padding: 0;
+  border-radius: 1px;
 }
 .highlight pre {
-  border-radius: 1px;
   border: none;
   margin: 0;
   padding: 10px 0;
@@ -1886,7 +1883,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #edf125;
+  background: #0f854e;
 }
 .links-of-blogroll {
   font-size: 13px;

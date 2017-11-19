@@ -83,7 +83,7 @@
 
 
 
-<meta name="description" content="未完成的项目  该项目目前并未完成。  哲学  一份Markdown格式的文件应该要能以纯文字形式直接发表，并且一眼看过去不存在任何标记用的标签或格式指令。 John Gruber  引言 &amp;gt; 符号不一定要在该行最左边，但也不能缩进超过三个空白。 可以只在引言区块的第一行行首输入 &amp;gt;，后面的行首可以省略符号： 12&amp;gt; 这是一个引言区块\这是它的第二行  效果：  这是一个引言区块">
+<meta name="description" content="未完成的项目  该项目目前并未完成。  哲学  一份Markdown格式的文件应该要能以纯文字形式直接发表，并且一眼看过去不存在任何标记用的标签或格式指令。 John Gruber  引言 &amp;gt; 符号不一定要在该行最左边，但也不能缩进超过三个空白。 可以只在引言区块的第一行行首输入 &amp;gt;，后面的">
 <meta name="keywords" content="Pandoc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pandoc&#39;s Markdown 摘要">
@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="&gt;33&lt;">
 <meta property="og:description" content="未完成的项目  该项目目前并未完成。  哲学  一份Markdown格式的文件应该要能以纯文字形式直接发表，并且一眼看过去不存在任何标记用的标签或格式指令。 John Gruber  引言 &amp;gt; 符号不一定要在该行最左边，但也不能缩进超过三个空白。 可以只在引言区块的第一行行首输入 &amp;gt;，后面的行首可以省略符号： 12&amp;gt; 这是一个引言区块\这是它的第二行  效果：  这是一个引言区块">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-22T11:23:27.325Z">
+<meta property="og:updated_time" content="2017-11-19T11:10:48.143Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Pandoc&#39;s Markdown 摘要">
 <meta name="twitter:description" content="未完成的项目  该项目目前并未完成。  哲学  一份Markdown格式的文件应该要能以纯文字形式直接发表，并且一眼看过去不存在任何标记用的标签或格式指令。 John Gruber  引言 &amp;gt; 符号不一定要在该行最左边，但也不能缩进超过三个空白。 可以只在引言区块的第一行行首输入 &amp;gt;，后面的行首可以省略符号： 12&amp;gt; 这是一个引言区块\这是它的第二行  效果：  这是一个引言区块">
@@ -270,8 +270,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-10-22T19:23:27+08:00">
-                2017-10-22
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-19T19:10:48+08:00">
+                2017-11-19
               </time>
             
           </span>
@@ -339,7 +339,7 @@
 <h2 id="引言">引言</h2>
 <p><strong><code>&gt;</code> 符号</strong>不一定要在该行最左边，但也不能缩进超过三个空白。</p>
 <p>可以只在引言区块的第一行行首输入 <code>&gt;</code>，后面的行首可以省略符号：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; 这是一个引言区块\</span></div><div class="line">这是它的第二行</div></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 这是一个引言区块\</span></span><br><span class="line">这是它的第二行</span><br></pre></td></tr></table></figure>
 
 <p><em>效果：</em></p>
 <blockquote>
@@ -351,7 +351,7 @@
 <h2 id="代码">代码</h2>
 <h3 id="缩进代码区块">缩进代码区块</h3>
 <p>以四个空白缩进为开始的区块。</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">一</div><div class="line">个</div><div class="line">区</div><div class="line">块</div></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">一</span><br><span class="line">个</span><br><span class="line">区</span><br><span class="line">块</span><br></pre></td></tr></table></figure>
 
 <p><em>效果：</em></p>
 <pre><code>一
@@ -360,21 +360,21 @@
 块</code></pre>
 <h3 id="围栏代码区块">围栏代码区块</h3>
 <p>以三个以上 <code>~</code> 或 <code>`</code> 的一行作为开始，并以同一符号至少同样长度的一行作为结束。</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">~~~~~~</div><div class="line">FindingParadise</div><div class="line">~~~~~~</div></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">~~~~~~</span><br><span class="line">FindingParadise</span><br><span class="line">~~~~~~</span><br></pre></td></tr></table></figure>
 
 <p><em>效果：</em></p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">FindingParadise</span></div></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">FindingParadise</span></span><br></pre></td></tr></table></figure>
 
 <p>如果代码本身有一整行这种东西，你比它更长一点就好了。</p>
 <h4 id="附加属性">附加属性</h4>
 <p><code>#mycode</code> 为 ID.<br><code>.tex</code> 和 <code>.numberLines</code> 为类别.<br><code>startFrom=&quot;0&quot;</code> 为属性.</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">~~~~ &#123;#mycode .tex .numberLines startFrom="0"&#125;</div><div class="line"></div><div class="line">\usepackage&#123;ctexart&#125;</div><div class="line"></div><div class="line">\begin&#123;document&#125;</div><div class="line"><span class="code">    Finding Paradise.</span></div><div class="line">\end&#123;document&#125;</div><div class="line">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</div></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">~~~~ &#123;#mycode .tex .numberLines startFrom="0"&#125;</span><br><span class="line"></span><br><span class="line">\usepackage&#123;ctexart&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"><span class="code">    Finding Paradise.</span></span><br><span class="line">\end&#123;document&#125;</span><br><span class="line">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span><br></pre></td></tr></table></figure>
 
 <p><em>效果：</em></p>
 <p><strong>不支持。</strong></p>
 <h3 id="行">行</h3>
 <p>行区块以 <code>|</code> 开头，行与行间的间隔在输出时将会以原样保留，行首空白同理。而这些行依然会以 Markdown 格式处理。</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">| Mitsuha, Yotsuha, do you know "Musubi"?</div><div class="line">|</div><div class="line">| Musubi?</div><div class="line">|</div><div class="line">| Musubi is the old way of calling the local guardian god.</div><div class="line">| This word has profound meaning.</div><div class="line">|     Tying thread is Musubi.</div><div class="line">|     Conneting people is Musubi.</div><div class="line">|     The flow of time is Musubi.</div><div class="line">|     They're all the god's power.</div><div class="line">| So the braided cords that we make are the god's art and represent the flow of time itself.</div><div class="line">| They converge and take shape.</div><div class="line">| They twist, tangle, sometimes unravel, break, then connect agagin.</div><div class="line">| Musubi - knotting. That's time.</div></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">| Mitsuha, Yotsuha, do you know "Musubi"?</span><br><span class="line">|</span><br><span class="line">| Musubi?</span><br><span class="line">|</span><br><span class="line">| Musubi is the old way of calling the local guardian god.</span><br><span class="line">| This word has profound meaning.</span><br><span class="line">|     Tying thread is Musubi.</span><br><span class="line">|     Conneting people is Musubi.</span><br><span class="line">|     The flow of time is Musubi.</span><br><span class="line">|     They're all the god's power.</span><br><span class="line">| So the braided cords that we make are the god's art and represent the flow of time itself.</span><br><span class="line">| They converge and take shape.</span><br><span class="line">| They twist, tangle, sometimes unravel, break, then connect agagin.</span><br><span class="line">| Musubi - knotting. That's time.</span><br></pre></td></tr></table></figure>
 
 <p><em>效果：</em></p>
 <p>Mitsuha, Yotsuha, do you know “Musubi”?</p>
@@ -504,7 +504,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -515,7 +515,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -537,14 +537,6 @@
           
 
           <div class="links-of-author motion-element">
-            
-              
-                <span class="links-of-author-item">
-                  <a href="https://github.com/xa0082249956" target="_blank" title="GitHub">
-                    
-                      <i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
             
           </div>
 
@@ -598,7 +590,7 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">xa0082249956</span>
 
@@ -667,22 +659,34 @@
 
 
   
-  <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+  
 
   
-  <script type="text/javascript" src="//cdn.bootcss.com/fastclick/1.0.0/fastclick.min.js"></script>
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/fastclick/1.0.0/fastclick.min.js"></script>
+  
 
   
-  <script type="text/javascript" src="//cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
+  
 
   
-  <script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.1/velocity.min.js"></script>
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.1/velocity.min.js"></script>
+  
 
   
-  <script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.1/velocity.ui.min.js"></script>
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.1/velocity.ui.min.js"></script>
+  
 
   
-  <script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  
 
 
   
@@ -882,6 +886,8 @@
   
 
   
+
+  
   
 
   
@@ -904,7 +910,7 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
